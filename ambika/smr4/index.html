@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>SMR-4 voicecard - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SMR-4 voicecard";
+        var mkdocs_page_input_path = "ambika/smr4.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build Instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">SMR-4 voicecard</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#resistors-first-decade">Resistors, first decade</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resistors-second-decade">Resistors, second decade</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resistors-third-decade">Resistors, third decade</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resistors-last-decade">Resistors, last decade</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#miscellaneous-short-parts">Miscellaneous short parts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ceramic-capacitors">Ceramic capacitors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trimmer-and-leds">Trimmer and LEDs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ic-sockets">IC sockets</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#electrolytic-capacitors">Electrolytic capacitors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#film-capacitors">Film capacitors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transistors">Transistors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#connectors-and-ic">Connectors and IC</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Ambika &raquo;</li>
+          <li>Build Instructions &raquo;</li>
+      <li>SMR-4 voicecard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/ambika-assembly-0013-540x274.jpg" /></p>
+<h2 id="assembly-instructions">Assembly instructions</h2>
+<p><strong>DISCLAIMER:</strong> We are not responsible for anything wrong (including electric shocks, malfunctions, fires, accidents involving a soldering iron) that might happen during the assembly of the kit. Everything you do while assembling the kit is at your own risks.</p>
+<p>Given the relatively small size of this board, we do not build it functional unit by functional unit - we just work our way from the shortest to the tallest component.</p>
+<h3 id="resistors-first-decade">Resistors, first decade</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0001-540x285.jpg" /></p>
+<p>Add 9x 220R resistors (red, red, black, black, brown). Add 2x 470R resistors (yellow, purple, black, black, brown). Resistors are not polarized - but it helps to solder them with the same orientation as on these photos, it will make it easier for you to spot mistakes in case the board does not work!</p>
+<h3 id="resistors-second-decade">Resistors, second decade</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0002-540x288.jpg" /></p>
+<p>Add 2x 1.0k resistors (brown, black, black, brown, brown) ; 3x 2.2k resistors (red, red, black, brown, brown) ; and 4x 4.7k resistors (yellow, purple, black, brown, brown).</p>
+<h3 id="resistors-third-decade">Resistors, third decade</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0003-540x287.jpg" /></p>
+<p>Add 13x 10k resistors (brown, black, black, red, brown) ; 3x 18k resistors (brown, grey, black, red, brown) ; and one 47k resistor (yellow, purple, black, red, brown). Do not mix the 18k and 10k resistors - check the photo carefully.</p>
+<h3 id="resistors-last-decade">Resistors, last decade</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0004-540x278.jpg" /></p>
+<p>Add one 150k resistor (brown, green, black, orange, brown) and one 330k resistor (orange, orange, black, orange, brown).</p>
+<h3 id="miscellaneous-short-parts">Miscellaneous short parts</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0005-540x221.jpg" /></p>
+<p>Add the 4.7V zener diode. It is polarized, the black ring of the diode must be on the same side as the ring printed on the circuit board. Solder the 20MHz quartz. It is not polarized.</p>
+<h3 id="ceramic-capacitors">Ceramic capacitors</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0006-540x277.jpg" /></p>
+<p>Ceramic capacitors are not polarized. Add 2x 18pF ceramic capacitors (marked 180 = "18 with 0 extra zero pF = 18pF") in positions C26 and C27. Similar values like 20pF or 22pF are also tolerated - they must be chosen according to the quartz' specifications actually. Don't worry, no difference in sound will be noticed if you get a different value, and the quartz is rather tolerant to a +/- 20% deviation. Add 2x 100pF ceramic capacitors (marked 101 = "10 with 1 extra zero pF = 100pF") in positions C4 and C10.</p>
+<p><img alt="" src="../../static/images/ambika-assembly-0007-540x268.jpg" /></p>
+<p>Add 13x 100nF ceramic capacitors (marked 104 = "10 with 4 extra zeros pF = 100,000pF = 100nF"). Note: the parts used in the kit have a very small marking on them. If you cannot read the value of a ceramic capacitor, if it has very long legs, and if it does not come attached to a strip, it is a 100nF ceramic capacitor! Add 2x 220nF ceramic capacitors (marked 224) in positions C14 and C22.</p>
+<h3 id="trimmer-and-leds">Trimmer and LEDs</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0008-540x467.jpg" /></p>
+<p>Add the 20k trimmer. It is used to adjust the response of the filter. Add the two LEDs. the DATA LED is orange ; and the NOTE LED is green. The LED is polarized, its orientation is defined by its long and short legs. Insert the two LEDs just as shown on the picture. The flat side of the LED symbol printed on the board actually indicates the cathode (short lead). The round side is the anode (long lead). Solder and cut the leads.</p>
+<h3 id="ic-sockets">IC sockets</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0009-540x273.jpg" /></p>
+<p>Make sure that the notch of IC sockets is oriented on the same side as the notch on the PCB symbol. This does not change anything electrically, but having the notch in the right position is a helpful hint for correctly inserting the IC in the next steps! Add 2x DIP8 sockets in positions IC5, IC6. Add 1x DIP14 socket in position IC1. Add 3x DIP16 sockets in positions IC2, IC3, IC4. Add 1x DIP28 socket in position IC7.</p>
+<h3 id="electrolytic-capacitors">Electrolytic capacitors</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0010-540x456.jpg" /></p>
+<p>The 3x 100µF capacitors (C11, C20, C28) are polarized. The white stripe indicates the -, and this should match the symbol printed on the PCB. The 2x 4.7µF capacitors (C1, C21) that come with the kit are dedicated to audio applications (AC coupling) and are not polarized. If you use polarized capacitors instead, follow the +/- symbol printed on the PCB.</p>
+<h3 id="film-capacitors">Film capacitors</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0011-540x354.jpg" /></p>
+<p>Add 4x 1nF capacitors in positions C5, C15, C7, C17. These are not polarized. There are three holes in the PCB because these capacitors are available in two packages:</p>
+<ul>
+<li>2.54mm pitch (WIMA, red): They need to be soldered as on the photo -
+    leaving the outer hole unconnected.</li>
+<li>5.08mm pitch (other manufacturers, grey or blue): the hole in the
+    middle is not connected.</li>
+</ul>
+<h3 id="transistors">Transistors</h3>
+<p><img alt="" src="../../static/images/ambika-assembly-0012-540x570.jpg" /></p>
+<p>Add the 4x 2N3906 transistors. These parts are polarized - the shape of
+the symbol printed on the board must match the round/flat sides of the
+transistor.</p>
+<h3 id="connectors-and-ic">Connectors and IC</h3>
+<p>Add the 2x 1x6 female headers, and the 2x 1x3 male headers.
+<img alt="" src="../../static/images/ambika_no_cut.jpeg" /></p>
+<p>Do not trim the leads of the board stacking connectors. The voicecard is stacked on top of the motherboard or of another voicecard, so the 6 leads of the 1x6 connectors should be kept long. This is the same stacking approach as the Arduino "shields".</p>
+<p><img alt="" src="../../static/images/ambika-assembly-0013-540x274.jpg" /></p>
+<p>Insert the ICs in their sockets.</p>
+<h2 id="setup">Setup</h2>
+<h3 id="layer-jumpers">Layer jumpers</h3>
+<p>A voicecard can either be inserted into the Ambika motherboard ; or stacked on top of another voicecard. In the former case, the two jumpers must be set to the A position. In the later case, the two jumpers must be set to the B position. The first jumper determines where the voicecard is sending its audio signal. You might exploit this to route the two voicecards in the stack to the same individual audio output (passive mixing), though this is not recommended. The second jumper is used to assign a unique CS line to each voicecard. When the master MCU wants to talk to a voicecard, for example to make it play a note, it sets the CS (chip select) line of the voicecard to a voltage of 0V. It is thus very important that no two voicecards are addressed through the same CS line! For this reason, check and double check that the two voicecards in the stack have their second jumper set to A and B respectively.</p>
+<h3 id="vcf-tuning">VCF tuning</h3>
+<p>All boards have a V/Oct trimmer to tune to a correct musical scale the tone emitted by the filter when it reaches self-oscillation. To do this adjustment, start from a blank patch. It greatly helps to assign the voicecard being tuned (and no other voicecard) to part 1. Set all oscillators to none, kill all modulations on the filter cutoff — env2&gt; and lfo&gt; modulation amounts to 0 — and set cutoff and resonance to 63. You should hear the self-oscillation tone. Adjust the V/Oct trimmer so that the intervals are respected – that is to say, when you play C3 then C4, you should hear two notes, maybe not C3s and C4s, but they must be one octave apart. If you do not have a good sense of pitch, you can try a software tuner like Tuna Pitch on OS X. If the filter is correctly tuned, you should be able to play the filter "self oscillation tone" across roughly 4 octaves with correct tuning. Note that tuning might vary a bit with temperature, so there is no need to spend too much time on this! As far as the digital oscillators are concerned, they are always in tune and do not need any calibration!</p>
+<h2 id="technical-documentation">Technical documentation</h2>
+<p>This filter uses the same topology as the <a href="../../static/documents/smr4mkII_analysis.pdf">Shruthi
+SMR4mkII</a>,
+with the following change: OTA / op-amp integrator cells are replaced by
+OTA-C-Darlington buffer cells. This saves a quad op-amp which wouldn't
+have fit on the board. The difference can be heard when increasing the
+resonance.</p>
+<p><img alt="" src="../../static/images/ambika_smr.png" /> The schematics in PDF format are <a href="../../static/schematics/Ambika-SMR-v04.pdf">available here</a>.</p>
+<p>You can find the Eagle files for this board in the source code hosted on <a href="https://github.com/pichenettes/ambika/tree/master/voicecard/hardware_design/pcb">github</a>.</p>
+<p>If you need a reference during assembly, you can download this printout of the <a href="../../static/images/ambika_smr_top.pdf">top side</a> of the board and print it at a 2:1 scale.</p>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdHl4MG1PWkxONzg2ZFdRYXJrMzZvTWc&amp;single=true&amp;gid=1&amp;output=html">Bill of materials</a></p>
+<h3 id="licence-and-credits">Licence and credits</h3>
+<p>This circuit and PCB layout are made available under a <strong>cc-by-sa-3.0</strong> license. The firmware is released under a <strong>GPL3.0</strong> license.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../mobo/" class="btn btn-neutral float-left" title="Motherboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../voicecards/" class="btn btn-neutral float-right" title="Other voicecards">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mobo/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../voicecards/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

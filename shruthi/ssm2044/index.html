@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>SSM2044 filter board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SSM2044 filter board";
+        var mkdocs_page_input_path = "shruthi/ssm2044.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">SSM2044 filter board</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>SSM2044 filter board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/5018317425_5a0522b764_z.jpg" /></p>
+<p>This filter board is based on the classic SSM2044 filter chip, which is still available in surplus online shops. Providing a VC 4-pole LPF (with VC resonance), the SSM2044 was used in the PPG Wave, the Korg PolySix and MonoPoly (<a href="http://www.electricdruid.net/index.php?page=info.ssm2044">nice reference here</a>), but also in the SP1200. Its sound is very warm and "juicy".</p>
+<p>To complete this filter, a linear VCA based on the high-quality SSM2164 quad-VCA chip is added. Don't be fooled by the magical SSM letters: this one is a modern, widely available (and classy!) chip. The VCA cells on the SSM2164 have an exponential response curve and need to be linearized. One such cell is used in a feedback configuration to convert the linear CV into a logarithmic CV (the little man in the op-amp can find the inverse of functions!), and a second cell is used for the actual amplification, using the inverse CV. This design is due to Mike Irwin.</p>
+<p>It would have been very unfortunate to leave the 2 remaining VCA cells on the SSM2164 unused, so we decided to wire them into a 2-pole low-pass, the cutoff frequency of which is controlled by CV1. Yet another low-pass? No, because the SSM2044 has two inputs: an inverting one and a non-inverting one. The original signal is sent to the inverting input, and the low-passed signal is sent to the non-inverting input. The SSM2044 will thus process the difference of both signals, which will sound like a high-pass filtered version of the original signal, with cutoff controlled by CV1. Why didn't we go with a high-pass? The circuit was a bit-simpler this way, and it sounded like an interesting use of the inverting and non-inverting inputs of the SSM2044.</p>
+<p>Note that this filter board will only be distributed as a PCB (no kit).</p>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p><img alt="" src="../../static/images/shruthi_ssm2044.png" /></p>
+<p>You can find the Eagle files for this board in the <code>shruthi/hardware_design/pcb</code> directory of the source code hosted on <a href="http://github.com/pichenettes/shruthi-1">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-Analog-SSM2044-v02.pdf">here</a>.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdHJicHVWTmZ6eGNUQ282TXFTQktzYXc&amp;single=true&amp;gid=0&amp;output=html">Bill of materials</a>.</p>
+<p>The SSM2044 is a bit finicky to use. It produces some noise when the cutoff is swept too abruptly, and the output may have a massive DC offset dependent on the resonance and cutoff frequency -- causing CVs to "bleed" in the output signal. The first problem is solved by low-pass filtering the cutoff CV by the R23/C16 pair. You can smooth the response even more by increasing C16, but beware of groovy, wobbly envelopes if there's too much filtering! The second problem is solved by the high-pass filter realized by R39 and C34. Increase R39 to boost a bit the low-end of the signal, at the cost of more thumps/pops when the envelope moves fast.</p>
+<h2 id="assembly-notes">Assembly notes</h2>
+<p>Here's an image of an assembled board:</p>
+<p><img alt="" src="../../static/images/5018317425_5a0522b764_z.jpg" /></p>
+<p>Some random notes:</p>
+<ol>
+<li>I have used posh polystyrene caps for the high-pass filter.</li>
+<li>For the low-pass, my 6.8nF polystyrene caps were a bit massive so I ended up using standard film ones - the filter works perfectly and I have not noticed any impact on the sound. I might change the layout a bit in a future revision to allow for bigger caps.</li>
+<li>The LT1054 is not socketed simply because I ran out of DIP8 sockets!</li>
+<li>The V/Oct trimpot is in the same direction as the other ones contrary to what is printed on the PCB. This has no impact.</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<h3 id="trimming-and-tuning">Trimming and tuning</h3>
+<h4 id="filter">Filter</h4>
+<p>First, <strong>Reso</strong> should be adjusted so that the filter enters in auto-oscillation (with all oscillators set to <strong>none</strong> ) when the value of resonance approaches 63. Then, <strong>V/oct</strong> must be adjusted so that a melody played by the auto-oscillation sine wave is in tune. Finally, <strong>F. range</strong> (aka <strong>Lowwww</strong> on the other filter boards) should be adjusted so that the high pitched sine wave produced with cutoff = 127, resonance = 63 and all oscillators off is at the limits of your hearing range.</p>
+<h4 id="vca-silencing">VCA silencing</h4>
+<p>Set the Envelope 2 sustain value to 0 and press a key. Adjust the <strong>Gate</strong> trimmer until you hear something (you might have to boost the gain a lot on your amp/speakers to actually notice the change). Then slowly turn the trimmer in the other direction and stop as soon as you stop hearing the sound. What is going on? <strong>Gate</strong> is offsetting the envelope CV up and down a tiny bit so that when the envelope reaches a value of 0, the VCA has a null gain, rather than a "low but audible" gain of -60dB.</p>
+<h3 id="using-the-high-pass-filter">Using the High-pass filter</h3>
+<p>The high-pass filter setting is not exposed in the Shruthi-1 interface, since some other filter boards do not contain a HP! To control it, connect modulation source <strong>offset</strong> to <strong>CV1</strong>, and control the modulation amount to sweep the high-pass filter.</p>
+<h2 id="kudos">Kudos</h2>
+<ul>
+<li><strong>Seppoman</strong> for some hints on dealing with the SSM2044 quirks.</li>
+</ul>
+<h2 id="releases">Releases</h2>
+<h3 id="v02">v0.2</h3>
+<ul>
+<li>Removed middle spacers holes.</li>
+<li>Increased VCA gain bias range.</li>
+<li>Increased hole sizes for audio and DC connectors.</li>
+<li>Added more space for capacitors (so that styroflex caps can be mounted).</li>
+</ul>
+<h3 id="v01">v0.1</h3>
+<ul>
+<li>Original release.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../smr4/" class="btn btn-neutral float-left" title="SMR4 filter board"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../svf/" class="btn btn-neutral float-right" title="SVF filter board (old)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../smr4/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../svf/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

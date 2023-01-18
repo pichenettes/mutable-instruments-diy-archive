@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Build instructions - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Build instructions";
+        var mkdocs_page_input_path = "cvpal/build.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Build instructions</a>
+    <ul class="current">
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>CVpal &raquo;</li>
+      <li>Build instructions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="getting-ready">Getting ready</h3>
+<p>We assume you know soldering. If you don't, look first at <a href="http://www.instructables.com/id/How-to-solder/">this tutorial</a>. The CVpal is very easy to build even for beginners!</p>
+<p><strong>DISCLAIMER:</strong> We are not responsible for anything wrong (including electric shocks, malfunctions, fires, accidents involving a soldering iron) that might happen during the assembly of the kit. Everything you do while assembling the kit is at your own risks.</p>
+<h3 id="step-1-zener-diodes">Step 1: Zener diodes</h3>
+<p><a href="../../static/images/cvpal-assembly-1.jpg"><img alt="" src="../../static/images/cvpal-assembly-1-540x357.jpg" title="cvpal-assembly-1" /></a></p>
+<p>Solder the two 3.6V Zener diodes D1 and D2. They are polarized. The black ring on the diode must be on the same side as the stripe printed on the circuit board. These diodes serve as voltage-limiters: the USB standard requires 3.3V while the microcontroller uses 5V I/O (the currents involved are so small that the voltages on the diodes do not actually reach 3.6V!).</p>
+<h3 id="step-2-resistors">Step 2: Resistors</h3>
+<p><a href="../../static/images/cvpal-assembly-2.jpg"><img alt="" src="../../static/images/cvpal-assembly-2-540x357.jpg" title="cvpal-assembly-2" /></a></p>
+<p>Solder the two 68R resistors (blue, grey, black, golden) in positions R6 and R7. Orientation does not matter. These two resistors work along with the Zener diodes for voltage limiting. <a href="../../static/images/cvpal-assembly-3.jpg"><img alt="" src="../../static/images/cvpal-assembly-3-540x357.jpg" title="cvpal-assembly-3" /></a></p>
+<p>Solder the five 220R resistors (red, red, black, black) in positions R1 to R5. The resistor below the LED provides current to the LED - the smaller the resistor, the brighter the LED... until it is destroyed by excess of current! If you ever want to solder a fancy-colored LED (blue, white, pink...) instead of the one provided with the kit, you'll need to use a larger resistor. Rule of thumb: look at the brightness in mcd in the datasheet and multiply by 10 to get the value of a suitable resistor. 220Ω is fine for the green LED provided with the kit. The four resistors near the output ports serve as a protection in case you connect, by mistake, the output of a module into the CV/Gate outputs. Higher values would provide more protection but would cause voltage drops (and thus, detuning) when the output is connected to several modules via multiples/stackcables. </p>
+<p><a href="../../static/images/cvpal-assembly-4.jpg"><img alt="" src="../../static/images/cvpal-assembly-4-540x357.jpg" title="cvpal-assembly-4" /></a></p>
+<p>Solder the 2.2k resistor (red, red, black, brown) in position R8. This resistor is what allows the host computer/smartphone to recognize the CVpal as a low-speed USB device.</p>
+<p><a href="../../static/images/cvpal-assembly-5.jpg"><img alt="" src="../../static/images/cvpal-assembly-5-540x357.jpg" title="cvpal-assembly-5" /></a></p>
+<p>Solder the 10k resistor (brown, black, black, red) in position R9. This resistor "pulls up" the reset line of the microcontroller - causing it to run continuously after it has been powered.</p>
+<h3 id="step-3-capacitors">Step 3: Capacitors</h3>
+<p><a href="../../static/images/cvpal-assembly-6.jpg"><img alt="" src="../../static/images/cvpal-assembly-6-540x357.jpg" title="cvpal-assembly-6" /></a></p>
+<p>Solder the two 18pF ceramic capacitors C2 and C3. The number "180" is printed on them (This reads as 18 x 10\^0 pF). These capacitors are not polarized. They are companions to the quartz Q1.</p>
+<p><a href="../../static/images/cvpal-assembly-7.jpg"><img alt="" src="../../static/images/cvpal-assembly-7-540x357.jpg" title="cvpal-assembly-7" /></a></p>
+<p>Solder the two 100nF ceramic capacitors C1 and C5. The number "104" is printed on them (10 x 10\^4 pF = 100nF). These capacitors are not polarized. They are known as "decoupling capacitors". Their role is to provide a local reservoir of energy to an integrated circuit (the microcontroller IC1 and the digital-to-analog converter IC2). This improves the stability of the power supply line, and ultimately prevents cross-talk or unexpected coupling/glitches between integrated circuits. </p>
+<p><a href="../../static/images/cvpal-assembly-8.jpg"><img alt="" src="../../static/images/cvpal-assembly-8-540x357.jpg" title="cvpal-assembly-8" /></a></p>
+<p>Solder the 20 MHz quartz Q1. This part is not polarized. The quartz is the "heart" that makes the microcontroller beat - on the CVpal, the ATTiny microcontroller will perform 20 million elementary operations per second. Solder the 100µF electrolytic capacitor C4. This capacitor is <strong>polarized</strong>. The long lead goes on the "+" side (as printed on the PCB). The white stripe on the side of the capacitor indicates the negative side. This picture was taken while the capacitor was being inserted through the board - so that the marking on the circuit board is visible: </p>
+<p><a href="../../static/images/cvpal-assembly-9.jpg"><img alt="" src="../../static/images/cvpal-assembly-9-540x357.jpg" title="cvpal-assembly-9" /></a></p>
+<p>Of course, you need to push it all the way down, not let it float above the board like that! </p>
+<p><a href="../../static/images/cvpal-assembly-10.jpg"><img alt="" src="../../static/images/cvpal-assembly-10-540x357.jpg" title="cvpal-assembly-10" /></a></p>
+<p>Solder the 22µH inductor L1. The 100µF capacitor is also a decoupling capacitor for the digital to analog converter. Teaming with the inductor, it prevents the signals emitted by the DAC to "see" any of the fluctuations and impurities coming from the computer. Digital circuitry needs to be isolated from sensitive analog circuitry!</p>
+<h3 id="step-4-integrated-circuits-sockets">Step 4: Integrated circuits sockets</h3>
+<p><a href="../../static/images/cvpal-assembly-11.jpg"><img alt="" src="../../static/images/cvpal-assembly-11-540x357.jpg" title="cvpal-assembly-11" /></a></p>
+<p>Solder the two sockets for IC1 and IC2. Make sure that the notch on the socket is on the same side as the notch printed on the board. Sockets make it easy to replace integrated circuits in case of failure or... assembly mistake!</p>
+<h3 id="step-5-led">Step 5: LED</h3>
+<p><a href="../../static/images/cvpal-assembly-12.jpg"><img alt="" src="../../static/images/cvpal-assembly-12-540x357.jpg" title="cvpal-assembly-12" /></a></p>
+<p>Solder the LED. The LED is <strong>polarized</strong>. Look at the drawing printed on the board. The circle representing the LED has a "flat" side where the text "LED 1" is printed. This indicates the cathode (short lead -) of the LED. The other side is the anode (long lead +). Notice that the LED also has a flat side. If you plan to mount the CVpal in a Eurorack modular system, you need to keep the LED about 1 cm above the PCB so that you can bend it to reach the hole in the panel.</p>
+<p><a href="../../static/images/cvpal-assembly-13.jpg"><img alt="" src="../../static/images/cvpal-assembly-13-540x357.jpg" title="cvpal-assembly-13" /></a></p>
+<h3 id="step-6-connectors">Step 6: Connectors</h3>
+<p>Pro tip: Use the front panel to keep the connectors well-aligned while you solder them.</p>
+<p><a href="../../static/images/cvpal-assembly-14.jpg"><img alt="" src="../../static/images/cvpal-assembly-14-540x357.jpg" title="cvpal-assembly-14" /></a></p>
+<p>Solder the 4 jack connectors and the USB socket.</p>
+<h3 id="step-7-integrated-circuits">Step 7: Integrated circuits</h3>
+<p><a href="../../static/images/cvpal-assembly-15.jpg"><img alt="" src="../../static/images/cvpal-assembly-15-540x357.jpg" title="cvpal-assembly-15" /></a></p>
+<p>Insert the two integrated circuits in their socket. Orientation is very important! The notch on the IC should be on the same side as the notch printed on the circuit board. The ATTiny84 is a microcontroller with 8kb of non-volatile program memory (flash), 512 bytes of non-volatile memory (eeprom) and 512 bytes of RAM. It runs a program implementing the USB-MIDI protocol, sorting notes, emitting gates/triggers on the GATE outputs, and driving the digital to analog converter to produce CVs. You can see the <a href="https://github.com/pichenettes/cvpal/tree/master/cvpal">source code of this program here</a>. The MCP4822 is a two-channel digital to analog converter with 12-bit of resolution - it can emit two voltages from 0 to 4.095V by increments of 1mV, under control of the microcontroller.</p>
+<h3 id="step-8-firmware-programming">Step 8: Firmware programming</h3>
+<p><strong>Skip this step if you bought a kit</strong> The microcontroller supplied with the kit is already programmed.</p>
+<p>Download the file <a href="../../static/firmware/cvpal.hex">cvpal.hex</a>. Solder a 2x3 header to the AVR ISP port. Connect your ISP programmer to the header and run the following avrdude commands:</p>
+<pre><code>avrdude -V -p t84 -c PROGRAMMER_NAME -P usb -B 10 -e -u \
+        -U efuse:w:0xff:m \
+        -U hfuse:w:0xd6:m \
+        -U lfuse:w:0xde:m \
+        -U lock:w:0x2f:m
+avrdude -V -p t84 -c PROGRAMMER_NAME -P usb -B 1 -U flash:w:cvpal.hex:i -U lock:w:0x2f:m
+</code></pre>
+<p>Replace <strong>PROGRAMMER_NAME</strong> by the name of your programmer, for example <strong>avrispmkII</strong> if you use Atmel's official programmer.</p>
+<h2 id="calibration">Calibration</h2>
+<p>Note: Yamaha and Roland have defined different schemes for numbering octaves – and since then nobody ever agreed on this! If, in the following procedures, everything appears to be off by one octave (the manual says something will happen with C4 but it happens with C3) or if measurements are off by +/-1V, don't panic – it is simply that your controller/DAW uses a different scheme for numbering octaves.</p>
+<h3 id="introduction">Introduction</h3>
+<p>The CVpal uses the V/Oct standard - every time the note increases by one octave, the voltage on the CV output increases by 1V. To make sure that this exact interval of 1V is reproduced (and thus that the VCO driven by the CVpal will play in tune), a calibration procedure is necessary. In this procedure, we will "tune" the voltage emitted by the CVpal for eight notes: F#2, C3, F#3, C4, F#4, C5, F#5 and C6. It is not necessary to calibrate more notes because the CVpal will interpolate between these. It is necessary to calibrate that many notes because the DAC has imperfections (non-linearity) that make a 2-point calibration (like the OFFSET/Scale trimmers found on many, many MIDI/CV interface) inaccurate. This procedure will have to be done for the two channels (CV1 / CV2).</p>
+<h3 id="setup">Setup</h3>
+<p>Connect the CVpal to a computer or smartphone with a USB cable. Check that the LED is lit (CVpal receives power) and that the CVpal is listed as a MIDI device in your sequencer (the microcontroller is up and running and the USB link is sound). Configure your sequencer software/app to make it play the note F#2 on channel 15. Here is how it looks in Logic, for example (we use the built-in keyboard, the key to press is "T"): </p>
+<p><a href="../../static/images/Picture-1.png"><img alt="" src="../../static/images/Picture-1.png" /></a> </p>
+<p><a href="../../static/images/Picture-2.png"><img alt="" src="../../static/images/Picture-2.png" /></a></p>
+<p>F#2 is the first F# key on a 49-key keyboard: </p>
+<p><a href="../../static/images/f_sharp_2.jpg"><img alt="" src="../../static/images/f_sharp_2-540x357.jpg" title="f_sharp_2" /></a></p>
+<p>The next steps involve voltage measurements - lots of them. We assume that you have a digital multimeter with 3.5 or more digits of accuracy, and that it is set to measure small DC voltages (450mV to 4.5V). Measure the voltage on the CV1 output. Here are two ways of doing it: You can either connect a cable to the CV1 output, and put the probes on the other end of the jack (black probe/COM on the sleeve, red probe/V on the tip). </p>
+<p><a href="../../static/images/calibration-2.jpg"><img alt="" src="../../static/images/calibration-2-540x357.jpg" title="calibration-2" /></a></p>
+<p>Another approach is to put the black (COM) probe on the lower-left pin of the ISP connector, and the red probe (V) on the metal part of the jack for CV1 output. <a href="../../static/images/calibration.jpg"><img alt="" src="../../static/images/calibration-540x357.jpg" title="calibration" /></a></p>
+<h3 id="calibration_1">Calibration</h3>
+<p>For the F#2 note, the voltage you measure must be between 450mV and 550mV. If this is not the case, verify that you have played the correct note (if you get something like 1.5V or 2.5V - it is a sign that you are playing the wrong octave!). </p>
+<p><a href="../../static/images/calibration-3.jpg"><img alt="" src="../../static/images/calibration-3-540x357.jpg" title="calibration-3" /></a></p>
+<p>Press the keys F2 and G2 to, respectively, decrease and increase the read voltage, so that you get as close as you can to 500mV. The keys will apply a change of about 1mV. </p>
+<p><a href="../../static/images/calibration-4.jpg"><img alt="" src="../../static/images/calibration-4-540x357.jpg" title="calibration-4" /></a></p>
+<p>Done? Then play a C3 note. </p>
+<p><a href="../../static/images/calibration-5.jpg"><img alt="" src="../../static/images/calibration-5-540x357.jpg" /></a></p>
+<p>The voltage measured on the CV1 output should be near 1.0V. Use B2 and C#3 to, respectively, decrease and increase the voltage, until you get as close as you can to 1.000V. The following chart shows the notes that need to be tuned next: </p>
+<p><a href="../../static/images/cvpal_calibration.png"><img alt="" src="../../static/images/cvpal_calibration-540x200.png" title="cvpal_calibration" /></a></p>
+<p><em>Note: Yamaha and Roland have defined different ways of assigning an octave number to a MIDI note – and since then nobody agrees on them! Don't be surprised is the *C3* in this chart is your *C4*, or the other way round.</em> </p>
+<p>Once the last note has been tuned, you can tune the second CV channel. The procedure is almost the same:</p>
+<ul>
+<li>For the voltage measurement, the cable will have to be plugged, this time, in channel 2 output (or you will have to put the red probe of the meter on the CV output 2 jack).</li>
+<li>The MIDI notes will have to be sent on channel 16 instead of 15</li>
+</ul>
+<h2 id="technical-documents">Technical documents</h2>
+<h3 id="pcb-and-schematics">PCB and schematics</h3>
+<p>Here is a view of the board (click for a larger version): </p>
+<p><a href="../../static/images/cvpal.png"><img alt="" src="../../static/images/cvpal-540x221.png" title="cvpal" /></a></p>
+<p>You can find the Eagle files for this board in the <strong>cvpal/hardware_design/pcb</strong> directory of the source code hosted on <a href="http://github.com/pichenettes/cvpal">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/CVpal-v01.pdf">here</a>. <a href="../../static/images/cvpal-v01.png"><img alt="" src="../../static/images/cvpal-v01-540x311.png" title="cvpal-v01" /></a></p>
+<p>Finally, the <a href="../../static/images/cvpal_top.pdf">parts placement diagram</a> (top view).</p>
+<h3 id="bill-of-materials">Bill of materials</h3>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdHJoeFp1Y0tham5jQ3hTSHF1MjdlMkE&amp;output=html">(Full page version)</a> Note that Reichelt does not sell the right version of the ATTiny84 - the version they have in stock is limited to a 10 MHz clock rate, while the CVpal uses a 20 MHz clock rate. We have tried overclocking this chip and it worked, but cannot confirm whether this solution is reproducible and sustainable.</p>
+<h3 id="license-and-credits">License and credits</h3>
+<p>This circuit and PCB layout are made available under a <strong>cc-by-sa-3.0</strong> license. The firmware is released under a <strong>GPL3.0</strong> license. It uses Objective Development's <a href="http://www.obdev.at/products/vusb/index.html">V-USB virtual USB library</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../specs/" class="btn btn-neutral float-left" title="Specifications"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../midipal/manual/" class="btn btn-neutral float-right" title="Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../specs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../midipal/manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

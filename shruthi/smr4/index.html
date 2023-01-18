@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>SMR4 filter board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SMR4 filter board";
+        var mkdocs_page_input_path = "shruthi/smr4.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">SMR4 filter board</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>SMR4 filter board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/5231089995_cae7c61237_z.jpg" /></p>
+<p>The SMR-4 board comprises a 4-pole VCF (a jumper can be moved to provide a 2-pole output) with voltage-controlled resonance, a linear VCA, and a +/- 5V regulated power supply powering all those (and the digital section upstairs).</p>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p><img alt="" src="../../static/images/shruthi_smr4.png" /></p>
+<p>You can find the Eagle files for this board in the shruthi/hardware_design/pcb directory of the source code hosted on <a href="http://github.com/pichenettes/shruthi-1">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-Analog-SMR4-v08.pdf">here</a>.</p>
+<p>How does it work? You can read an analysis <a href="../../static/documents/smr4_analysis.pdf">here</a>.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0Ai4xPbRS5YZjdHlmMHRxSDFvUG5WVEdVbjFISGVwRnc&amp;output=html">Bill of materials</a>.</p>
+<p>Some notes:</p>
+<ol>
+<li>These small deviations are not critical.</li>
+<li>Polystyrene caps might give a better sound.</li>
+<li>Filter tuning is improved by using matched, thermocoupled transistor pairs.</li>
+</ol>
+<h2 id="assembly-instructions">Assembly instructions</h2>
+<h3 id="getting-ready">Getting ready</h3>
+<p>For reference, during the assembly, you can use the following picture of an assembled board (it is provided with the kit):</p>
+<p><img alt="" src="../../static/images/5231089995_cae7c61237_z.jpg" /></p>
+<p>Mondrian, oh Mondrian !</p>
+<p>Some equipment you'll need:</p>
+<ol>
+<li>Soldering iron + solder (nothing fancy, a 15 or 20W will do).</li>
+<li>Cutters.</li>
+</ol>
+<p>We assume you know soldering. If you don't, look first at <a href="http://www.instructables.com/id/How-to-solder/">this tutorial</a>. We highly recommend you to purchase a simple kit from <a href="http://www.adafruit.com">adafruit</a> or <a href="http://www.sparkfun.com">sparkfun</a> to practice on something that you won't regret breaking.</p>
+<p>A last word: be patient! we know you're just a couple of hours away from playing your Shruthi-1, but if you do something stupid, those hours will turn into days or weeks.</p>
+<p><strong>DISCLAIMER:</strong> We are not responsible for anything wrong (including electric shocks, malfunctions, fires, accidents involving a soldering iron) that might happen during the assembly of the kit. Everything you do while assembling the kit is at your own risks.</p>
+<h3 id="step-1-power-supply-part-1">Step 1: power supply, part 1</h3>
+<p>Let's start with the power supply section (the "column" of parts on the right of the board). Building the power supply first will allow you to test it early and check that you won't be damaging other parts because of incorrect voltages.</p>
+<p><img alt="" src="../../static/images/5231075225_ab62e769e5_z.jpg" /></p>
+<p>First, let's populate the board with:</p>
+<ol>
+<li>the fourteen 100nF ceramic caps (labelled 104).</li>
+<li>the 10pF ceramic cap (labelled 100).</li>
+</ol>
+<p>Ceramic capacitors are not polarized.</p>
+<h3 id="step-2-power-supply-part-2">Step 2: power supply, part 2</h3>
+<p><img alt="" src="../../static/images/5231076401_dcdeeccae0_z.jpg" /></p>
+<p>Now, add:</p>
+<ol>
+<li>The 3 100uF electrolytic caps (C2, C9, C19).</li>
+<li>The 2 220uF electrolytic caps (C23, C29). 470uF can also be used there.</li>
+<li>The (optional) 10uF tantalum cap (C31).</li>
+<li>The protection diode D1</li>
+</ol>
+<p>All of them are <strong>polarized</strong>. The white stripe on the side of the electrolytic capacitors indicate which of their lead is negative. The negative lead is the shortest one. The long lead must go in the hole marked with a plus sign. Here is another view of the capacitors:</p>
+<p><img alt="" src="../../static/images/5231077075_820321bc6e_z.jpg" /></p>
+<p>C31 is optional. Adding C31 in parallel to C2 lowers the ESR of the pair, while having a moderate impact on the capacitance. C31 is <strong>polarized</strong>. The positive lead is marked with a <strong>+</strong> and a band (see <a href="../../static/images/tantalum_cap.jpg">this picture</a>)</p>
+<p>Finally, D1 is <strong>polarized</strong>, the white ring around it must match what is printed on the PCB.</p>
+<h3 id="step-3-power-supply-part-3">Step 3: power supply, part 3</h3>
+<p><img alt="" src="../../static/images/5231077943_d1f1821e7e_z.jpg" /></p>
+<p>If you don't want to use a main on/off switch, add a piece of wire (I use the leads of parts I have just cut) to make a permanent connection between the pads labelled SW. Otherwise, solder two pieces of wire to the rocker switch. The switch has no polarity.</p>
+<p>You can now solder the voltage regulators (LM7905 and LM7805). They are <strong>polarized</strong>. The metallic plate with the hole should be on the same side as the bold line of the part drawing on the PCB. The kit might include another part compatible with the LM7805, labelled KA7805 or TS7805.</p>
+<p>Now check one last time the orientation of everything before continuing!</p>
+<p>Finally, add the DC power socket.</p>
+<h3 id="step-4-power-supply-part-4">Step 4: power supply, part 4</h3>
+<p>Insert IC1 (LT1054). Be careful with the <strong>orientation</strong>, this IC is not oriented like most of the other ICs on the board! The LT1054 does not have a notch, but a round mark to indicate its first pin. This round mark must be near the IC1 marking on the PCB.</p>
+<p>The power supply is now ready to be tested. Connect a DC supply (unregulated, any voltage between 7.5V and 12V, center pin positive) and check the voltages at the following points of the PCB:</p>
+<p><img alt="" src="../../static/images/4991293606_30b1de5ce3_z.jpg" /></p>
+<p>Put the COM probe of your meter on the blue point on the far left (near the connector labelled GND). Test, with the other probe, that all the blue points are at 0V, all the red points at 5V, and all the green points at -5V. A difference of 0.1V is acceptable (I often get -5.1 and 4.9V, this is OK).</p>
+<p>If there's something wrong, check the regulators and capacitors polarities.</p>
+<h3 id="step-5-resistors-and-diodes">Step 5: Resistors and diodes</h3>
+<p><img alt="" src="../../static/images/5231078911_7eeab43fe8_z.jpg" /></p>
+<p>Add:</p>
+<ol>
+<li>2x 1N4148 diodes. They are <strong>polarized</strong>, the black ring on the diode should be in the direction of the power supply.</li>
+<li>1x 68R resistor (blue, grey, black, gold)</li>
+<li>7x 220R resistors (red, red, black, black). Note that previous of the board (v0.5) uses only 6 of them.</li>
+</ol>
+<h3 id="step-6-resistors-again">Step 6: Resistors again</h3>
+<p><img alt="" src="../../static/images/5231079871_7526034ff1_z.jpg" /></p>
+<p>Add:</p>
+<ol>
+<li>5x 1k resistors (brown, black, black, brown)</li>
+<li>1x 2.0k resistor (red, black, black, brown)</li>
+<li>1x 2.2k resistor (red, red, black, brown)</li>
+<li>1x 5.6k resistor (green, blue, black, brown)</li>
+<li>3x 6.8k resistor (blue, grey, black, brown).</li>
+</ol>
+<h3 id="step-7-resistors-the-trilogy">Step 7: Resistors, the trilogy</h3>
+<p><img alt="" src="../../static/images/5231080945_3ffd746548_z.jpg" /></p>
+<p>Add 15 10k resistors (brown, black, black, red). The previous version of the board (v0.5) has 14 of them.</p>
+<h3 id="step-8-resistors-the-prequel">Step 8: Resistors, the prequel</h3>
+<p><img alt="" src="../../static/images/5231673342_4c15c919b3_z.jpg" /></p>
+<p>If you have a v0.7 of the board, add the following resistors:</p>
+<ol>
+<li>1x 30k resistor (orange, black, black, red)</li>
+<li>3x 33k resistors (orange, orange, black, red)</li>
+<li>1x 56k resistor (green, blue, black, red)</li>
+<li>1x 68k resistor (blue, grey, black, red)</li>
+<li>1x 100k resistor (brown, black, black, orange)</li>
+<li>1x 220k resistor (red, red, black, orange)</li>
+<li>1x 330k resistor (orange, orange, black, orange)</li>
+</ol>
+<p>If you have a v0.8 board, some resistor values have changed (68k to 33k ; 220k to 330k):</p>
+<ol>
+<li>1x 30k resistor (orange, black, black, red)</li>
+<li>4x 33k resistors (orange, orange, black, red)</li>
+<li>1x 56k resistor (green, blue, black, red)</li>
+<li>1x 100k resistor (brown, black, black, orange)</li>
+<li>2x 330k resistor (orange, orange, black, orange)</li>
+</ol>
+<h3 id="step-9-sockets">Step 9: Sockets</h3>
+<p><img alt="" src="../../static/images/5231674486_8e05a6b046_z.jpg" /></p>
+<p>Add 3x DIP14 IC sockets and 3x DIP16 IC sockets.</p>
+<h3 id="step-10-capacitors">Step 10: Capacitors</h3>
+<p><img alt="" src="../../static/images/5231676234_6564b65967_z.jpg" /></p>
+<p>Next, the capacitors. For these ones, <strong>polarity/orientation does not matter</strong>:</p>
+<ol>
+<li>2x 100pF ceramic caps (labelled 101).</li>
+<li>3x 4.7uF NP electrolytic caps. Audio is going through them, so their quality is important!</li>
+<li>3x 33nF film caps. They smooth the control signals from the MCU. There's a trade-off between envelope response time and "purity" of the audio output - these values can be reduced a bit for more aggressive envelopes.</li>
+<li>4x 1nF film caps near IC8. They are responsible for the actual filtering. You might want to put there something a little fancier (polystyrene), which might not have the same size as the standard 5.08mm lead spacing. Some 1nF poly/film cap also come in a 2.54mm spacing package. That's why there are 3 holes there... Ignore the middle one when using a capacitor in a 5.08mm spaced package, and ignore the outer hole when using a capacitor in a 2.54mm spaced package (such as those provided with the kit).</li>
+</ol>
+<h3 id="step-11-transistors">Step 11: Transistors</h3>
+<p><img alt="" src="../../static/images/5231678354_c78be6ce9a_z.jpg" /></p>
+<p><strong>Transistors are polarized</strong>. Make sure that the "flat" and "round" sides of the transistors follow what is printed on the PCB. <strong>Be careful and don't mix up 2N3906 with 2N3904</strong>!</p>
+<h3 id="step-12-connectors-and-trimpots">Step 12: Connectors and trimpots</h3>
+<p><img alt="" src="../../static/images/5231088231_cf76f4c4fa_z.jpg" /></p>
+<p>Add the connectors and the trimpots:</p>
+<ol>
+<li>1x 20k trimpot (W203) labelled lowwwww.</li>
+<li>3x 5k trimpots (W502) at the positions labelled reso, DC and V/oct.</li>
+<li>8x1 female connector for stacking the boards.</li>
+<li>3x1 male connector for pole selection.</li>
+<li>The two audio connectors</li>
+</ol>
+<p><strong>Don't forget putting a jumper on the poles selector!</strong> (JP3). 4 is the default, standard, reasonable value. Also, make sure that the conducting piece of the jumper touches the two pins of the 3x1 connector...</p>
+<p>If you intend to house your Shruthi in the standard acrylic case, you don't need to solder the volume pots - instead, you'll have to "bridge" two of the pots' solder pads as printed on the PCB.</p>
+<p><img alt="" src="../../static/images/5231183245_aa706f9ed9_z.jpg" /></p>
+<h3 id="step-13-ic-time">Step 13: IC time!</h3>
+<p>You can now insert the ICs! (3x TL074 and 3x LM13700). All are looking "left" instead of IC7. <strong>IC7 looks in the opposite direction</strong>. The board should look like this:</p>
+<p><img alt="" src="../../static/images/5231683000_3707ac3b98_z.jpg" /></p>
+<h3 id="pause-aint-i-missing-something">Pause: Ain't I missing something?</h3>
+<p>You might have noticed 4 locations where one could solder a part with a 2.54mm pitch -- below IC4, and near the Resonance trimpot. These pads can be used to solder parts (Zeners, diodes, LEDs...) to tame/shape the sine wave the filter will emit when it self-oscillates.</p>
+<h3 id="step-14-tuning">Step 14: Tuning</h3>
+<p>To operate correctly, the filter needs to be tuned. The following symptoms indicate that the filter is not tuned optimally:</p>
+<ul>
+<li>Loud "plop" at note starts</li>
+<li>No self-oscillation when resonance is set to 63</li>
+<li>Heavily distorted resonance at self-oscillation</li>
+<li>Dull sound even when cutoff = 127</li>
+<li>Weird sounds heard when resonance = 63</li>
+</ul>
+<h4 id="board-connection">Board connection</h4>
+<p>First, you'll need to connect the two boards without stacking them. Here's how my setup looks like. Cables for doing that are now provided with the kit.</p>
+<p><img alt="" src="../../static/images/4735808047_42ef11cf76_z.jpg" />\
+<img alt="" src="../../static/images/4736447240_f1ec9b3f06_z.jpg" /></p>
+<p>Some general notes regarding trimming:</p>
+<ul>
+<li>Trimmers are 22 turns. Once you've reach one of the extremities of their range, you'll still be able to turn the screw but it won't have any effect. You'll hear a small click or notice a slight change in torque required to turn the screw.</li>
+<li>Don't get crazy over trimming. There's no setting that will magically make everything sound like the original Minimoog of your dreams.</li>
+</ul>
+<h4 id="resonance-setting">Resonance setting</h4>
+<p>The first step consists in setting up the feedback gain so that the filter plays a nice sine wave when resonance is set to a high value.</p>
+<ol>
+<li>Set the 2 oscillators to <strong>none</strong>, the resonance to 63 and cutoff to 50. Disable the envelope-&gt;filter modulation. The second line of the filter page on the LCD should display @ 50 63 0 0@</li>
+<li>Press and hold the E4 key on a MIDI keyboard, or send this note from your sequencer (MIDI note #64).</li>
+<li>Turn the <strong>Reso</strong> trimmer counterclockwise until you can't hear any sound.</li>
+<li>Then turn it clockwise until you start hearing the self-oscillation. If you continue turning, the self-oscillation will get louder and eventually distort. Move back to the point where it starts appearing.</li>
+</ol>
+<p>The equilibrum point is the one for which the resonance doesn't take too long to come when a note is played, but is not heavily distorted.</p>
+<h4 id="voct-response-tuning">V/Oct response tuning</h4>
+<p>Now we'll tune the <strong>V/oct</strong> trimmer, which allows the filter cutoff (and thus, the sine wave emitted by the filter at auto-oscillation) to follow musical intervals played on the keyboard. With cutoff set to 50 and resonance to 63, try playing C1, C2, C3, C4: the four notes should be one octave apart from each other. If this is not the case, adjust <strong>V/oct</strong> to achieve the right tuning. This process is a bit different from tuning a guitar: it doesn't matter whether pressing C1 will play a C1 - what matters is whether playing C1, C2 will play two sounds one octave apart. If they sound more like 11 semitones apart, rotate <strong>V/Oct</strong> clockwise. If they sound more like 13 semitones apart, rotate <strong>V/Oct</strong> counterclockwise.</p>
+<h4 id="dc-offset-tuning">DC offset tuning</h4>
+<p>This trimpot compensates the DC offset at the output of the filter, before it is sent to the VCA. If a signal with a DC component goes through a VCA, the envelope signal will "bleed" into the VCA output, resulting in clicks or pops with fast envelopes.</p>
+<ol>
+<li>With the oscillators still set to none, set the resonance to 0 and the cutoff to 0.</li>
+<li>Play a note on the keyboard, you'll just hear a short "plop" and then silence.</li>
+<li>Adjust the <strong>DC</strong> trimpot until you find a position that minimizes the loudness of the "plop".</li>
+</ol>
+<p>Note that the "sweet spot" for this setting is somewhere in the middle (11 turns away from the extremities).</p>
+<h4 id="cutoff-range-tuning">Cutoff range tuning</h4>
+<p>This setting modifies the maximum cutoff frequency of the filter. When resonance is set to the maximum value (63), the oscillations can get instable for high settings of the cutoff value and high notes played on the keyboard (above E4). When this occurs, the auto-oscillation sine wave is at a very high frequency, but some of its undertones can be heard. You might choose to ignore this glitch and use the full range of the filter, or trim the <strong>Lowww</strong> trimpot to lower the frequency response of the filter and avoid hitting the instability region.</p>
+<ol>
+<li>Set the resonance to 63.</li>
+<li>Press and hold E4 on the MIDI keyboard (note #64).</li>
+<li>Set the cutoff to a value of 80.</li>
+<li>Adjust the <strong>Lowww</strong> trimpot to move up or down the pitch of the sound.</li>
+<li>To check how this affects the filter, sweep the cutoff until you reach high values above 112.</li>
+</ol>
+<p>If you change the <strong>Lowww</strong> so that a high pitched sound is heard for cutoff=80, the filter cutoff frequency will reach higher frequencies, with a greater risk of hitting the instability zone when resonance = 63. If you turn <strong>Lowww</strong> in the other direction, in such a way that cutoff=80 yields a lower pitched sound, the range of the cutoff will cover lower frequencies, resulting in a more damped sound when cutoff = 127, but you won't risk entering the instability zone.</p>
+<h2 id="kudos">Kudos</h2>
+<ul>
+<li><a href="http://narrat1ve.com/">Todd Bailey</a> for tons of board layout tips!</li>
+<li><a href="http://users.ece.gatech.edu/lanterma/">Aaron D. Lanterman</a> for his awesome class material.</li>
+</ul>
+<h2 id="releases">Releases</h2>
+<h3 id="v06-v07">v0.6, v0.7</h3>
+<ul>
+<li>Removed middle spacers holes.</li>
+<li>Self-oscillation in 2-poles mode.</li>
+<li>Increased hole sizes for audio and DC connectors.</li>
+<li>Added pads for external CV sources on cutoff.</li>
+</ul>
+<h3 id="v05">v0.5</h3>
+<ul>
+<li>Original release.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../polivoks/" class="btn btn-neutral float-left" title="Polivoks filter board"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ssm2044/" class="btn btn-neutral float-right" title="SSM2044 filter board">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../polivoks/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ssm2044/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

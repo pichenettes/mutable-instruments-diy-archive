@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>SVF filter board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SVF filter board";
+        var mkdocs_page_input_path = "shruthi/svf2.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">SVF filter board</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>SVF filter board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><strong>Note</strong>: Documentation for the older version of this board is <a href="../svf">available here</a>. </p>
+<p><a href="../../static/images/svf_full-1.jpg"><img alt="" src="../../static/images/svf_full-1-540x357.jpg" title="SVF board, full size" /></a></p>
+<p>This filter board features 2 independent 2-pole state variable filters with low-pass, band-pass and high-pass modes, which can be routed in serial or parallel. The routing and mode switching is digitally controlled and can be stored in patches.</p>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p><a href="../../static/images/pcb.png"><img alt="" src="../../static/images/pcb-540x413.png" title="pcb" /></a></p>
+<p>You can find the Eagle files for this board in the <code>shruthi/hardware_design/pcb directory</code> of the source code hosted on <a href="https://github.com/pichenettes/shruthi-1/tree/xt/shruthi/hardware_design/pcb">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-Analog-SVF-v03.pdf">here</a>.</p>
+<p>The position of all parts is shown on this <a href="../../static/images/shruthi_svf_top.pdf">drawing</a>.</p>
+<p>If you are wondering how it works, <a href="../../static/documents/svf_analysis.pdf">this document</a> provides an analysis and some design notes.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdDh1QmJMRjJMWlE3MFVXM0U4MUxqdGc&amp;output=html">Bill of materials (second half of the document)</a>. Note that the resistors from Digikey have minor differences in value (E48 vs E24 series). These differences are not critical.</p>
+<h2 id="assembly-instructions">Assembly instructions</h2>
+<p>We assume you know soldering. If you don't, look first at <a href="http://www.instructables.com/id/How-to-solder/">this tutorial</a>. Be patient!</p>
+<p><strong>DISCLAIMER:</strong> We are not responsible for anything wrong (including electric shocks, malfunctions, fires, accidents involving a soldering iron) that might happen during the assembly of the kit. Everything you do while assembling the kit is at your own risks.</p>
+<p>The assembly is done in two chapters: first, we build the power supply section, and then, the rest of the filter board. Building the power supply section first allows potentially destructive mistakes to be detected early.</p>
+<h3 id="power-supply-step-1-capacitors">Power supply step 1: Capacitors</h3>
+<p><a href="../../static/images/svf-1.jpg"><img alt="" src="../../static/images/svf-1-540x357.jpg" title="svf-1" /></a></p>
+<p>Add 1x 10pF ceramic capacitor (marked 100 = "10 with 0 extra zeros pF") in position C7. This part is not polarized. It tunes the frequency of the DC/DC converter which generates the negative voltage for powering the analog section. </p>
+<p><a href="../../static/images/svf-2.jpg"><img alt="" src="../../static/images/svf-2-540x357.jpg" title="svf-2" /></a></p>
+<p>Add 2x 100nF ceramic capacitors (marked 104 = "10 with 4 extra zeros = 100,000pF = 100nF") in positions C38 and C48. These parts are not polarized, and serve for power supply filtering. Note: the marking on these capacitors is very small and difficult to read. To help you recognize them: 1/ These are the only capacitors not attached to a cardboard strip. 2/ The print is much smaller than on the other values such as 10pF, 560pF, or 100pF.</p>
+<h3 id="power-supply-step-2-diode-and-connectors">Power supply step 2: Diode and connectors</h3>
+<p><a href="../../static/images/svf-3.jpg"><img alt="" src="../../static/images/svf-3-540x357.jpg" title="svf-3" /></a></p>
+<p>Add 1x 1N400x diode in position D1. The diode is <strong>polarized</strong>. The ring on the diode must be on the same side as the marking on the board. This diode serves as a protection in case a power supply with the wrong polarity is connected by mistake. Add 1x DIP8 IC socket in position IC1 - note that the notch is oriented towards the exterior of the board. Solder a jumper wire (for example a leg of a capacitor you have cut in the previous steps) between the two pads marked SW. This connection can be broken to solder an on/off switch. </p>
+<p><a href="../../static/images/svf-4.jpg"><img alt="" src="../../static/images/svf-4-540x357.jpg" title="svf-4" /></a></p>
+<p>Solder the DC jack connector in position J1.</p>
+<h3 id="power-supply-step-3-more-capacitors">Power supply step 3: More capacitors</h3>
+<p><a href="../../static/images/svf-5.jpg"><img alt="" src="../../static/images/svf-5-540x357.jpg" title="svf-5" /></a></p>
+<p>Add one 10µF tantalum capacitor in position C3. This part is <strong>polarized</strong>. A small stripe is printed on the part and indicates the + lead, which should go in the hole marked + on the board. This part is a charge reservoir for the DC/DC converter. </p>
+<p><a href="../../static/images/svf-6.jpg"><img alt="" src="../../static/images/svf-6-540x357.jpg" title="svf-6" /></a></p>
+<p>Add 3x 100µF electrolytic capacitors in positions C2, C15 and C16. Note that the blue and tall 100µF capacitor shown on this photo was out of stock at the time the kit were prepared. Instead, your kit contains a smaller (about 8mm), black part. These capacitors are all <strong>polarized</strong> (and will pop if soldered with the wrong orientation!). The white stripe painted on the capacitor indicates its negative lead. The positive lead is the long one, and should go in the hole marked with a + on the PCB. These parts are used for power supply filtering. </p>
+<p><a href="../../static/images/svf-7.jpg"><img alt="" src="../../static/images/svf-7-540x357.jpg" title="svf-7" /></a></p>
+<p>Add 2x 220µF electrolytic capacitors in positions C37 and C49. They are all <strong>polarized</strong> (and will pop if soldered with the wrong orientation!). The white stripe painted on the capacitor indicates its negative lead. The positive lead is the long one, and should go in the hole marked with a + on the PCB. These parts are used for power supply filtering.</p>
+<h3 id="power-supply-step-4-ics">Power supply step 4: ICs</h3>
+<p><a href="../../static/images/svf-10.jpg"><img alt="" src="../../static/images/svf-10-540x357.jpg" title="svf-10" /></a></p>
+<p>Solder the 7805 positive voltage regulator in position IC14, and the 7905 negative voltage regulator in position IC5. They have different names, hence are different parts, and should not be mixed up! They are also <strong>polarized</strong> - make sure the metal tab is oriented on the same side as on the picture (it is also depicted with a thick white line on the PCB). These parts output a smooth, steady voltage from whatever the wall-wart plugged into the unit delivers. Any excess of energy delivered by the wall-wart is dissipated as heat, so these parts can get quite hot! Insert the LT1054 DC/DC converter in the IC1 socket. This part is <strong>polarized</strong> - make sure it is inserted with the same orientation as on the picture.</p>
+<h3 id="power-supply-step-5-voltage-test">Power supply step 5: Voltage test</h3>
+<p>Connect a wall-wart with the following specifications:</p>
+<ul>
+<li>Output voltage: 7.5V to 9V</li>
+<li>Output current: 300mA or more</li>
+<li>Polarity: - -( o- + (center tip positive)</li>
+</ul>
+<p><a href="../../static/images/svf-8.jpg"><img alt="" src="../../static/images/svf-8-540x357.jpg" title="svf-8" /></a></p>
+<p>Measure the voltage on a +5V point of the PCB. Check that it is between 4.9V and 5.1V. </p>
+<p><a href="../../static/images/svf-9.jpg"><img alt="" src="../../static/images/svf-9-540x357.jpg" title="svf-9" /></a></p>
+<p>Measure the voltage on a -5V point of the PCB. Check that it is between -4.9V and -5.1V. All good? Let us dive into the assembly of the filter itself!</p>
+<h3 id="step-1-jumper-wires">Step 1: Jumper wires</h3>
+<p><a href="../../static/images/svf-11.jpg"><img alt="" src="../../static/images/svf-11-540x357.jpg" title="svf-11" /></a></p>
+<p>Solder two pieces of wire between the two lower pads in positions R1 and R2. If you decide to build a custom case later, these pads can be used to solder input and output gain potentiometers.</p>
+<h3 id="step-2-resistors-first-decade">Step 2: Resistors, first decade</h3>
+<p><a href="../../static/images/svf-12.jpg"><img alt="" src="../../static/images/svf-12-540x357.jpg" title="svf-12" /></a></p>
+<p>Add 1x 220R resistor (red red black black brown) in position R3. Add 8x 470R resistors (yellow purple black black brown) in positions R22, R23, R33, R34, R38, R39, R48 and R49. Resistors are not polarized - but it's a good idea to solder them just like on the photos in case you need the assistance of someone else to verify or troubleshoot your work.</p>
+<h3 id="step-3-resistors-second-decade">Step 3: Resistors, second decade</h3>
+<p><a href="../../static/images/svf-13.jpg"><img alt="" src="../../static/images/svf-13-540x357.jpg" title="svf-13" /></a></p>
+<p>Add 2x 1.0k resistors (brown black black brown brown) in positions R51 and R52.</p>
+<h3 id="step-4-resistors-third-decade">Step 4: Resistors, third decade</h3>
+<p><a href="../../static/images/svf-14.jpg"><img alt="" src="../../static/images/svf-14-540x357.jpg" title="svf-14" /></a></p>
+<p>Add 3x 10k resistors (brown black black red brown) in positions R10, R11 and R17. Add 2x 15k resistors (brown green black red brown) in positions R28 and R44. Add 6x 22k resistors (red red black red brown) in positions R8, R15, R16, R18, R19 and R21.</p>
+<h3 id="step-5-resistors-fourth-decade">Step 5: Resistors, fourth decade</h3>
+<p><a href="../../static/images/svf-15.jpg"><img alt="" src="../../static/images/svf-15-540x357.jpg" title="svf-15" /></a></p>
+<p>Add 18x 33k resistors (orange orange black red brown).</p>
+<h3 id="step-6-resistors-the-last-decade">Step 6: Resistors, the last decade</h3>
+<p><a href="../../static/images/svf-16.jpg"><img alt="" src="../../static/images/svf-16-540x357.jpg" title="svf-16" />{</a></p>
+<p>Add 4x 100k resistors (brown black black orange brown) in positions R9, R14, R20 and R24. Add 2x 330k resistors (orange orange black orange brown) in positions R29 and R45. Most of the resistors soldered in the previous steps work for setting gain factors in various stages of the circuitry - a wildly distorted or quiet output; or a filter control going rapidly out of range are often the consequence of incorrect resistor values.</p>
+<h3 id="step-7-zener-diodes">Step 7: Zener diodes</h3>
+<p><a href="../../static/images/svf-17.jpg"><img alt="" src="../../static/images/svf-17-540x357.jpg" title="svf-17" /></a></p>
+<p>Solder 4x 3.6V Zener diodes in positions D2, D3, D4 and D5. The diodes are <strong>polarized</strong> - the black ring of the diode must be on the same side as the ring printed on the symbol on the PCB. </p>
+<p><a href="../../static/images/svf-18.jpg"><img alt="" src="../../static/images/svf-18-540x357.jpg" title="svf-18" /></a></p>
+<p>These diodes work as voltage limiters. A pair of back to back 3.6V Zener diodes will force the signal to stay roughly within the -3.6V to 3.6V range. What is interesting is that this "limiting" effect is relatively gentle - no hard clipping occurs. This soft-limiting circuit is used in each filter, to prevent it from screaming when resonance is high - instead we get a gentle sinusoidal self oscillation! An interesting mod would be to use a switch to enable/disable them.</p>
+<h3 id="step-8-ceramic-capacitors">Step 8: Ceramic capacitors</h3>
+<p><a href="../../static/images/svf-19.jpg"><img alt="" src="../../static/images/svf-19-540x357.jpg" title="svf-19" /></a></p>
+<p>Add 3x 100pF ceramic capacitors (marked 101 = "10 with 1 extra zero = 100pF") in positions C10, C13 and C14. These parts are not polarized, and tame high frequencies in the mixer, output amplifier, and VCA control circuits. </p>
+<p><a href="../../static/images/svf-20.jpg"><img alt="" src="../../static/images/svf-20-540x357.jpg" title="svf-20" /></a></p>
+<p>Add 8x 560pF ceramic capacitors (marked 561 = "56 with 1 extra zero = 560pF") in positions C24, C25, C29, C30, C41, C42, C44 and C45. These parts are not polarized, and prevent high frequency signals from reaching the sensitive inputs of the V2164 ICs.</p>
+<h3 id="step-9-ceramic-capacitors">Step 9: Ceramic capacitors</h3>
+<p><a href="../../static/images/svf-21.jpg"><img alt="" src="../../static/images/svf-21-540x357.jpg" title="svf-21" /></a></p>
+<p>Add 21x 100nF ceramic capacitors (marked 104 = "10 with 4 extra zero = 100,000pF = 100nF"). These parts are not polarized, and serve as decoupling capacitors - local reservoirs of energy immediately available to each IC. Note: the marking on these capacitors is very small and difficult to read. To help you recognize them: 1/ These are the only capacitors not attached to a cardboard strip. 2/ The print is much smaller than on the other values such as 10pF, 560pF, or 100pF.</p>
+<h3 id="step-10-ic-sockets">Step 10: IC sockets</h3>
+<p><a href="../../static/images/svf-22.jpg"><img alt="" src="../../static/images/svf-22-540x357.jpg" title="svf-22" /></a></p>
+<p>Make sure that the notch of IC sockets is oriented on the same side as the notch on the PCB symbol. This does not change anything electrically, but having the notch in the right position is a helpful hint for correctly inserting the IC in the next steps! Add 5x DIP8 sockets in positions IC2, IC3, IC4, IC6 and IC10. Add 1x DIP14 socket in position IC8. Add 5x DIP16 sockets in positions IC7, IC9, IC11, IC12 and IC13.</p>
+<h3 id="step-11-film-capacitors">Step 11: Film capacitors</h3>
+<p><a href="../../static/images/svf-23.jpg"><img alt="" src="../../static/images/svf-23-540x357.jpg" title="svf-23" /></a></p>
+<p>Add 1x 6.8nF capacitor in position C9. The value "6.8n" or "6800" is printed on it. This cap smooths the VCA CV signal. Add 2x 33nF capacitors in positions C11 and C12. The value "33n" or "0.033" is printed on it. They smooth the two VCF frequency CV signals. Add 2x 68nF capacitors in positions C8 and C22. The value "68n" or "0.068" is printed on it. They smooth the two VCF resonance CV signals.</p>
+<h3 id="step-12-connectors-and-trimmers">Step 12: Connectors and trimmers</h3>
+<p><a href="../../static/images/svf-24.jpg"><img alt="" src="../../static/images/svf-24-540x357.jpg" title="svf-24" /></a></p>
+<p>Add the 1x8 and 1x6 connectors. Add the 4x 5k trimmers. Make sure that the screw is oriented towards the exterior of the board.</p>
+<h3 id="step-13-non-polarized-capacitors">Step 13: Non-polarized capacitors</h3>
+<p><a href="../../static/images/svf-25.jpg"><img alt="" src="../../static/images/svf-25-540x357.jpg" title="svf-25" /></a></p>
+<p>Add the 2x 1.0µF NP capacitors in positions C20 and C21 and the 2x 4.7µF NP capacitors in positions C1 and C34. They are not polarized. They are used to block the DC component of the signal between various stages of the circuitry (and as such, prevent VCA CV feedthrough, which manifests itself as "pops").</p>
+<h3 id="step-14-styroflex-capacitors">Step 14: Styroflex capacitors</h3>
+<p><a href="../../static/images/svf-26.jpg"><img alt="" src="../../static/images/svf-26-540x169.jpg" title="svf-26" /></a></p>
+<p>Solder the 4x 220pF styroflex capacitors in positions C33, C35, C39 and C46. Bend the lead carefully! These parts are not polarized. They are the main filter capacitors - 2 of them per filter (this is a two-pole filter). Styroflex capacitors are available in small tolerances and have good temperature stability - they are thus good choices for filters.</p>
+<h3 id="step-15-connectors-and-ics">Step 15: Connectors and ICs</h3>
+<p><a href="../../static/images/svf-27.jpg"><img alt="" src="../../static/images/svf-27-540x357.jpg" title="svf-27" /></a></p>
+<p>Insert the ICs. They all have their notch oriented towards the left - at the exception of the LT1054! Solder the two audio connectors. Done!</p>
+<h2 id="using-this-filter-board">Using this filter board</h2>
+<h3 id="control-board-configuration-and-connections">Control board configuration and connections</h3>
+<p>To activate your SVF board, select <strong>svf</strong> for the <strong>fil</strong> setting in the system settings page. If you don't do so, it is likely that the filter will emit glitchy filtered sounds every time you navigate through the pages. After having made the change, press S6 (load/save), turn the encoder to select "ok" and click. This will save the filter board setting for future use. Make sure that both the analog (CV1 to +5V) and digital (RX to +5V) ports of the filter and control boards are connected.</p>
+<h3 id="controlling-filter-2">Controlling filter 2</h3>
+<p>When pressing the <strong>S2</strong> switch (Filter page) a second time, a new page is displayed allowing you to configure the filter routing and the cutoff/resonance of the secondary filter.</p>
+<pre><code> Cut res md1 md2
+ 110   0 lpf +hp
+</code></pre>
+<p>The parameters are the following:</p>
+<ul>
+<li><strong>cut (cutoff)</strong>: Cutoff frequency of the secondary filter.</li>
+<li><strong>res (resonance)</strong>: Resonance of the secondary filter.</li>
+<li><strong>md1 (mode 1)</strong>: Mode of the main filter. The modes are <strong>lpf</strong> (low-pass), <strong>bpf</strong> (band-pass), and <strong>hpf</strong> (high-pass).</li>
+<li><strong>md2 (mode 2)</strong>: Mode of the secondary filter. The modes are <strong>lp</strong> (low-pass), <strong>bp</strong> (band-pass), and <strong>hp</strong> (high-pass). The first character indicates the filter topology. <strong>+</strong> is for the parallel mode ; <strong>&gt;</strong> is for the serial mode.</li>
+</ul>
+<h3 id="relative-control-of-filter-2">Relative control of filter 2</h3>
+<p>Three special modes are available for filter 1: <strong>lp&gt;</strong>, <strong>bp&gt;</strong>, <strong>hp&gt;</strong>. In these modes, the cutoff frequency of filter 2 becomes relative to the cutoff frequency of filter 1 ; and the cutoff 2 setting controls the spacing between the two (with a value above 64 representing a positive shift and a value below 64 a negative shift). For example:</p>
+<pre><code> Cut res md1 md2
+  64   0 bp&gt; +bp
+</code></pre>
+<p>The frequency of filter 2 is the same as the frequency of filter 1.</p>
+<pre><code> Cut res md1 md2
+  76   0 bp&gt; +bp
+</code></pre>
+<p>Filter 2's cutoff is one octave (64 + 12 semitones = 76) above filter 1's cutoff.</p>
+<pre><code> Cut res md1 md2
+  52   0 bp&gt; +bp
+</code></pre>
+<p>Filter 2's cutoff is one octave (64 - 12 semitones = 52) below filter 1's cutoff. This coupling mode is recommended for getting filter 2 to track the played note (since filter 1 does).</p>
+<h3 id="modulating-filter-2">Modulating filter 2</h3>
+<p>The CV1 and CV2 buses are used to transmit the cutoff and resonance settings of the secondary filter. Thus, you can use these as modulation destinations in the modulation matrix to route envelopes, LFOs, etc to the cutoff and resonance of the secondary filter. For example, if you want the second filter to be modulated by a LFO, this can be done with the following modulation patch:</p>
+<pre><code> Mod src dst amt
+   1 lf1 cv1  63
+</code></pre>
+<h2 id="calibration">Calibration</h2>
+<p>Note that when the two boards are stacked (but not screwed), it is still possible to lift the control board while keeping it connected to access the 4 trimmers.</p>
+<h3 id="filter-1-tuning">Filter 1 tuning</h3>
+<p>The tuning procedure consists in making sure that the cutoff frequency of the filter follows a musical scale: increasing the cutoff setting on the Shruthi by 12 (or playing a note 1 octave = 12 semitones higher) should double the cutoff frequency. Power the Shruthi on and dial the following settings from the <strong>init</strong> patch:</p>
+<ul>
+<li>Oscillator 1 shape: <strong>none</strong></li>
+<li>Oscillator 2 shape: <strong>none</strong></li>
+<li>Filter cutoff: <strong>64</strong></li>
+<li>Filter resonance: <strong>63</strong> (maximum value)</li>
+<li>
+<p>Filter envelope and LFO modulations: <strong>0</strong></p>
+<p>Cut res env lfo
+  64  63   0   0</p>
+</li>
+</ul>
+<p>Play on the keyboard. You should hear a pure tone (sine wave), which does not come from the Shruthi oscillators but from the filter self-oscillating. Adjust the first V/Oct trimmer (R5) so that the <strong>intervals</strong> are respected - that is to say, when you play C2 then C4, you should hear two notes, maybe not C2s and C4s, but they must be two octaves apart. If you do not have a good sense of pitch, you can try a software tuner like <a href="https://www.macupdate.com/app/mac/33029/tuna-pitch">Tuna Pitch</a> on OS X. If the filter is correctly tuned, you should be able to play the filter "self oscillation tone" across roughly 4 octaves with correct tuning. Now, play and hold a note in the higher octaves. Sweep the <strong>cutoff</strong> control up. You will notice glitches/changes in pitch when cutoff reaches very high values above 110 - this is due to interactions between the filter self-oscillation and the digital carrier used to control the filter. If you want to get rid of them (they manifest themselves only when resonance is very high), turn the first Range trimmer (R4) so that this zone is out of reach - the downside will be that the filter will have a "darker" tone and that it won't be possible to fully open it.</p>
+<h3 id="filter-2-tuning">Filter 2 tuning</h3>
+<p>We assume that you have already dialled all settings for filter 1 tuning. Set the second filter settings to:</p>
+<pre><code> Cut res md1 md2
+  64  63 lp&gt; +lp
+</code></pre>
+<p>The second filter is now active, in parallel with the first, with the same settings and key-tracking. You will now hear two tones whenever a note is played. Adjust filter 2's Range and V/Oct trimmer so that the two tones are fused into one - it will be very hard to get them to be exactly aligned, but getting a mild beating/chorusing between the two notes is enough!</p>
+<h2 id="tweaks-and-mods">Tweaks and mods</h2>
+<h3 id="vca-bleed-compensation">VCA bleed compensation</h3>
+<p>Solder the remaining 2M resistor (red black black yellow) between the two pads marked "opt" to totally close the VCA when no note is played. This has the slightly negative effect of reducing the smoothness of the VCA envelope. You can also try a higher value below 10M.</p>
+<h3 id="for-advanced-builders-only-ghost-eyes">For advanced builders only: ghost eyes</h3>
+<p>The two minuscule LEDs are for the ghost eyes. Since getting their orientation right is tricky, here is how we recommend doing it:</p>
+<ol>
+<li>Connect the control board to the filter board, set the resonance to 63 (this is one of the ways of getting the ghost eyes to light up)</li>
+<li>Disconnect the control board and keep the filter board powered.</li>
+<li>Check that you have +5V on the lower pad of each eye.</li>
+<li>Put one LED in place with tweezers. Change its position/orientation until it lights up. Solder it. Good luck!</li>
+<li>Repeat the same procedure for the other LED.</li>
+</ol>
+<h2 id="license">License</h2>
+<p>This circuit and PCB layout is made available under a <strong>cc-by-sa-3.0</strong> license.</p>
+<h2 id="kudos">Kudos</h2>
+<p>David Dixon and Tom Wiltshire for precious discussions on SSM2164 SVF design.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../svf/" class="btn btn-neutral float-left" title="SVF filter board (old)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../digital_xt/" class="btn btn-neutral float-right" title="XT control board">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../svf/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../digital_xt/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

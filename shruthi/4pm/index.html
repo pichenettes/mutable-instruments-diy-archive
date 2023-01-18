@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>4 pole-mission filter board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "4 pole-mission filter board";
+        var mkdocs_page_input_path = "shruthi/4pm.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">4 pole-mission filter board</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>4 pole-mission filter board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/shruthi_4pm.jpg" /></p>
+<p>One board to rule them all... This filter board is probably the most advanced 4-pole core for the Shruthi-system! It uses the same "Pole-mixing" technique introduced in the Oberheim Xpander to provide a cornucopia of filter responses. It also provides 4 different settings controlling the "flavour" of the resonance, clean and liquid, MS-20 style, wobbly/chaotic, and a combination of the MS20 and wobbly modes.</p>
+<p>The filter core is based on a SSM2164, for a very low-distortion and pure sound. A LM13700 is used as a global VCA and for resonance control, with loudness compensation.</p>
+<h2 id="using-this-filter-board">Using this filter board</h2>
+<p>Please make sure that both the analog (CV1 to +5V) and digital (RX to +5V) ports of the filter and control boards are connected.</p>
+<p>Beware! Only the Shruthi-1 firmware v0.96 (or above) generates the digital signals required to control the mode selection and routing matrix. In addition, it is not possible to use simultaneously the 4-Pole Mission filter board and the Programmer since they will be both accessing at the same time the digital extension port. To activate the 4-Pole Mission filter board, select <strong>4pm</strong> in the system settings page. If you don't do so, it is likely that it will emit glitchy filtered sounds everytime you navigate through the pages.</p>
+<p>When pressing the <strong>S2</strong> switch (Filter page) a second time, a new page is displayed allowing you to configure the filter routing.</p>
+<pre><code> Cut res mod fla
+ 100  33 lp4 liq
+</code></pre>
+<p>The parameters are the following:</p>
+<ol>
+<li><strong>cut (cutoff)</strong>: Cutoff frequency, conveniently repeated on this page.</li>
+<li><strong>res (resonance)</strong>: Resonance level, conveniently repeated on this page.</li>
+<li><strong>mod (mode)</strong>: Filter mode. See below.</li>
+<li><strong>fla (flavour)</strong>: Resonance flavour. See below.</li>
+</ol>
+<p>The following <strong>15</strong> filter modes are available:</p>
+<ul>
+<li><strong>lp4</strong>: 4-pole low-pass.</li>
+<li><strong>lp3</strong>: 3-pole low-pass.</li>
+<li><strong>lp2</strong>: 2-pole low-pass.</li>
+<li><strong>lp1</strong>: 1-pole low-pass.</li>
+<li><strong>hp1</strong>: 1-pole high-pass.</li>
+<li><strong>hp2</strong>: 2-pole high-pass.</li>
+<li><strong>hp3</strong>: 3-pole high-pass.</li>
+<li><strong>bp2</strong>: 2-pole band-pass.</li>
+<li><strong>bp4</strong>: 4-pole band-pass.</li>
+<li><strong>notch</strong>: notch filter.</li>
+<li><strong>phaser</strong>: phaser.</li>
+<li><strong>h2lp</strong>: 2-pole high-pass and 1-pole low-pass (band-passlike).</li>
+<li><strong>h3lp</strong>: 3-pole high-pass and 1-pole low-pass (band-passlike).</li>
+<li><strong>n+lp</strong>: notch and 1-pole low-pass.</li>
+<li><strong>p+lp</strong>: allpass and 1-pole low-pass.</li>
+</ul>
+<p>The 4 resonance flavours are:</p>
+<ul>
+<li><strong>liquid</strong>: standard, close to the CEM or Roland designs (no loudness drop).</li>
+<li><strong>ms</strong>: Korg-35 style soft limiting is introduced in the signal chain.</li>
+<li><strong>wobbly</strong>: The 1-pole output is fed back to the filter cutoff frequency for a rubbery chaotic and modulated resonance.</li>
+<li><strong>whacky</strong>: A combination of the <strong>ms</strong> and <strong>wobbly</strong> modes.</li>
+</ul>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p><img alt="" src="../../static/images/shruthi_4pm.png" /></p>
+<p>You can find the Eagle files for this board in the shruthi/hardware_design/pcb directory of the source code hosted on <a href="http://github.com/pichenettes/shruthi-1">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-Analog-PoleMixing-v02.pdf">here</a>.</p>
+<p>We did our homework! A technical document explaining the pole-mixing technique is <a href="../../static/documents/pole_mixing.pdf">available here</a>.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdGdhVGdVWUM1bGZvMmJTTUs1WnNuQ3c&amp;output=html&amp;widget=true">Bill of materials</a>.</p>
+<p>Note that the 2x 220R resistors at the far left of the big row of resistors are current-limiting resistors for the LEDs. 220R is recommended if you use standard green, red or yellow LEDs. For blue or white LEDs, a value between 1k and 10k is recommended.</p>
+<h2 id="assembly-notes">Assembly notes</h2>
+<h3 id="assembly-order">Assembly order</h3>
+<p>We recommend you to proceed in the following order (from shortest to tallest parts):</p>
+<ol>
+<li>Resistors</li>
+<li>Diodes</li>
+<li>Ceramic capacitors</li>
+<li>IC sockets</li>
+<li>DC connector</li>
+<li>Transistors, 220pF styroflex capacitors</li>
+<li>Remaining capacitors</li>
+<li>Remaining connectors and trimmers</li>
+<li>Regulators</li>
+</ol>
+<p>Beware! a common mistake made by a handful of builders is to mix up the 100pF and 100nF caps. There are two 100pF caps, here is their location:</p>
+<p><img alt="" src="../../static/images/4pm_100p100n.png" /></p>
+<p>After soldering, we recommend a bit of testing. The following image shows where the power pins are located on the first row of ICs. Red: +5V ; Green: ground ; Blue: -5V.</p>
+<p><img alt="" src="../../static/images/4pm_testing.png" /></p>
+<ol>
+<li>Without any IC inserted and the board powered off, check that there is no short between a red and green pad ; a red and blue pad ; a green and red pad.</li>
+<li>Insert the LT1054, power the board, and check the voltages on the red and blue spots (with a green point used as a reference). You should read a value close to +5V and to -5V.</li>
+<li>Once this power supply check is done ; insert all ICs. You are ready to go! Don't forget to set the control board to the <strong>4pm</strong> filter setting!</li>
+</ol>
+<p>A quick check if something goes wrong: Probe the signal at those points - their voltage is the signal 1, 2, 3, and 4-pole filtered.</p>
+<p><img alt="" src="../../static/images/4pm_poles_testing.png" /></p>
+<h3 id="voct-tuning">V/Oct Tuning</h3>
+<p>The tuning procedure consists in making sure that the cutoff frequency of the filter follows a musical scale: increasing the cutoff setting on the Shruthi by 12 (or playing a note 1 octave = 12 semitones higher) should double the cutoff frequency.</p>
+<p>The filter board must be connected to the control board (through both the 1x8 and 1x6 connectors) to carry out this procedure.</p>
+<p>Dial the following settings on the Shruthi-1:</p>
+<ul>
+<li>Oscillator 1 shape: <strong>none</strong></li>
+<li>Oscillator 2 shape: <strong>none</strong></li>
+<li>Filter cutoff: <strong>64</strong></li>
+<li>Filter resonance: <strong>63</strong> (maximum value)</li>
+<li>Filter envelope and LFO modulations: <strong>0</strong></li>
+<li>Filter mode: <strong>LP4</strong></li>
+<li>Filter resonance flavour: <strong>liquid</strong></li>
+</ul>
+<p>Play on the keyboard. You should hear a pure tone (sine wave), which does not come from the Shruthi-1 oscillators but from the filter self-oscillating. Adjust the <strong>V/Oct</strong> trimmer (the one close to the 1x8 connector) so that the <strong>intervals</strong> are respected - that is to say, when you play C3 then C4, you should hear two notes, maybe not C3s and C4s, but they must be one octave apart. If you do not have a good sense of pitch, you can try a software tuner like Tuna Pitch on OS X. If the filter is correctly tuned, you should be able to play the filter "self oscillation tone" across roughly 4 octaves with correct tuning.</p>
+<p>The second trimmer, labelled <strong>Range</strong>, adjusts the cutoff range of the filter. If <strong>V/Oct</strong> is correctly trimmed, the filter cutoff can span 10.66 octaves, that is to say the ratio between the maximum cutoff frequency and the minimum frequency is 1625. This allows the filter to cover the audio range (12 Hz to 19.5kHz). Note that the filter will behave a bit erratically at high resonance and very high cutoff values ; due to interactions between the resonance pure tone and high-frequency components due to aliasing or PWM modulation. The best way to adjust this setting is to use the patch 39, <strong>e-piano</strong>. Try to turn the trimmer to find a compromise between a very muffled sound ; and a sound that will sound too synthetic and bright.</p>
+<h3 id="light-show">Light show</h3>
+<p>Here are some suggestions for blinking LEDs lovers. Keep in mind that putting two LEDs of a different kind in parallel, under the same current-limiting resistor, will not work (that is to say, if you solder the SMT LED for the eye of the beast, you won't be able to connect another LED in parallel for the inside of the case or the front panel). The LEDs must have the same forward voltage (from 1.7V to 3V) to be put in parallel.</p>
+<h3 id="blinking-eyes-on-the-front-panel-blinking-eye-on-the-board-with-smt-led">Blinking eyes on the front panel + blinking eye on the board with SMT LED.</h3>
+<p><img alt="" src="../../static/images/4pm_leds_1.png" /></p>
+<h3 id="blinking-eyes-on-the-front-panel-with-alternating-pattern">Blinking eyes on the front panel with alternating pattern.</h3>
+<p><img alt="" src="../../static/images/4pm_leds_2.png" /></p>
+<h3 id="blinking-leds-to-light-up-the-inside-of-the-board">Blinking LEDs to light up the inside of the board.</h3>
+<p><img alt="" src="../../static/images/4pm_leds_3.png" /></p>
+<h2 id="license">License</h2>
+<p>This circuit and PCB layout is made available under a <strong>cc-by-sa-3.0</strong> license.</p>
+<h2 id="releases">Releases</h2>
+<h3 id="v02">v0.2</h3>
+<ul>
+<li>Added a pad for a SMT LED in the eye of the creepy dog.</li>
+<li>Used standard (horizontally placed) resistors for the LED current limiting.</li>
+<li>Changed the resonance gain resistor value.</li>
+</ul>
+<h3 id="v01">v0.1</h3>
+<ul>
+<li>First prototype.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../4pm_build/" class="btn btn-neutral float-left" title="4 Pole-mission kit"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ym_build/" class="btn btn-neutral float-right" title="Yellow magic kit">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../4pm_build/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ym_build/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

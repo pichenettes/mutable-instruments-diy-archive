@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Build instructions - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Build instructions";
+        var mkdocs_page_input_path = "midipal/build.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Build instructions</a>
+    <ul class="current">
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>MIDIpal &raquo;</li>
+      <li>Build instructions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/6010198202_ae564026d4_o.jpg" /></p>
+<p>The MIDIpal board features:</p>
+<ul>
+<li>A regulated 3.3V power supply, taking power from either a DC wall
+    wart or a 9V battery.</li>
+<li>An ATMega328p clocked by an external 20 MHz quartz.</li>
+<li>A MIDI output and input, with opto-isolation.</li>
+<li>An 8x1 LCD module, 2 LEDs and a clickable encoder.</li>
+<li>A reset button and a 2x3 ISP connector used during firmware
+    development.</li>
+</ul>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p>Here is an image of the board:</p>
+<p><img alt="" src="../../static/images/midipal.png" /></p>
+<p>Note that all the SMD parts are on the top side of the board, while all
+the through-hole connectors are on the bottom of the board.</p>
+<p>You can find the Eagle files for this board in the
+<code>midipal/hardware_design/pcb</code> directory of the source code hosted on
+<a href="http://github.com/pichenettes/midipal/tree/master">github</a>.</p>
+<p>The schematics in PDF format are
+<a href="../../static/schematics/Midipal-v03.pdf">here</a>.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0Ai4xPbRS5YZjdGlHeVBfQUg3Y18xbEZpOG45Vkh6U1E&amp;output=html&amp;widget=true">Bill of
+materials</a></p>
+<h2 id="assembly-instructions">Assembly instructions</h2>
+<h3 id="smt-soldering-in-short">SMT soldering in short</h3>
+<ul>
+<li>
+<p>Get a flux pen and some solder wick</p>
+</li>
+<li>
+<p>Get some thin solder, at most 0.5mm. Digikey #82-117-ND has been
+reported to be very well suited for this job!</p>
+</li>
+<li>
+<p>Clean your iron's tip!</p>
+</li>
+<li>
+<p>Watch the <a href="http://www.youtube.com/watch?v=b9FC9fAlfQE">best video tutorial
+ever</a>.</p>
+</li>
+<li>
+<p>Sissy method for soldering the TQFP ATMega, aka "tip-pin-pad-solder
+rendez-vous":</p>
+</li>
+<li>
+<p>Apply solder on a pad in a corner</p>
+</li>
+<li>Heat the pad and move the chip in until it is correctly aligned</li>
+<li>Are you sure the chip is correctly aligned? Really?</li>
+<li>Apply flux abundantly on the 4 sides of the chip</li>
+<li>Touch pin 1 with the tip of the soldering iron</li>
+<li>Hear the crackling sound of the barbecued flux</li>
+<li>Touch the pin and the tip of the soldering iron with the tip of your
+    solder</li>
+<li>
+<p>Repeat for each pin</p>
+</li>
+<li>
+<p>Things go wrong because:</p>
+</li>
+<li>
+<p>The tip of your iron was dirty</p>
+</li>
+<li>You have not applied enough flux</li>
+<li>
+<p>You have not aligned the chip in such a way that the pins are
+    sitting in the middle of their pads</p>
+</li>
+<li>
+<p>When soldering resistors, capacitors, etc. start by a pad that is
+    not grounded. Heat it, apply solder, move the part in with the
+    tweezers. Solder the other side. Starting with a grounded pad is
+    more difficult because of heat being dissipated on the ground plane.</p>
+</li>
+</ul>
+<h3 id="step-1-atmega328p">Step 1: ATMega328p</h3>
+<p><img alt="" src="../../static/images/6010194506_8a0c9aaeab_o.jpg" /></p>
+<p>This part is the most difficult, so start by this. After having soldered
+it, check that there is no short between adjacent pins. Use solder wick
+to remove bridges -- even if you need to rework it 4 or 5 times it
+cannot go wrong (here is <a href="../../static/images/5867605926_7f79d5afa4_b.jpg">a
+photo</a>
+of a fully working board the MCU solder job of which had been redone 8
+or 9 times).</p>
+<h3 id="step-2-4x-100nf-caps">Step 2: 4x 100nF caps</h3>
+<p><img alt="" src="../../static/images/6010194830_22108a31d3_o.jpg" /></p>
+<h3 id="step-3-1x-10k-resistor-2x-22pf-caps">Step 3: 1x 10k resistor, 2x 22pF caps</h3>
+<p><img alt="" src="../../static/images/6010195230_ec7612f395_o.jpg" /></p>
+<h3 id="step-4-1x-20-mhz-quartz-1x-switch-with-gull-wings">Step 4: 1x 20 MHz quartz, 1x switch with gull wings</h3>
+<p><img alt="" src="../../static/images/6009645483_8674fb3d35_o.jpg" /></p>
+<h3 id="step-5-2x-220r-resistors-1x-47k-resistor-1x-4n4148">Step 5: 2x 220R resistors, 1x 4.7k resistor, 1x 4N4148</h3>
+<p><img alt="" src="../../static/images/6010195844_ec6fe22ffa_b.jpg" /></p>
+<p>There is a stripe marking the cathode of the diode. It goes "up". See
+the little diagram silkscreened above D1.</p>
+<h3 id="step-6-1x-6n138">Step 6: 1x 6N138</h3>
+<p><img alt="" src="../../static/images/6009646119_a347401c43_o.jpg" /></p>
+<p>Let the solder flow up the pins.</p>
+<h3 id="step-7-3x-100r-resistors-2x-leds-green-and-red">Step 7: 3x 100R resistors, 2x LEDs (green and red)</h3>
+<p><img alt="" src="../../static/images/6009646373_ee8e382215_o.jpg" /></p>
+<p>Look closely at the LED package. It has green dots on one side. They
+should go on the same side as the 3 dots pattern silkscreened on the
+PCB.</p>
+<p>Which LED is green, which LED is red? The easiest way to check is to use
+a meter in continuity testing or diode testing mode. This will provide
+enough current to dimly light them.</p>
+<h3 id="step-8-1x-lm1117-2x-100uf-caps-2x-schottky-diodes">Step 8: 1x LM1117, 2x 100uF caps, 2x Schottky diodes</h3>
+<p><img alt="" src="../../static/images/6009646887_3d7ee537a0_o.jpg" /></p>
+<p>The Schottky diodes are a bit tricky to solder. Applying solder on a pad
+and moving in the diode won't work that well. If you can get someone to
+help you, the best solution will be to have someone firmly hold the
+diode into place with the tweezers, while you solder one side of the
+diode. <strong>The diodes are polarized</strong>, the cathode is identified by a
+stripe that should be on the same side as the symbol silkscreened on the
+board.</p>
+<p>The capacitors are polarized too ; the shape silkscreened on the PCB
+should match the base of the capacitor. To solder the capacitor, hold
+the tip of the iron on the tiny "tail" on the capacitor's sides.</p>
+<h3 id="step-9-1x-spdt-switch-1x-dc-connector-1x-5k-trimmer">Step 9: 1x SPDT Switch, 1x DC connector, 1x 5k trimmer</h3>
+<p><img alt="" src="../../static/images/6009647113_4a17cc0ff1_b.jpg" /></p>
+<p><img alt="" src="../../static/images/6009647351_2788eb056b_o.jpg" /></p>
+<h3 id="step-10-isp-connector">Step 10: ISP connector</h3>
+<p><img alt="" src="../../static/images/6009647619_3ea4219e68_b.jpg" /></p>
+<p>At this stage you can connect a DC power source (delivering a voltage
+between 5V and 9V, and with a current rating above 150mA) and check that
+you get 3.3V at the pads marked <strong>3.3V</strong>.</p>
+<h3 id="step-11-midi-connectors-lcd-module-encoder">Step 11: MIDI connectors, LCD module, encoder</h3>
+<p><img alt="" src="../../static/images/6010197956_8b0a498d72_o.jpg" /></p>
+<p><img alt="" src="../../static/images/6010198202_ae564026d4_o.jpg" /></p>
+<p>That's it! You can now adjust the contrast of the LCD. If you plan to
+use the MIDIpal with a 9V battery, you can solder the provided battery
+clip (black = negative, red = positive).</p>
+<h3 id="step-12-getting-started">Step 12: Getting started</h3>
+<p>At any time, to select the "app" the Midipal will run, hold the encoder
+down for 2 seconds. Rotate the encoder to select an app, and press it to
+confirm. For example, you can select the "Monitor" app and check that
+incoming MIDI signals are correctly parsed.</p>
+<p>Most of the MIDIpal apps work the following way: rotate the encoder to
+navigate in the list of parameters, press the encoder to select a
+parameter (the value of the parameter will be enclosed in square
+brackets), rotate the encoder to modify the value, and press the encoder
+to confirm.</p>
+<p>This is a very short overview, experiment or <a href="../manual">check the
+manual!</a></p>
+<h2 id="firmware-setup">Firmware setup</h2>
+<p>This section explains how to flash the firmware of the MIDIpal. Note
+that kits shipped after April 11th have their MCU already programmed -
+in this case, this step is optional - but you might still want to read a
+bit about this topic if you are interested in modifying the MIDIpal
+code!</p>
+<p><img alt="" src="../../static/images/6600207639_8dc722301e_z.jpg" /></p>
+<h3 id="option-1-build-the-code-and-upload-it-with-avrdude">Option 1: build the code and upload it with avrdude.</h3>
+<p>The firmware code is hosted on
+<a href="http://github.com/pichenettes/midipal">github</a>, in the <code>midipal</code>
+directory. It can be built and sent to the MCU with:</p>
+<pre><code>make -f midipal/makefile bake\_all
+</code></pre>
+<h3 id="option-2-install-pre-built-binaries-with-avrdude">Option 2: install pre-built binaries with avrdude.</h3>
+<p>Download the following files:</p>
+<ul>
+<li><a href="https://raw.github.com/pichenettes/midipal/master/midipal/data/midipal_flash_golden.hex">midipal_flash_golden.hex</a></li>
+<li><a href="https://raw.github.com/pichenettes/midipal/master/midipal/data/midipal_eeprom_golden.hex">midipal_eeprom_golden.hex</a></li>
+</ul>
+<p>Type the following commands in a terminal/command line:</p>
+<pre><code>avrdude -B 100 -V -p m328p -c avrispmkII -P usb -e -u -U efuse:w:0xfd:m
+-U hfuse:w:0xd4:m -U lfuse:w:0xff:m -U lock:w:0x2f:m
+</code></pre>
+<pre><code>avrdude -B 1 -V -p m328p -c avrispmkII -P usb -U
+flash:w:midipal\_flash\_golden.hex:i -U
+eeprom:w:midipal\_eeprom\_golden.hex:i -U lock:w:0x2f:m
+</code></pre>
+<p>Note that in these commands, you will have to replace:</p>
+<ul>
+<li><strong>avrdude</strong> by the path to your local install of avrdude (for
+    example <code>C:\WinAVR\bin\avrdude</code> on windows).</li>
+<li><strong>avrispmkII</strong> by the name of your ISP programmer.</li>
+<li><strong>usb</strong> by something else if your ISP programmer is not a USB one.</li>
+</ul>
+<h3 id="option-3-use-atmels-avrstudio">Option 3: use Atmel's AVRStudio.</h3>
+<p>Download the following files:</p>
+<ul>
+<li><a href="https://raw.github.com/pichenettes/midipal/master/midipal/data/midipal_flash_golden.hex">midipal_flash_golden.hex</a></li>
+<li><a href="https://raw.github.com/pichenettes/midipal/master/midipal/data/midipal_eeprom_golden.hex">midipal_eeprom_golden.hex</a></li>
+</ul>
+<p>Launch AVRStudio and select <strong>AVR programming</strong> in the <strong>Tools</strong> menu.</p>
+<p>Select <strong>AVRISP mkII</strong>, <strong>ATMega328p</strong> and <strong>ISP</strong> in the Tool, Device,
+Interface combo boxes and click on <strong>Apply</strong>. If you have another
+programmer or if it is connected to another port, you'll have to change
+the <strong>tool</strong> and <strong>interface</strong> settings.</p>
+<p>Click on the <strong>Memories</strong> tab on the left column and select the
+<code>midipal_flash_golden.hex</code> file in the <strong>Flash</strong> section. Select
+<code>midipal_eeprom_golden.hex</code> file in the <strong>EEPROM</strong> section.</p>
+<p>Connect the AVR ISP mkII programmer to the ISP connector on the MIDIpal
+board.</p>
+<p>Click on the <strong>Interface settings</strong> tab on the left column and set the
+ISP clock to <strong>16.1 kHz</strong>. Click on <strong>Set</strong>.</p>
+<p>Click on the <strong>Fuses</strong> tab on the left column and set the values to
+<strong>EXTENDED = 0xFD</strong> ; <strong>HIGH = 0xD4</strong> ; <strong>LOW = 0xFF</strong>. Click on
+<strong>Program</strong>.</p>
+<p>Click on the <strong>Interface settings</strong> tab on the left column and set the
+ISP clock to <strong>4 MHz</strong>. Click on <strong>Set</strong>.</p>
+<p>Click on the <strong>Memories</strong> tab on the left column. Click on <strong>Program</strong>
+on the <strong>Flash</strong> section. Click on <strong>Program</strong> on the <strong>EEPROM</strong>
+section.</p>
+<h2 id="hacking">Hacking</h2>
+<h3 id="adc-ports">ADC ports</h3>
+<p>The 8 pads labelled "Analog 1..8 0..3.3V" are connected to the ATMega
+ADC. They accept voltages in the 0..3.3V range (voltages outside of this
+range will damage the MCU), which can be converted to 8 freely
+assignable CC by the "controller" app on the MIDIpal firmware.</p>
+<h3 id="chaining">Chaining</h3>
+<p>You can easily chain several MIDIpal together to build one monster MIDI
+multi-FX. Two 4 pins connectors are located on each side of the MIDIpal
+to ease chaining. The following rules apply:</p>
+<ul>
+<li>You only need to connect to a battery/DC wall wart the power supply
+    section of one unit in a chain. The other units will be powered by
+    the 3.3V rail of the powered unit.</li>
+<li>Do not create feedback loops! That is to say, if the IN of unit A is
+    connected to the OUT of unit B, do not connect the OUT of unit A to
+    the IN of unit B.</li>
+</ul>
+<p>The following image shows how to hook up two units.</p>
+<p><img alt="" src="../../static/images/midipal_chaining.png" /></p>
+<p>The areas in yellow and green can be left unpopulated. Notice how the
+OUT of the left unit is connected to the IN of the right unit, but not
+the other way round.</p>
+<h2 id="license">License</h2>
+<p>The MIDIpal is made available under a <strong>cc-by-sa-3.0</strong> license ; and its
+source code under a GPL3.0 license.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware development"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../cyclic/" class="btn btn-neutral float-right" title="Cyclic">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../cyclic/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

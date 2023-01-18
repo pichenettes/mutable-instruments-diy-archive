@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Other voicecards - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Other voicecards";
+        var mkdocs_page_input_path = "ambika/voicecards.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build Instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Other voicecards</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#layer-jumpers">Layer jumpers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#board-layout">Board layout</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#board-assembly">Board assembly</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vcf-tuning">VCF tuning</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#parts-sourcing">Parts sourcing</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Ambika &raquo;</li>
+          <li>Build Instructions &raquo;</li>
+      <li>Other voicecards</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>These voicecards can synthesize one voice of sound, using a hybrid synthesis engine derived from the Shruthi and three different flavors of analog filters (2-pole multimode SVF ; 4-pole OTA-C ; and 4-pole VC integrator based on a SSM2164).</p>
+<p>You can <a href="../../static/audio/ambika_filters.mp3">listen to a comparison of those</a>
+(in order: SMR4, SVF LP, SVF BP, SVF HP, 4P).</p>
+<h2 id="general-comments">General comments</h2>
+<p>The following observations apply to all the voicecards</p>
+<h3 id="layer-jumpers">Layer jumpers</h3>
+<p>A voicecard can either be inserted into the Ambika motherboard ; or
+stacked on top of another voicecard. In the former case, the two jumpers
+must be set to the <strong>A</strong> position. In the later case, the two jumpers
+must be set to the <strong>B</strong> position.</p>
+<p>The first jumper determines where the voicecard is sending its audio
+signal. You might exploit this to route the two voicecards in the stack
+to the same individual audio output (passive mixing), though this is not
+recommended.</p>
+<p>The second jumper is used to assign a unique CS line to each voicecard.
+When the master MCU wants to talk to a voicecard, for example to make it
+play a note, it sets the CS (chip select) line of the voicecard to a
+voltage of 0V. It is thus very important that no two voicecards are
+addressed through the same CS line! For this reason, check and double
+check that the two voicecards in the stack have their second jumper set
+to A and B respectively.</p>
+<h3 id="board-layout">Board layout</h3>
+<p>The lower part of the board is the digital section, containing an
+ATmega-328p MCU responsible for the sound and control signal generation,
+and a MCP4822 dual DAC converting the oscillators and VCA CVs into
+analog signals. VCF and resonance CVs are generated directly by the
+ATMega328p using PWM.</p>
+<p>The upper part is the analog filter and VCA - emplying a different
+circuit for each voicecard in this family.</p>
+<h3 id="board-assembly">Board assembly</h3>
+<p>Work in the following order:</p>
+<ul>
+<li>Resistors and diodes</li>
+<li>Ceramic capacitors, crystal</li>
+<li>IC sockets, LEDs, trimmer</li>
+<li>Film and electrolytic capacitors</li>
+<li>ISP connector</li>
+</ul>
+<p>And finally, solder the pair of 6x1 header for board stacking.</p>
+<p><img alt="" src="../../static/images/ambika_no_cut.jpeg" /></p>
+<p><strong>Do not trim the leads of the board stacking connectors</strong>. You might
+have gotten this habit if you have built Shruthi-1s... Don't do it! The
+voicecard is stacked on top of the motherboard, so the 6 leads of the
+1x6 connectors should be kept. This is the same stacking approach as the
+Arduino "shields".</p>
+<p>Keep in mind that the boards are spaced by 12mm vertically. This might
+be of importance if you use styroflex caps on the SVF or 4P boards - you
+have to make sure that their leads won't touch the board above it.</p>
+<h3 id="vcf-tuning">VCF tuning</h3>
+<p>All boards have a V/Oct trimmer to tune to a correct musical scale the
+tone emitted by the filter when it reaches self-oscillation. To do this
+adjustment, start from a blank patch. It greatly helps to assign the
+voicecard being tuned (and no other voicecard) to part 1. Set all
+oscillators to <strong>none</strong>, kill all modulations on the filter cutoff --
+<strong>env2&gt;</strong> and <strong>lfo2&gt;</strong> modulation amounts to 0 -- and set cutoff
+and resonance to 63. You should hear the self-oscillation tone. Adjust
+the V/Oct trimmer so that the intervals are respected – that is to say,
+when you play C3 then C4, you should hear two notes, maybe not C3s and
+C4s, but they must be one octave apart. If you do not have a good sense
+of pitch, you can try a software tuner like Tuna Pitch on OS X. If the
+filter is correctly tuned, you should be able to play the filter "self
+oscillation tone" across roughly 4 octaves with correct tuning. Note
+that tuning might vary a bit with temperature, so there is no need to
+spend too much time on this!</p>
+<p>As far as the digital oscillators are concerned, they are always in tune
+and do not need any calibration!</p>
+<h3 id="parts-sourcing">Parts sourcing</h3>
+<p>Each board has 3 low-profile 100uF capacitors that serve as local
+bypassing of the +5V, +8V and -8V rails. Panasonic makes some which are
+easy to find. Check the dimensions carefully when ordering from other
+sources. 10mm is the maximum allowed height.</p>
+<p>The connector used for stacking the voicecards is often labelled as an
+"Arduino stackable header" or "Arduino shield header". This is the part
+you need, though it is often sold at exorbitant prices for what it is.</p>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<h3 id="svf-voicecard">SVF voicecard</h3>
+<p>This filter circuit is documented
+<a href="../../static/documents/svf_analysis.pdf">here</a>.
+A digitally controlled SPQT switch (half 4052) commutes the 3 modes (LP,
+HP and BP).</p>
+<p><img alt="" src="../../static/images/ambika_svf.png" />\
+<img alt="" src="../../static/images/ambika_svf.jpeg" /></p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Ambika-SVF-v05.pdf">available
+here</a>.</p>
+<p>You can find the Eagle files for this board in the source code hosted on
+<a href="https://github.com/pichenettes/ambika/tree/master/voicecard/hardware_design/pcb">github</a>.</p>
+<p>If you need a reference during assembly, you can download this printout
+of the
+<a href="../../static/images/ambika_svf_top.pdf">top</a> side
+of the board and print it at a 2:1 scale.</p>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdHl4MG1PWkxONzg2ZFdRYXJrMzZvTWc&amp;single=true&amp;gid=2&amp;output=html">Bill of
+materials.</a></p>
+<ul>
+<li>The DAC output goes straight to an SSM2164 expo gain cell. This does
+    not mean that the VCA has an exponential response. It is linearized
+    in software. This costs a bit of resolution.</li>
+<li>C19 smoothes the filter CV. A value of 68nF is recommended. The
+    original design (hence the silkscreen on the board) used 33nF which
+    gives snappier, "clickier" filter envelopes.</li>
+</ul>
+<p>I usually build this board in 4 steps - one with resistors, one with
+ceramic capacitors, one with IC sockets, and one with everything else!</p>
+<p><img alt="" src="../../static/images/7612415966_f3c63fc900_z.jpg" />\
+<img alt="" src="../../static/images/7612418382_ce2f12e8da_z.jpg" />\
+<img alt="" src="../../static/images/7612420058_57a3b5785a_z.jpg" />\
+<img alt="" src="../../static/images/7612421918_ac7f4516bb_z.jpg" /></p>
+<h3 id="smr4-voicecard">SMR4 voicecard</h3>
+<p>This filter uses the same topology as the
+<a href="../../static/documents/smr4mkII_analysis.pdf">SMR4mkII</a>,
+with the following change: OTA / op-amp integrator cells are replaced by
+OTA-C-Darlington buffer cells. This saves a quad op-amp which wouldn't
+have fit on the board. The difference can be heard when increasing the
+resonance.</p>
+<p><img alt="" src="../../static/images/ambika_smr.png" />\
+<img alt="" src="../../static/images/ambika_smr.jpeg" /></p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Ambika-SMR-v04.pdf">available
+here</a>.</p>
+<p>You can find the Eagle files for this board in the source code hosted on
+<a href="https://github.com/pichenettes/ambika/tree/master/voicecard/hardware_design/pcb">github</a>.</p>
+<p>If you need a reference during assembly, you can download this printout
+of the
+<a href="../../static/images/ambika_smr_top.pdf">top</a> side
+of the board and print it at a 2:1 scale.</p>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdHl4MG1PWkxONzg2ZFdRYXJrMzZvTWc&amp;single=true&amp;gid=1&amp;output=html">Bill of
+materials.</a></p>
+<h3 id="4p-voicecard">4P voicecard</h3>
+<p>This filter uses the same core as the <a href="../../static/documents/pole_mixing.pdf">4-Pole Mission Shruthi-1 filter
+board</a>,
+but only provides the LP4 output.</p>
+<p><img alt="" src="../../static/images/ambika_4p.png" />\
+<img alt="" src="../../static/images/ambika_4p.jpeg" /></p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Ambika-4P-v01.pdf">available
+here</a>.</p>
+<p>You can find the Eagle files for this board in the source code hosted on
+<a href="https://github.com/pichenettes/ambika/tree/master/voicecard/hardware_design/pcb">github</a>.</p>
+<p>If you need a reference during assembly, you can download this printout
+of the
+<a href="../../static/images/ambika_4p_top.pdf">top</a> side
+of the board and print it at a 2:1 scale.</p>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdHl4MG1PWkxONzg2ZFdRYXJrMzZvTWc&amp;single=true&amp;gid=3&amp;output=html">Bill of
+materials.</a></p>
+<h2 id="license">License</h2>
+<p>These circuits and PCB layouts are made available under a
+<strong>cc-by-sa-3.0</strong> license.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../smr4/" class="btn btn-neutral float-left" title="SMR-4 voicecard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mechanical/" class="btn btn-neutral float-right" title="Mechanical assembly">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../smr4/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mechanical/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

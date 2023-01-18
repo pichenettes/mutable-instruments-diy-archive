@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Firmware setup - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firmware setup";
+        var mkdocs_page_input_path = "ambika/firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build Instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Firmware setup</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#option-1-build-the-code-and-upload-it-with-avrdude">Option 1: build the code and upload it with avrdude</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#option-2-install-pre-built-binaries-with-avrdude">Option 2: install pre-built binaries with avrdude</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Ambika &raquo;</li>
+          <li>Build Instructions &raquo;</li>
+      <li>Firmware setup</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="flashing-the-motherboard-voicecards-firmware">Flashing the motherboard / voicecards firmware</h2>
+<p>This section explains how to flash Ambika's firmware with an AVR
+programmer - in case you are building it from scratch (the kits come
+with pre-programmed chips). This is also helpful if you intend to modify
+the code.</p>
+<h3 id="option-1-build-the-code-and-upload-it-with-avrdude">Option 1: build the code and upload it with avrdude</h3>
+<p>The firmware code is hosted on
+<a href="http://github.com/pichenettes/ambika">github</a>, in the <code>controller</code> and
+<code>voicecard</code> directories. The required tools are python 2.5, GNU make,
+avrdude, and avr-gcc version 4.3.3 (if you use another version you might
+have to check that the voicecard code size is under 31744 bytes and the
+motherboard code size under 61440 bytes). Some of the paths to these
+tools have to be edited in avrlib/makefile.mk</p>
+<p>To build the motherboard code (including MIDI/SD bootloader) and flash
+it, connect the programmer to the motherboard and use:</p>
+<pre><code>make bootstrap_controller
+</code></pre>
+<p>To build the voicecard code (including bootloader) and flash it, connect
+the programmer to a voicecard and use:</p>
+<pre><code>make bootstrap_voicecard
+</code></pre>
+<h3 id="option-2-install-pre-built-binaries-with-avrdude">Option 2: install pre-built binaries with avrdude</h3>
+<p>Download the following files:</p>
+<ul>
+<li><a href="../../static/firmware/ambika_controller.hex">ambika_controller.hex</a></li>
+<li><a href="../../static/firmware/ambika_controller_boot.hex">ambika_controller_boot.hex</a></li>
+<li><a href="../../static/firmware/ambika_voicecard.hex">ambika_voicecard.hex</a></li>
+<li><a href="../../static/firmware/ambika_voicecard_boot.hex">ambika_voicecard_boot.hex</a></li>
+<li><a href="../../static/firmware/ambika_voicecard_eeprom_golden.hex">ambika_voicecard_eeprom_golden.hex</a></li>
+</ul>
+<p>Connect the programmer to the motherboard. Type the following commands
+in a terminal/command line:</p>
+<pre><code>avrdude -B 100 -V -p m644p -c avrispmkII -P usb -e -u -U efuse:w:0xfd:m
+-U hfuse:w:0xd2:m -U lfuse:w:0xff:m -U lock:w:0x2f:m
+</code></pre>
+<pre><code>avrdude -B 1 -V -p m644p -c avrispmkII -P usb -U
+flash:w:ambika_controller.hex:i -U
+flash:w:ambika_controller_boot.hex:i -U lock:w:0x2f:m
+</code></pre>
+<p>Hook the programmer to the voicecard. Type the following commands in a
+terminal/command line:</p>
+<pre><code>avrdude -B 100 -V -p m328p -c avrispmkII -P usb -e -u -U efuse:w:0xfd:m
+-U hfuse:w:0xde:m -U lfuse:w:0xff:m -U lock:w:0x2f:m
+</code></pre>
+<pre><code>avrdude -B 1 -V -p m328p -c avrispmkII -P usb -U
+flash:w:ambika_voicecard.hex:i -U flash:w:ambika_voicecard_boot.hex:i
+-U eeprom:w:ambika_voicecard_eeprom_golden.hex:i -U lock:w:0x2f:m
+</code></pre>
+<p>Note that in all these commands, you will have to replace:</p>
+<ul>
+<li><strong>avrdude</strong> by the path to your local install of avrdude (for
+    example <code>C:\WinAVR\bin\avrdude</code> on windows).</li>
+<li><strong>avrispmkII</strong> by the name of your ISP programmer.</li>
+<li><strong>usb</strong> by something else if your ISP programmer is not a USB one.</li>
+</ul>
+<h2 id="copying-the-factory-data-presets-to-a-sd-card">Copying the "factory data" (presets) to a SD card</h2>
+<ol>
+<li>Format a SD card with a FAT or FAT32 filesystem (all the brand new
+    voicecards we tested were correctly formatted).</li>
+<li>Unzip <a href="../../static/firmware/ambika_golden_card.zip">this archive</a> and
+    copy the PROGRAM and MULTI directories to the root directory of the
+    SD card.</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../mechanical/" class="btn btn-neutral float-left" title="Mechanical assembly"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../technotes/" class="btn btn-neutral float-right" title="Technical notes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mechanical/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../technotes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

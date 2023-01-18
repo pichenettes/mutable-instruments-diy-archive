@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>XT control board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "XT control board";
+        var mkdocs_page_input_path = "shruthi/digital_xt.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">XT control board</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#resistors-first-decade">Resistors, first decade</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resistors-second-decade">Resistors, second decade</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resistors-third-decade">Resistors, third decade</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bridges">Bridges</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#digital-volume-control">Digital volume control</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#analog-volume-control">Analog volume control</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#diode">Diode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#quartz-and-friends">Quartz and friends</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bypass-capacitors">Bypass capacitors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resistor-networks">Resistor networks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ic-sockets">IC sockets</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#taller-and-taller">Taller and taller...</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#switches-pots-connectors">Switches, pots, connectors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#display">Display</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#leds">LEDs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#integrated-circuits">Integrated circuits</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#74hc165">74hc165</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#74hc595">74hc595</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#6n137">6N137</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#cd4051">CD4051</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#24lc512">24LC512</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#atmega644p">ATMega644p</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>XT control board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><a href="../../static/images/xt-assembly-0024.jpg"><img alt="" src="../../static/images/xt-assembly-0024-540x178.jpg" title="xt-assembly-0024" /></a></p>
+<h2 id="assembly-instructions">Assembly instructions</h2>
+<p>We assume you know soldering. If you don't, look first at <a href="http://www.instructables.com/id/How-to-solder/">this tutorial</a>.</p>
+<p><strong>DISCLAIMER:</strong> We are not responsible for anything wrong (including electric shocks, malfunctions, fires, accidents involving a soldering iron) that might happen during the assembly of the kit. Everything you do while assembling the kit is at your own risks.</p>
+<p><strong>Note:</strong> There are a few mechanical changes (number, position and diameter of holes) between the production version of the board and the one shown in these instructions. This has no impact on the assembly procedure; and the parts and circuits used are the same.</p>
+<h3 id="resistors-first-decade">Resistors, first decade</h3>
+<p><a href="../../static/images/xt-assembly-0001.jpg"><img alt="" src="../../static/images/xt-assembly-0001-540x357.jpg" title="xt-assembly-0001" /></a></p>
+<p>Add 11x 220R resistors (red, red, black, black, brown). Resistors are not polarized, but following our illustrations will give you bonus point if you ever request help on the forum. R15, R16 and R17 are used for current limiting in the MIDI I/O, their values are chosen to match the MIDI specifications. R31 to R38 are current-limiting resistors for the LEDs. You can increase their value to 1.0k or even 4.7k if you use blue or white LEDs. Flat top LEDs just look better given the 4.6mm thickness of the plexi &amp; alu top panels.</p>
+<h3 id="resistors-second-decade">Resistors, second decade</h3>
+<p><a href="../../static/images/xt-assembly-0002.jpg"><img alt="" src="../../static/images/xt-assembly-0002-540x391.jpg" title="xt-assembly-0002" /></a></p>
+<p>Add 2x 2.2k resistors (red, red, black, brown, brown) in positions R9 and R10. These are pull-up resistors for the <a href="http://en.wikipedia.org/wiki/I%C2%B2C" title="I2C">I2C</a> bus that connects the processor and the EEPROM memory storing the patches.</p>
+<h3 id="resistors-third-decade">Resistors, third decade</h3>
+<p><a href="../../static/images/xt-assembly-0003.jpg"><img alt="" src="../../static/images/xt-assembly-0003-540x357.jpg" title="xt-assembly-0003" /></a></p>
+<p>Add 2x 10k resistors (brown, black, black, red, brown) in positions R18 and R19. R18 is part of the MIDI reception circuit (pull-up for the optocoupler output), while R19 keeps the RESET line of the microcontroller at a high logic level to keep it running.</p>
+<h3 id="bridges">Bridges</h3>
+<p>The volume pot R8 on the top right corner of the panel can modify the volume in two ways: digitally, by reducing the level of the VCA envelope; or in the analog domain by directly attenuating the final output level. The first option does not require messy wires and is the simplest to build - its drawback is that a loss of resolution in the VCA envelope can be heard at low volumes. The second option requires wiring - which can also cause noise and catch nasty signals if done wrong.</p>
+<h4 id="digital-volume-control">Digital volume control</h4>
+<p>Solder 3 bridges like this: </p>
+<p><a href="../../static/images/xt-assembly-0005.jpg"><img alt="" src="../../static/images/xt-assembly-0005-540x351.jpg" title="xt-assembly-0005" /></a></p>
+<p>They can be made of discarded resistor leads.</p>
+<h4 id="analog-volume-control">Analog volume control</h4>
+<p>Bridge the top right and top center pins (JP1) ; and solder wires to the 3 pads above the pot (JP2). </p>
+<p><a href="../../static/images/wiring.png"><img alt="" src="../../static/images/wiring.png" title="wiring" /></a></p>
+<p>Connect these wires to the 3 pads near the filter board's output jack.</p>
+<h3 id="diode">Diode</h3>
+<p><a href="../../static/images/xt-assembly-0004.jpg"><img alt="" src="../../static/images/xt-assembly-0004-540x357.jpg" title="xt-assembly-0004" /></a></p>
+<p>Add the diode 1N4148 in position D1. The diode is polarized, the ring of the diode must be on the same side as the ring on the diagram printed on the board. This diode protects the MIDI in circuitry (optocoupler) from badly built MIDI cables or MIDI out circuitry.</p>
+<h3 id="quartz-and-friends">Quartz and friends</h3>
+<p><a href="../../static/images/xt-assembly-0006.jpg"><img alt="" src="../../static/images/xt-assembly-0006-540x357.jpg" title="xt-assembly-0006" /></a></p>
+<p>Add the 20 MHz quartz (not polarized) and the two 18pF ceramic caps that surround it in positions C11 and C12. They are not polarized and the value 180 is printed on them (180 = "18 with 0 extra zero pF = 18pF"). These three parts form - with the help of some circuitry inside the microcontroller - an ultra-stable 20 MHz oscillator which defines the speed at which the microcontroller runs. The quartz is extremely precise and barely sensitive to temperature changes - this is why digital oscillators are stable and do not need tuning.</p>
+<h3 id="bypass-capacitors">Bypass capacitors</h3>
+<p><a href="../../static/images/xt-assembly-0007.jpg"><img alt="" src="../../static/images/xt-assembly-0007-540x357.jpg" title="xt-assembly-0007" /></a></p>
+<p>Solder the 3x 100nF ceramic capacitors on the bottom side of the board. The number "104" is printed on them (10 x 10\^4 pF = 100nF). These capacitors are not polarized. They are known as <a href="http://en.wikipedia.org/wiki/Decoupling_capacitor">"decoupling capacitors"</a>. Their role is to provide a local reservoir of energy to an integrated circuit (the microcontroller). This improves the stability of the power supply line, and ultimately prevents cross-talk or unexpected coupling/glitches between integrated circuits. </p>
+<p><a href="../../static/images/xt-assembly-0008.jpg"><img alt="" src="../../static/images/xt-assembly-0008-540x263.jpg" title="xt-assembly-0008" /></a></p>
+<p>Solder the 11x 100nF ceramic capacitors on the other side of the board, in positions C1, C2, C3, C5, C6, C7, C8, C9, C10, C13 and C14. They are also decoupling capacitors, working for the ICs they are located next to.</p>
+<h3 id="resistor-networks">Resistor networks</h3>
+<p><a href="../../static/images/xt-assembly-0009.jpg"><img alt="" src="../../static/images/xt-assembly-0009-540x357.jpg" title="xt-assembly-0009" /></a> </p>
+<p><a href="../../static/images/xt-assembly-0010.jpg"><img alt="" src="../../static/images/xt-assembly-0010-540x357.jpg" title="xt-assembly-0010" /></a> </p>
+<p><a href="../../static/images/xt-assembly-0011.jpg"><img alt="" src="../../static/images/xt-assembly-0011-540x357.jpg" title="xt-assembly-0011" /></a></p>
+<p>Add 3x resistor networks in positions RN1, RN2, RN3. The code name of these parts is 9X-1-103LF, which means "this is a 9-pin part made of many resistors sharing 1 common pin, each of them having a resistance of 10e3 = 10k". These parts are polarized! The dot printed on the network indicates pin 1, which must be on the same side as the 1 printed on the PCB. In the Shruthi circuits, these parts play a role in detecting button presses - if a group of buttons is stuck it is worth checking the closest resistor network!</p>
+<h3 id="ic-sockets">IC sockets</h3>
+<p>Make sure that the notch of IC sockets is oriented on the same side as the notch on the PCB symbol. This does not change anything electrically, but having the notch in the right position is a helpful hint for correctly inserting the IC in the next steps! </p>
+<p><a href="../../static/images/xt-assembly-0012.jpg"><img alt="" src="../../static/images/xt-assembly-0012-540x357.jpg" title="xt-assembly-0012" /></a> </p>
+<p><a href="../../static/images/xt-assembly-0013.jpg"><img alt="" src="../../static/images/xt-assembly-0013-397x600.jpg" title="xt-assembly-0013" /></a></p>
+<p>Add 2x DIP8 sockets in positions OK1 and IC1. Add 8x DIP16 sockets in positions IC2, IC3, IC4, IC5, IC6, IC7, IC8, IC9. </p>
+<p><a href="../../static/images/xt-assembly-0015.jpg"><img alt="" src="../../static/images/xt-assembly-0015-540x357.jpg" title="xt-assembly-0015" /></a></p>
+<p>Flip the board and solder a socket on the back for IC10.</p>
+<h3 id="taller-and-taller">Taller and taller...</h3>
+<p><a href="../../static/images/xt-assembly-0014.jpg"><img alt="" src="../../static/images/xt-assembly-0014-540x357.jpg" title="xt-assembly-0014" /></a></p>
+<p>Add a 100µF electrolytic capacitor in position C4. This capacitor is polarized. The long lead goes on the "+" side (as printed on the PCB). The white stripe on the side of the capacitor indicates the negative side. This capacitor is a decoupling cap, and helps in preventing noise from the digital/logic circuits and the display to affect the analog circuitry downstairs...</p>
+<h3 id="switches-pots-connectors">Switches, pots, connectors</h3>
+<p><a href="../../static/images/xt-assembly-0016.jpg"><img alt="" src="../../static/images/xt-assembly-0016-540x195.jpg" title="xt-assembly-0016" /></a></p>
+<p>It's now time to solder all the tactile switches. They are not polarized. </p>
+<p><a href="../../static/images/xt-assembly-0017.jpg"><img alt="" src="../../static/images/xt-assembly-0017-540x357.jpg" title="xt-assembly-0017" /></a></p>
+<p>Solder the 1x8 male connector. The kit does not come with a 1x6 male connector for the other group of pads; but you'll have to solder one if you want to use the Shruthi XT with a special control board with multimode filtering or effects.</p>
+<p><a href="../../static/images/xt-assembly-0018.jpg"><img alt="" src="../../static/images/xt-assembly-0018-540x202.jpg" title="xt-assembly-0018" /></a></p>
+<p>Add all the potentiometers (they are all the same) and the encoder. </p>
+<p><a href="../../static/images/xt-assembly-0019.jpg"><img alt="" src="../../static/images/xt-assembly-0019-540x357.jpg" title="xt-assembly-0019" /></a></p>
+<p>Add the MIDI connectors. It is recommended to solder only one leg (as shown on the photo) - if necessary adjust their alignment; and once everything is okay, finish soldering all pins.</p>
+<h3 id="display">Display</h3>
+<p><a href="../../static/images/xt-assembly-0020.jpg"><img alt="" src="../../static/images/xt-assembly-0020-540x357.jpg" title="xt-assembly-0020" /></a></p>
+<p>Solder the 1x16 male connector to the display. Solder the display to the control board. Try to keep the display as close to the circuit board as possible! The display that comes with your kit is an OLED - it has a little inductor on its back that gets in the way, but we cut a hole in the board for that! If you want to use a LCD display instead of an OLED, there are two extra parts to add:</p>
+<ul>
+<li>A small resistor (3.3 ohm to 100 ohm - bridge for Newhaven Display parts).</li>
+<li>A trimmer/adjustable resistor (for contrast adjustment) in position R1.</li>
+</ul>
+<h3 id="leds">LEDs</h3>
+<p><a href="../../static/images/xt-assembly-0021.jpg"><img alt="" src="../../static/images/xt-assembly-0021-540x357.jpg" title="xt-assembly-0021" /></a></p>
+<p>Put the 8 LEDs in place. Observe the symbol printed on the board. One side of the symbol is flat, the other is round. The flat side indicates the cathode (- pin) - which is also the short lead of the LED. The round side indicates the long lead. The base of LED lens should be elevated roughly 9mm above the PCB level. We recommend you to partially assemble the top of the case with the two panels (plexiglas and aluminum) in place to get the LED elevation right and keep them neatly aligned. Don't cut the leads of the LEDs fully - leave of few millimeters for later adjustments. </p>
+<p><a href="../../static/images/xt-assembly-0024.jpg"><img alt="" src="../../static/images/xt-assembly-0024-540x178.jpg" title="xt-assembly-0024" /></a></p>
+<h3 id="integrated-circuits">Integrated circuits</h3>
+<p>Insert the integrated circuits. Be careful with their orientation - the notch on the IC must be on the same side as the symbol printed on the PCB (and the notch of the socket if they have been correctly soldered). </p>
+<p><a href="../../static/images/xt-assembly-0022.jpg"><img alt="" src="../../static/images/xt-assembly-0022-521x600.jpg" title="xt-assembly-0022" /></a> </p>
+<p><a href="../../static/images/xt-assembly-0023.jpg"><img alt="" src="../../static/images/xt-assembly-0023-540x540.jpg" title="xt-assembly-0023" /></a></p>
+<p>You can skip the following sections if you are not curious to know how your Shruthi works! The following paragraphs explain what each IC does.</p>
+<h4 id="74hc165">74hc165</h4>
+<p>They are 8 to 1 parallel to serial converters. They take binary data from 8 inputs, and send them one by one on a single line - this allows multiple inputs to be monitored while using a single microcontroller line (okay, three: a data line, a clock and a latch). Several 74hc165s can be daisy-chained. They are used for reading buttons state. There are 3 groups of buttons on the board, so 3 74hc165s in total. Non-responsive buttons are a symptom of faulty 74hc165s. <a href="http://www.nxp.com/documents/data_sheet/74HC_HCT165.pdf">Datasheet</a></p>
+<h4 id="74hc595">74hc595</h4>
+<p>It is a 1 to 8 serial to parallel converter. It does the exact opposite of the 165s - take a sequence of 8 bits and send them to different outputs. This is what allows the 8 LEDs to be controlled from one single microcontroller line. Incorrect LED patterns are displayed when this part is faulty. <a href="http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf">Datasheet</a></p>
+<h4 id="6n137">6N137</h4>
+<p>It is an optocoupler. It allows two different devices to communicate (one sending data to the other) without any electrical connection between their circuitry. One side of the optocoupler is a LED, the other is a light sensor (photo-diode or photo-transistor) that converts the light of the LED back in electrical signals - all this isolated from external light in the darkness of the chip. The optocoupler is used here for MIDI communication. Concretely, this means that when you connect a MIDI keyboard to the Shruthi with a MIDI cable, you are actually connecting the MIDI keyboard to a little LED inside the Shruthi - whose on/off pattern is converted back into an electrical signal. What's the point of doing all this, rather than using a plain wired connection? This allows, for example, the connection between two devices running at different voltages (5V or 3.3V); this prevent ground loop problems; and this prevent any electrical problem/damage on one device to "contaminate" another through the MIDI cable (at worst, the optocoupler will be damaged). The people who designed MIDI knew what they were doing! If you have problems with MIDI reception, this is the part to look at. <a href="http://www.fairchildsemi.com/ds/6N/6N137.pdf">Datasheet</a></p>
+<h4 id="cd4051">CD4051</h4>
+<p>They are analog multiplexers. They work like an 8-position switch, whose position can be digitally controlled. They are used to connect all the 29 potentiometers to the microcontroller, which measures their value. For example, when the microcontroller wants to know the position of the cutoff potentiometer, it activates the CD4051 to which the potentiometer is hooked; and it selects one of the 8 positions connecting it to the potentiometer - a bit like telephone exchanges in the old times... Once the connection is established, it runs an analog to digital conversion, and the result is a number giving the position of the potentiometer. The microcontroller permanently does that to scan all potentiometers in a round-robin fashion, at a rate of 20 scans per second on idle potentiometers, and 250 scans per second once a potentiometer has been touched. Check these parts if some potentiometers are not responsive or if the display flickers with random values. <a href="http://www.ti.com/lit/ds/schs047g/schs047g.pdf">Datasheet</a></p>
+<h4 id="24lc512">24LC512</h4>
+<p>It is a 512kbits EEPROM with an I2C interface. It is used here to store patches and presets. The one in the kit is pre-programmed with the "factory" presets. <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21754M.pdf">Datasheet</a></p>
+<h4 id="atmega644p">ATMega644p</h4>
+<p>It is the main processor. It has 64kbytes of flash ; 4kbytes of RAM ; 2kbytes of EEPROM and runs at 20 MHz. It handles absolutely everything that happens in the Shruthi - except analog filtering! Of course, it runs code specially crafted for that, that has been programmed onto it during kit preparation. <a href="http://www.atmel.com/Images/doc2593.pdf">Datasheet</a></p>
+<h2 id="technical-documents">Technical documents</h2>
+<h3 id="pcb-and-schematics">PCB and schematics</h3>
+<p><a href="../../static/images/xt_pcb_v03.png"><img alt="" src="../../static/images/xt_pcb_v03-540x191.png" title="xt_pcb_v03" /></a></p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-Digital-XT-v03.pdf">available here</a>.</p>
+<p>You can find the Eagle files for this board in the source code <a href="https://github.com/pichenettes/shruthi-1">hosted on github</a> (Note: if the files are not present in the main branch, check for the "XT" branch).</p>
+<p>If you need a reference during assembly, you can download this blueprint of the <a href="../../static/images/shruthi_digital_xt_v03_top.pdf">top</a> and <a href="../../static/images/shruthi_digital_xt_v03_bottom.pdf">bottom</a> sides of the board. Note that they are at 0.9 scale.</p>
+<h3 id="bill-of-materials">Bill of materials</h3>
+<p>The BOM can be browsed online <a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdFV1YmdGZXdFYmMzV1NfTEZpRWZVd1E&amp;output=html">at this address</a>.</p>
+<p>Download the <a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdFV1YmdGZXdFYmMzV1NfTEZpRWZVd1E&amp;output=ods">spreadsheet version</a>.</p>
+<h3 id="licence-and-credits">Licence and credits</h3>
+<p>This circuit and PCB layout are made available under a <strong>cc-by-sa-3.0</strong> license. The circuit has been designed by Émilie Gillet, with contributions from Frank Daniels regarding UI and mechanical aspects. The firmware is released under a <strong>GPL3.0</strong> license.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../svf2/" class="btn btn-neutral float-left" title="SVF filter board"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../xt_enclosure/" class="btn btn-neutral float-right" title="XT enclosure">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../svf2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../xt_enclosure/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

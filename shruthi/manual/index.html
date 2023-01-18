@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "shruthi/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#controls-and-navigation">Controls and navigation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pages">Pages</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#editing">Editing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#using-the-encoder">Using the encoder.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#display-status-symbols">Display status symbols</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>This manual documents the version 1.00 of the firmware - which has been
+introduced with the Shruthi XT but can also be installed on the classic
+version of the Shruthi.</p>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="overview">Overview</h3>
+<p>The Shruthi comes either in the <strong>classic</strong> version with only 4 knobs
+below the screen; or the <strong>XT</strong> version which provides hands-on controls
+on all synthesis parameters. The panel of the <strong>XT</strong> version is divided
+into 3 sections: oscillators/mixer/filter ; main control ; and
+modulations (LFOs/envelopes). The main control section is the same on
+the <strong>XT</strong> and on the <strong>classic</strong> versions.</p>
+<p>The main control section consist of the following elements:</p>
+<ul>
+<li>The LCD or OLED display shows, most of the time, the name and value
+    of the 4 parameters that can be directly edited with the
+    potentiometers under the screen. When a parameter is modified, the
+    display temporarily shows the full name of the parameter and its
+    value. In some other circumstances, the display might show a
+    confirmation messages, the content of a sequence, etc.</li>
+<li>The clickable encoder can be used to navigate between
+    parameters/pages, or to step through the values of a parameter.</li>
+<li>The four potentiometers below the display modify the synthesis
+    parameters currently displayed on the active page.</li>
+<li>The 8 LEDs provide complementary information about the active page.</li>
+<li>The 6 switches facilitate navigation between pages. The switches
+    <strong>S1</strong> to <strong>S4</strong> are used to cycle between groups of related pages ;
+    <strong>S5</strong> is used to switch between the synthesis pages and the
+    sequencer/system pages ; and <strong>S6</strong> is used to bring the load/save
+    page to load and recall presets.</li>
+</ul>
+<p>The following connectors are available on the rear panel:</p>
+<ul>
+<li><strong>1</strong>: 2.1mm DC power jack. The Shruthi can be powered with a
+    7.5V-9V unregulated supply, or with a 9V battery adapter. Make sure
+    that the connector has a <strong>center pin (or tip) positive</strong> / <strong>outer
+    collar (or sleeve) negative pin</strong> polarity. Most universal power
+    supplies allows the polarity to be selected -- the polarity being
+    often represented by a diagram like this: - (o +, or by the
+    indication <em>tip: +</em>. The power supply has a reverse polarity
+    protection.</li>
+<li><strong>2</strong>: MIDI in. This input should be connected to the MIDI out port
+    of a sound card, master keyboard, sequencer...</li>
+<li><strong>3</strong>: MIDI out. This output can be used as a MIDI thru, but also to
+    transmit the notes generated by the Shruthi's internal sequencer,
+    backup data, or for polychaining units.</li>
+<li><strong>4</strong>: Line-level, mono audio output.</li>
+<li><strong>5</strong>: Line-level, mono audio input. Note that the external audio
+    signal flows through the VCF and the VCA - you won't hear anything
+    until a note or sequence is played by the Shruthi to "open" the VCA.</li>
+</ul>
+<p>In addition to the extra knobs for editing synthesis parameters, the
+<strong>XT</strong> additionally features:</p>
+<ul>
+<li>An on/off switch on the back panel.</li>
+<li>A global <strong>volume</strong> knob.</li>
+<li>A <strong>Jam</strong> button which holds a note and starts the
+    sequencer/arpeggiator.</li>
+</ul>
+<h3 id="controls-and-navigation">Controls and navigation</h3>
+<h4 id="pages">Pages</h4>
+<p>The Shruthi parameters are edited by blocks of four (one per
+potentiometer). A set of four related parameters are grouped together on
+a <em>page</em>. For example, the <strong>Filter</strong> page will assign the four
+following functions to the four potentiometers: filter cutoff, filter
+resonance, envelope to filter modulation, LFO to filter modulation. The LEDs <strong>L1</strong>
+to <strong>L6</strong> display the currently active page. Moreover, the display is
+constantly showing which knob does what in the current page. For
+example, if the filter page is active, the display will show:</p>
+<pre><code> Cut res env lfo
+ 110   0  10   0
+</code></pre>
+<p>Pages are bundled together in groups, and repeatedly pressing one of the
+group switches cycles between the different pages in this group. For
+example, pressing <strong>S1</strong> cycles between the oscillator 1 page, the
+oscillator 2 page, and the mixer page.</p>
+<p>Pages are also grouped into two large categories: one category contains
+all the pages related to sound synthesis -- the ones you'll navigate in
+when creating a sound -- and another category contains all the pages
+related to sequencing and to system settings. The switch <strong>S5</strong> is used
+to toggle between the two categories. When the <strong>synthesis</strong> category is
+active, the LED on top of <strong>S5</strong> is lit. When the <strong>sequencer</strong> category
+is active, this LED is not lit. The switches <strong>S1</strong>, <strong>S2</strong>, <strong>S3</strong> and
+<strong>S4</strong> cycle through different groups of pages as shown on this diagram:</p>
+<p><img alt="" src="../../static/images/shruthi_pages.png" /></p>
+<p>The upper list shows the pages in the <strong>synthesis</strong> category accessible
+from each switch, the lower list shows the pages in the <strong>sequencer</strong>
+category. <strong>L7</strong> indicates which page category is active, and the leds
+<strong>L1-L6</strong> show which page is active.</p>
+<p>Here's an example. The Shruthi displays:</p>
+<pre><code> Cut res env lfo
+ 110   0  10   0
+</code></pre>
+<p><strong>L7</strong> is lit (synthesis category) and <strong>L3</strong> is lit: the <strong>filter</strong>
+page is active.</p>
+<p>Press <strong>S1</strong> to jump into the <strong>oscillators</strong> group. <strong>L1</strong> is lit, and
+the screen is now displaying:</p>
+<pre><code> Sha prm rng sub
+ saw   0   0 tr1
+</code></pre>
+<p>Press <strong>S1</strong> again to move to the next page in the <strong>oscillators</strong>
+group. <strong>L2</strong> is now lit, the screen is displaying:</p>
+<pre><code> Sha prm rng tun
+ squ  16 -12  12
+</code></pre>
+<p>Now press <strong>S5</strong> to switch to the <strong>sequencer</strong> category. <strong>L7</strong> is now
+off, <strong>L1</strong> is lit. The active page is the <strong>clock</strong> page:</p>
+<pre><code> Mod bpm gro amt
+ stp 120 swi   0
+</code></pre>
+<p>Press <strong>S5</strong> again to get back to the <strong>synthesis</strong> category. <strong>L7</strong> is
+on, and you are back to the <strong>oscillator 2</strong> page.</p>
+<h4 id="editing">Editing</h4>
+<p>When a page is active, a summary of the four parameters modified by each
+potentiometer is displayed on screen. While tweaking a potentiometer,
+the full parameter name, its value, and the page name, are temporarily
+displayed on the screen:</p>
+<pre><code>filter
+cutoff 89
+</code></pre>
+<p>After a short delay, the four parameters page summary is shown again.</p>
+<p>On the Shruthi <strong>XT</strong>, modifying any parameter through the switches or
+buttons on each side of the central section also brings this temporary
+display.</p>
+<h4 id="using-the-encoder">Using the encoder.</h4>
+<p>When the Shruthi is displaying a page summary, the rotary encoder can be
+used to scroll through the parameters. The name of the active parameter
+is capitalized. For example, resonance is here the active parameter:</p>
+<pre><code> cut Res env lfo
+ 110   0  10   0
+</code></pre>
+<p>Rotate the encoder clockwise to make <strong>env</strong> the active parameter,
+rotate the encoder counter-clockwise to make <strong>cut</strong> the active
+parameter. If you continue rotating the encoder clockwise for several
+steps, the next page, <strong>env 1</strong>, will be shown, and its first parameter,
+<strong>atk</strong>, will become selected. Once a parameter is selected, click the
+encoder to edit it. The encoder is now used to increment/decrement the
+parameter value. Once the value has been set, click on the encoder again
+to move back to the 4 parameter summary.</p>
+<p>Note that potentiometer and encoder editing can be combined. For
+example, use a potentiometer to quickly adjust a parameter, and then,
+while the parameter name is still displayed on the screen, use the
+encoder to fine-tune it.</p>
+<p>A last trick: if you hold S6 while rotating the encoder, it will
+increment/decrement by 10 instead of 1. This is particularly useful for
+browsing long lists of patches...</p>
+<p>That's all you need to know about the pages/navigation system!</p>
+<h4 id="display-status-symbols">Display status symbols</h4>
+<p>The Shruthi sometimes flashes a symbol on the first line of the display
+to signal incoming MIDI messages or the completion of specific commands.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Symbol</th>
+<th align="left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">(note icon)</td>
+<td align="left">A Note On MIDI message has been received</td>
+</tr>
+<tr>
+<td align="left">(pitch bend lever icon)</td>
+<td align="left">A pitch bend message has been received</td>
+</tr>
+<tr>
+<td align="left"><strong>\~</strong></td>
+<td align="left">A control change message has been received</td>
+</tr>
+<tr>
+<td align="left"><strong>!</strong></td>
+<td align="left">The Shruthi is busy accessing memory - this can interrupt sound generation</td>
+</tr>
+<tr>
+<td align="left"><strong>x</strong></td>
+<td align="left">The patch has been reset to initial settings</td>
+</tr>
+<tr>
+<td align="left"><strong>?</strong></td>
+<td align="left">The patch has been randomized</td>
+</tr>
+<tr>
+<td align="left"><strong>&gt;</strong></td>
+<td align="left">Patch or sequence SysEx data is being sent</td>
+</tr>
+<tr>
+<td align="left"><strong>+</strong></td>
+<td align="left">Patch or sequence SysEx data has been successfully received</td>
+</tr>
+<tr>
+<td align="left"><strong>#</strong></td>
+<td align="left">The Shruthi has received invalid SysEx data (for example a SysEx message intended for another device)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference">Reference</h2>
+<p>The section describes one by one all the parameters accessible on the
+<strong>synthesis</strong> and <strong>sequencer</strong> pages.</p>
+<h3 id="synthesis">Synthesis</h3>
+<p>Before digging into the pages details, here is a diagram of the Shruthi
+signal flow.</p>
+<p><img alt="" src="../../static/images/shruthi_architecture.png" /></p>
+<p>The audio signal flow is represented in red (digital path) and then in
+orange (analog path):</p>
+<ul>
+<li>The oscillators 1 and 2 generate digital waveforms, which are
+    combined together by the modulator. The default modulator is a
+    balance control over the level of the two oscillators, but more
+    esoteric modulation methods are available.</li>
+<li>The sub-oscillator (which is synchronized in pitch with the
+    oscillator 1, but 1 octave lower) also generates a basic waveform.</li>
+<li>The click generator generates a short transient/click at the
+    beginning of the note. Note that the sub-oscillator and the click
+    generator cannot be used at the same time. It's bassy-beefy or
+    clicky, not both.</li>
+<li>The output of the modulator, the sub-oscillator/click-generator and
+    some additional noise are mixed together. You can adjust the balance
+    of each ingredient.</li>
+<li>The result is converted into a pseudo analog (10 MHz / 1bit) audio
+    signal, and mixed in the analog domain with an external signal
+    coming from the <strong>Audio in</strong> jack.</li>
+<li>The result is then sent to an analog VCF and VCA, to produce the
+    final audio signal. Some filter boards might offer other signal
+    transformations such as additional filters, effects, distortions...</li>
+</ul>
+<p>Each of these modules have parameters (represented by the blue arrows)
+which can be controlled by any of the modulation sources listed below.
+However, some connections are already "hardwired" (or rather "softwired"
+in the firmware):</p>
+<ul>
+<li>The oscillators' pitch always track the note played on the keyboard.</li>
+<li>The filter cutoff frequency always tracks the note. Again, this can
+    be disabled or attenuated by applying a negative modulation from
+    note pitch to cutoff frequency. The rationale behind this choice is
+    that most of the time, you want 1:1 tracking, so this frees up a
+    slot in the modulation matrix for something more interesting!</li>
+<li>Lfo 2 and Envelope 1 are always connected to the filter, their
+    modulation amount being controlled by dedicated parameters on the
+    <strong>filter</strong> page.</li>
+</ul>
+<p>The following routing programmed in the <code>init</code> patch:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Source</th>
+<th align="left">Destination</th>
+<th align="left">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Lfo 1</td>
+<td align="left">Oscillator 1 coarse pitch</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Lfo 1</td>
+<td align="left">Oscillator 2 coarse pitch</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Lfo 2</td>
+<td align="left">Oscillator 1 PWM</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Lfo 2</td>
+<td align="left">Oscillator 2 PWM</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Lfo 2</td>
+<td align="left">Oscillators balance</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Step sequencer</td>
+<td align="left">Oscillators balance</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Velocity</td>
+<td align="left">Oscillator 1 PWM</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Velocity</td>
+<td align="left">Oscillator 2 PWM</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Envelope 2</td>
+<td align="left">VCA gain</td>
+<td align="left">100%</td>
+</tr>
+<tr>
+<td align="left">Velocity</td>
+<td align="left">VCA gain</td>
+<td align="left">25%</td>
+</tr>
+<tr>
+<td align="left">Bender</td>
+<td align="left">Oscillator 1+2 fine pitch</td>
+<td align="left">2 semitones</td>
+</tr>
+<tr>
+<td align="left">LFO</td>
+<td align="left">Oscillator 1+2 fine pitch (vibrato)</td>
+<td align="left">2 semitones</td>
+</tr>
+</tbody>
+</table>
+<h4 id="oscillator-1">Oscillator 1</h4>
+<pre><code> Sha prm rng sub
+ saw   0   0 sq1
+</code></pre>
+<ul>
+<li><strong>sha (shape)</strong>: Oscillator 1 waveform shape.</li>
+<li><strong>prm (parameter)</strong>: Oscillator 1 parameter. This changes the timbre
+    of the generated waveform, in a waveform-specific way (see below).</li>
+<li><strong>rng (range)</strong>: Oscillator 1 pitch, from -24 semitones to 24
+    semitones (relative the pitch of the MIDI note).</li>
+<li><strong>sub (subosc)</strong>: Sub-oscillator shape (see below).</li>
+</ul>
+<p>The following is a list of all the available waveforms, with some
+applications and a description of what adjusting the <strong>parameter</strong>
+setting actually does.</p>
+<h5 id="none-silence"><strong>none</strong>: Silence</h5>
+<p>This simply switches off the oscillator. This might be useful for
+filtering/gating external signals, or to temporarily mute an oscillator
+when editing a patch.</p>
+<h5 id="saw-sawtooth"><strong>saw</strong>: Sawtooth</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_1.png" /></p>
+<p>This waveform is perfect for basses and brass sounds. The parameter
+controls the waveshapping - when its value is increased, an increasingly
+large section of the waveform is shifted up. Note that this is not
+intended to be a perfect, drawn with a ruler, sawtooth. It contains a
+bit of high-pass filtering to make it sound more Juno-y. This waveform
+is band-limited. Thus, only a limited amount of aliasing artifacts will
+be heard when playing high-pitched notes.</p>
+<h5 id="square-square-wave"><strong>square</strong>: Square wave</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_2.png" /></p>
+<p>The parameter controls the pulse-width. This waveform is perfect for
+simulating a clarinet, for basses, "hollow" sounds or Depeche Mode-like
+leads. Note that this is not intended to be a perfect, drawn with a
+ruler, square wave. It contains a bit of high-pass filtering to make it
+sound more Juno-y. This waveform is band-limited and only a limited
+amount aliasing will be heard when playing high-pitched notes.</p>
+<p>Note that there's a slight difference in sound when moving the parameter
+from 0 to 1. To offer the best sound quality, the pulse width = 50%
+flavor is read straight from a wavetable at full sample rate, while the
+pulse width &gt; 50% flavor is obtained from two dephased sawtooth
+waves, evaluated at half the sample rate. For bass sounds, for which
+aliasing is not going to be a problem, it is recommended to use <strong>pwm</strong>
+instead of <strong>square</strong> to get a beefier sound.</p>
+<h5 id="triang-triangle"><strong>triang</strong>: Triangle</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_3.png" /></p>
+<p>A pure waveform, which serves as a good basis for flute or
+soundchip-like leads. The parameter controls some kind of waveshapping,
+clipping the bottom of the waveform. This waveform is band-limited and
+will still sound fine above C5.</p>
+<h5 id="zsaw-phase-distortion-sawtooth-with-filter-sweep"><strong>zsaw</strong>: Phase-distortion sawtooth with filter sweep</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_4.png" /></p>
+<p>This waveform uses phase distortion to recreate a low-pass filtered
+sawtooth by progressively "pinching" the phase of a sine wave. The
+parameter controls the brightness of the sound: from a sine wave to a
+sawtooth, then from a sawtooth to a sawtooth gone through an ugly
+transistor amp. Good for dirty bass guitar sounds or clavinets.</p>
+<h5 id="zreso-phase-distortion-sawtooth-with-resonant-filter-sweep"><strong>zreso</strong>: Phase-distortion sawtooth with resonant filter sweep</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_5.png" /></p>
+<p>This waveform uses phase distortion to recreate a sawtooth sent through
+a low-pass filter with high resonance. The parameter controls the
+resonance frequency. Useful for doubly-filtered sounds, formants, or
+anything where its synthetic, cheesy, feel will shine.</p>
+<h5 id="ztri-phase-distortion-resonant-triangle-monster"><strong>ztri</strong>: Phase-distortion resonant triangle monster</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_6.png" /></p>
+<p>This thing is hard to describe and must be experienced. It sounds like a
+resonant filter sweep, but has a very hollow, synthetic quality. It may
+or may not have been in the Casio CZ-101. This waveform is likely to
+result in whacky sounds, vaguely evoking hardsync.</p>
+<h5 id="zpulse-phase-distortion-trapezoidal-creature"><strong>zpulse</strong>: Phase-distortion trapezoidal creature</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_7.png" /></p>
+<p>Yet another waveform that makes little sense. When the parameter is set
+to 0, it sounds like a fat superposition of a square wave and a
+sawtooth. Sweeping the parameter value progressively increases what
+sounds like the resonance of an odd, goofily saturated analogue filter.</p>
+<h5 id="zsync-phase-distortionself-sync-trick"><strong>zsync</strong>: Phase-distortion/self-sync trick</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_8.png" /></p>
+<p>You know the trick: one oscillator playing a low-frequency square wave
+and another oscillator a higher-frequency sine wave, the first one
+resetting the phase of the second... and the two of them sent into a
+ring-modulator! Now roll this into one single sound generator, the
+parameter of which controls the frequency ratio of the two oscillators:
+we call it zsync... The resulting sound is close to a Jew's harp or
+<a href="http://en.wikipedia.org/wiki/Morsing">Morsing</a> - band-passey and
+formantey.</p>
+<h5 id="pad-stack-of-4-detuned-sawtooth-waves"><strong>pad</strong>: Stack of 4 detuned sawtooth waves</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_9.png" /></p>
+<p>As the name implies, this waveform made of four stacked sawtooth waves
+is useful for pads (when a copious amount of filtering is applied) or
+for harsh trance leads. The parameter controls the amount of detuning
+between the four waves. Note that no bandlimiting is happening here, so
+this thing doesn't sound quite good above C5... but it's doing a perfect
+job in the bass range!</p>
+<h5 id="fm-minimal-2-operators-fm"><strong>fm</strong>: Minimal 2-operators FM</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_10.png" /></p>
+<p>The parameter controls the modulation strength. This oscillator provides
+the base material for metallic sounds, bells, metallophones, or the next
+386 DX hit.</p>
+<p>When the fm oscillator is selected, the <strong>range</strong> parameter plays a slightly different role than usual: instead of controlling the main pitch of the note, it controls the modulator frequency, and has a drastic impact on the timbre.</p>
+<h5 id="waves-tampur-digitl-metall-bowed-slap-organ-male-wavetables-wavetables-wavetables"><strong>waves</strong>, <strong>tampur</strong>, <strong>digitl</strong>, <strong>metall</strong>, <strong>bowed</strong>, <strong>slap</strong>, <strong>organ</strong>, <strong>male</strong>: wavetables, wavetables, wavetables!</h5>
+<p>All these waveforms are wavetables, comprising 16 single-cycle
+waveforms. The parameter scans the wavetable, smoothly interpolating
+between each waveform. Some of these tables are "transwaves": the single
+cycle waveforms were extracted from different "stages" of a sample, and
+you can somehow recreate the original sample by using an envelope that
+will sweep the parameter from 0 to 127.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_11.png" /></p>
+<p><strong>waves</strong> are 16 basic waveforms, or rather two series of 8 basic
+waveforms: waveforms 9-16 are one octave higher.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_12.png" /></p>
+<p><strong>tampur</strong> is a transwave extracted from a looped
+<a href="http://en.wikipedia.org/wiki/Tambura">Tampura</a> note.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_13.png" /></p>
+<p><strong>digitl</strong> is a PPG-wave classic.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_14.png" /></p>
+<p><strong>metall</strong> is made from single cycle waveforms extracted from classic
+D50 patches.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_15.png" /></p>
+<p><strong>bowed</strong> is a transwave extracted from cello sounds.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_16.png" /></p>
+<p><strong>slap</strong> is a transwave extracted from an SQ-80 slap bass patch.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_17.png" /></p>
+<p><strong>organ</strong> contains 16 different mixtures of pure tones, ready for some
+"Light my fire" action.</p>
+<p><img alt="" src="../../static/images/shruthi_wave_18.png" /></p>
+<p><strong>male</strong> is another PPG-wave classic, it sounds vaguely like a human
+male voice.</p>
+<h5 id="user-user-wavetable"><strong>user</strong>: user wavetable</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_19.png" /></p>
+<p>This wavetable has two peculiarities: it is smaller than the other ones
+(8 single cycle waveforms, each of them being 129 samples long), and it
+resides in RAM instead of residing in flash ROM. By default, it is
+loaded with the same content as <strong>digitl</strong>, but its content can be
+altered by <a href="#sysex">SysEx messages</a>. You can find
+<a href="../../static/downloads/user_wavetables.zip">here</a>
+some examples of MIDI files containing user wavetables.</p>
+<h5 id="8bits-bitwise-anarchy"><strong>8bits</strong>: bitwise anarchy</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_20.png" /></p>
+<p>A palette of 8-bits sounding waveforms obtained by applying bitwise
+operations to a basic sawtooth wave (something now known as
+"biscuiting").</p>
+<h5 id="crush-bit-crushed-sine-and-triangle-wave"><strong>crush</strong>: bit-crushed sine and triangle wave</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_21.png" /></p>
+<p>From 0-63, this oscillator will produce a bit-crushed sine wave ; 63
+corresponding to the maximum amount of decimation. From 64-127, this
+will produce a bit-crushed triangle wave, 64 corresponding to the
+maximum amount of decimation. As a result, the transition from the two
+waveforms is smooth since the bit-crushing is very heavy when the two
+ends meet. A parameter value near 120 yields a very typical <em>NES bass</em>
+sound.</p>
+<h5 id="pwm-my-first-arduino-synth"><strong>pwm</strong>: my first Arduino synth</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_22.png" /></p>
+<p>This waveform is a shamelessly naive square wave. The parameter controls
+the pulse-width. Contrary to <strong>square</strong>, this waveform stinks aliasing -
+but for notes below C2 it is not a real problem: it becomes much more
+aggressive and "in your face" than <strong>square</strong>.</p>
+<h5 id="noise-filtered-noise-generator"><strong>noise</strong>: Filtered noise generator</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_23.png" /></p>
+<p>The parameter controls the frequency of a simple 1-pole
+low-pass/high-pass filter in which is sent white noise. From 0 to 63,
+high-frequency content is progressively added. From 63 to 127,
+low-frequency content is progressively removed. Perfect as a raw
+material for percussions or sound effects.</p>
+<h5 id="vowel-low-tech-formant-synthesis"><strong>vowel</strong>: Low-tech formant synthesis</h5>
+<p><img alt="" src="../../static/images/shruthi_wave_24.png" /></p>
+<p>Changing the parameter will sweep between different vocal-like sounds
+(14 vowels and 2 consonants). Now. Spell. Daftpunk.</p>
+<h5 id="remaining-wavetables">Remaining wavetables...</h5>
+<p>The remaining waveforms are an additional selection of wavetables. Some
+of them, like <strong>cello</strong> or <strong>vibes</strong>, are made of single-cycle waveforms
+extracted from samples. The others are inspired by some PPG classics!</p>
+<p>That's it for the oscillators waveforms. Oscillator 1 is linked to a
+sub-oscillator / transient generator. The first 6 settings correspond to
+the sub-oscillator, which is an oscillator of its own, playing always
+one or two octave lower than the oscillator 1. The next settings disable
+the sub-oscillator and enable various transient generators, which will
+produce a short, clicky sound at the beginning of the note:</p>
+<ul>
+<li><strong>sq1</strong> square sub-oscillator, 1 octave below osc. 1</li>
+<li><strong>tr1</strong> triangle sub-oscillator, 1 octave below osc. 1</li>
+<li><strong>pl1</strong> 25% pulse sub-oscillator, 1 octave below osc. 1</li>
+<li><strong>sq2</strong> square sub-oscillator, 2 octaves below osc. 1</li>
+<li><strong>tr2</strong> triangle sub-oscillator, 2 octaves below osc. 1</li>
+<li><strong>pl2</strong> 25% pulse sub-oscillator, 2 octaves below osc. 1</li>
+<li><strong>click</strong> produces a discrete click (more obvious on sine/organ
+    sounds).</li>
+<li><strong>glitch</strong> produces a sound similar to that of a skipping CD.</li>
+<li><strong>blow</strong> is a burst of noise with a slow attack.</li>
+<li><strong>metal</strong> adds a metallic sounding, high-pitched click.</li>
+<li><strong>pop</strong> adds a low-pitched discontinuity.</li>
+</ul>
+<p>The transient generator can be used for instance to add some punch to
+metallic-sounding or FM sounds, or for percussive effects.</p>
+<h4 id="oscillator-2">Oscillator 2</h4>
+<pre><code> Sha prm rng tun
+ saw   0   0   0
+</code></pre>
+<ul>
+<li><strong>sha (shape)</strong>: Oscillator 2 waveform shape. The available
+    waveforms are the same as for oscillator 1.</li>
+<li><strong>prm (parameter)</strong>: Oscillator 2 parameter.</li>
+<li><strong>rng (range)</strong>: Oscillator 2 pitch transposition, from -24
+    semitones to 24 semitones.</li>
+<li><strong>tun (detune)</strong>: Fine detuning of Oscillator 2.</li>
+</ul>
+<h4 id="mixer">Mixer</h4>
+<pre><code> Op. mix sub noi
+ sum  32   0   0
+</code></pre>
+<ul>
+<li><strong>op (operator)</strong>: Modulation operator (see below).</li>
+<li><strong>mix (osc bal)</strong>: Oscillator 1&amp;2 balance. Might do something
+    different than balance when an operator different from <strong>sum</strong> is
+    selected (see the Oscillator 1 section).</li>
+<li><strong>sub (sub osc.)</strong>: Sub oscillator or transient generator level.</li>
+<li><strong>noi (noise)</strong>: Noise level.</li>
+</ul>
+<p>The <strong>operator</strong> parameter controls how oscillator 1 and oscillator 2
+are blended together. The different modulation modes are:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Operator</th>
+<th align="left">Description</th>
+<th align="left">What does the <em>mix</em> parameter do?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sum</td>
+<td align="left">Mixing</td>
+<td align="left">Adjusts the oscillator 1&amp;2 balance</td>
+</tr>
+<tr>
+<td align="left">sync</td>
+<td align="left">Mixing and synchronization: oscillator 2's phase is reset whenever oscillator 1's phase is reset. You won't hear the detuning, but instead a timbral modulation</td>
+<td align="left">Adjusts the oscillator 1&amp;2 balance</td>
+</tr>
+<tr>
+<td align="left">ring</td>
+<td align="left">Ring modulation - oscillators' signals are scaled and multiplied</td>
+<td align="left">Balance between the original sound and the output of the modulator</td>
+</tr>
+<tr>
+<td align="left">xor</td>
+<td align="left">XOR modulation. The bits of oscillator 1 and 2's digital values are exclusive-or'ed, and the result is shifted</td>
+<td align="left">Shifts the output, with overflow</td>
+</tr>
+<tr>
+<td align="left">fuzz</td>
+<td align="left">Fuzz. Oscillator 1 and 2 are equally mixed and sent to a waveshapper with a warm tanh response</td>
+<td align="left">Fuzz amount</td>
+</tr>
+<tr>
+<td align="left">&gt;&gt; 4</td>
+<td align="left">Oscillator 1 and 2 are mixed and sent through a dirty 4x sample rate reduction</td>
+<td align="left">Oscillator 1&amp;2 balance</td>
+</tr>
+<tr>
+<td align="left">&gt;&gt; 8</td>
+<td align="left">Oscillator 1 and 2 are mixed and sent through a dirty 8x sample rate reduction</td>
+<td align="left">Oscillator 1&amp;2 balance</td>
+</tr>
+<tr>
+<td align="left">fold</td>
+<td align="left">Oscillator 1 and 2 are mixed and sent through a foldback distortion</td>
+<td align="left">Distortion amount</td>
+</tr>
+<tr>
+<td align="left">bits</td>
+<td align="left">Oscillator 1 and 2 are mixed and sent through a bit depth reducer</td>
+<td align="left">Bit depth reduction amount</td>
+</tr>
+<tr>
+<td align="left">duo</td>
+<td align="left">Duophony</td>
+<td align="left">Adjusts the oscillator 1&amp;2 balance</td>
+</tr>
+<tr>
+<td align="left">2steps</td>
+<td align="left">Oscillator 1 / 2 cycling</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">4steps</td>
+<td align="left">Sound source cycling</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">8steps</td>
+<td align="left">Sound source cycling</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">seqmix</td>
+<td align="left">Sound source cycling</td>
+<td align="left">-</td>
+</tr>
+</tbody>
+</table>
+<p>A few words about the last fancy modulation modes...</p>
+<p>In <strong>duophony</strong> mode, you can play two-note chords (or bass + melody).
+The first note of the chord will be assigned to oscillator 1, and the
+second note will be assigned to oscillator 2, like on the ARP Odyssey or
+the Polivoks. This works best when <strong>mix</strong> is set to 32 and when
+oscillator 1 and 2 are set to the same settings (otherwise small
+differences in timing can result in drastic changes as both notes of the
+chord will be assigned to different oscillators). If you play more than
+2 notes, the least recently played note will be assigned to oscillator
+2, the most recently played note to oscillator 1 ; and the other notes
+are ignored. The sub-oscillator follows the least recently played note.
+Note that the Shruthi is by design a monosynth, with one set of
+envelopes &amp; LFOs, and one filter / VCA - both notes will go through the
+same filter and have the same envelope, resulting in a kind of weird
+paraphonic effect. Don't be surprised if you encounter pitch jumps,
+envelope clicks, weird voicing, or if things do not sound and feel as
+good as on a polysynth - all these are due to stubbornly trying to fit
+duophony into an essentially monophonic design. Ironically, the duophony
+mode works best with the arpeggiator - it will move through the chord in
+pairs of notes. Try it!</p>
+<p>In <strong>2steps</strong> mode, oscillator 1 and oscillator 2 are alternatively on
+and off at each new note.</p>
+<p>In <strong>4steps</strong> mode, oscillator 1, oscillator 2, the sub oscillator and
+the noise source are alternatively on and off at each new note. The
+first note you play is played by the sub-oscillator ; the second note by
+oscillator 1 ; the third by the noise source ; the fourth by oscillator
+2. Try this with the arpeggiator and you get a mini drum pattern!
+<strong>8steps</strong> does the same thing, but with a more complex cha-cha rhythmic
+pattern.</p>
+<p>Finally, in <strong>seqmix</strong> mode, the on/off status of the oscillators / sub
+/ noise is controlled by the values in the step sequencer. 1 = osc 1 ; 2
+= osc 2 ; 4 = sub ; 8 = noise ; and these values can be added up for
+combinations (osc 1 + noise = 1 + 8 = 9). The following table enumerates
+all combinations:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Step sequencer value</th>
+<th align="left">Osc 1</th>
+<th align="left">Osc 2</th>
+<th align="left">Sub</th>
+<th align="left">Noise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">a</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">b</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">c</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">d</td>
+<td align="left">X</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">e</td>
+<td align="left">-</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">f</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">X</td>
+<td align="left">X</td>
+</tr>
+</tbody>
+</table>
+<p>You can thus use this mode for programming simple drum patterns in the
+step sequencer - using the sub oscillator as a bass drum and the noise
+as a snare drum, and interweaving notes from the oscillators between the
+drum notes.</p>
+<h4 id="filter">Filter</h4>
+<pre><code> Cut res env lfo
+  66   0  16  37
+</code></pre>
+<ul>
+<li><strong>cut (cutoff)</strong>: Filter cutoff frequency.</li>
+<li><strong>res (resonance)</strong>: Filter resonance.</li>
+<li><strong>env (env1-&gt;vcf)</strong>: Modulation amount from envelope 1 to VCF. If
+    you want to set a negative modulation amount, you can patch env1 to
+    the VCF in the modulations section and ignore this parameter.</li>
+<li><strong>lfo (lfo2-&gt;vcf)</strong>: Modulation amount from LFO 2 to VCF. Again,
+    if you want to set a negative modulation amount, you can patch the
+    LFO 2 to the VCF in the modulations section and ignore this
+    parameter.</li>
+</ul>
+<p>Note that a second page of filter settings might be available if a
+special filter board is used - for example, the dual multimode filter
+board has a second menu with the cutoff/resonance of the second filter,
+or the filter mode settings. Please refer to the documentation specific
+to each filter board!</p>
+<h4 id="envelope-1-2">Envelope 1 / 2</h4>
+<pre><code> Atk dec sus rel
+   0  44  20  60
+</code></pre>
+<ul>
+<li><strong>atk (attack)</strong>: Envelope attack time.</li>
+<li><strong>dec (decay)</strong>: Envelope decay time.</li>
+<li><strong>sus (sustain)</strong>: Envelope sustain level.</li>
+<li><strong>rel (release)</strong>: Envelope release time.</li>
+</ul>
+<p>Note that the envelopes are not linear, but have a moderate exponential
+slope for snappier action.</p>
+<h4 id="lfo-1-2">LFO 1 / 2</h4>
+<pre><code> Sha rat atk mod
+ tri  52   0 fre
+</code></pre>
+<ul>
+<li><strong>sha (shape)</strong>: LFO waveform. The available LFO waveforms are:
+    triangle, square, sample&amp;hold, ramp (sawtooth), step (cycles through
+    the sequence of values programmed in the step sequencer). 16
+    additional waveforms named \~1 to \~16 are also available. They are
+    directly taken from one of the wavetables, are intended to be used
+    with slow frequencies, and are very good at mimicking the sounds of
+    machines or... human organs.</li>
+<li><strong>rat (rate)</strong>: LFO rate.</li>
+<li><strong>atk (attack)</strong>: LFO rise time. When this setting is non-zero, the
+    LFO will take some amount of time to reach its maximum amplitude</li>
+<li><strong>mod</strong>: LFO synchronization mode: when set to <strong>free</strong>, the LFO is
+    free-running. When set to <strong>slave</strong>, the phase of the LFO is reset
+    every time a new note is played. When set to <strong>master</strong>, the LFO
+    will retrigger the envelope (LFO 1 retriggers envelope 1 and LFO 2
+    envelope 2). Finally, when set to <strong>1 shot</strong> the LFO will turn into
+    a single-cycle envelope triggered on every key press.</li>
+</ul>
+<p>Among the choices of LFO rates, the first values, which are prefixed by
+a "x", are tempo-synchronized settings. The number following the X
+corresponds to the number of sequencer steps that will be used to set up
+the LFO period: <strong>x16</strong> simply means that the LFO will go through one
+cycle over the duration of 16 sequencer steps (4 beats). For example, if
+you set the LFO to a ramp, with a rate of <strong>x4</strong>, and map it to the
+cutoff, the cutoff will raise over the duration of a beat and return to
+a low value at the beginning of each beat. With a <strong>x2</strong> or <strong>x1</strong> rate,
+square LFO mapped to the VCA, you can get old-school trancey gater
+effects. With a <strong>x2</strong> rate, sample&amp;hold LFO mapped to the cutoff and
+the basic arpeggiator pattern, with high resonance, you get a random
+bleeping at every note.</p>
+<h4 id="modulation-matrix">Modulation matrix</h4>
+<p>In this page, the routing between the modulation sources and
+destinations is configured. The first important thing about this page is
+that it works a bit differently from the others: the potentiometer
+<strong>P1</strong> is used to select a patchcord, while <strong>P2</strong>, <strong>P3</strong> and <strong>P4</strong>
+are used to edit it.</p>
+<p>Here is an example:</p>
+<pre><code> Mod src dst amt
+   1 lf1  ~1   0
+</code></pre>
+<p>This page means: "The patchcord #1 connects the LFO1 to the oscillator
+1 pitch, and the corresponding modulation amount is set to 0". By
+turning the first knob, you can scroll through the different connections
+in place, for example:</p>
+<pre><code> mod src dst amt
+   9 en2 vca  63
+</code></pre>
+<p>"The patchcord #9 connects the envelope 2 to the VCA gain, and the
+corresponding modulation amount is 63".</p>
+<p>Once a patchcord is selected with the first knob, the
+source/destination/amount are edited with the 3 other knobs. Note that
+you can see in details the source and destination when tweaking one of
+those parameters:</p>
+<pre><code>mod en&gt;vca
+amount 62
+</code></pre>
+<p>When editing modulations, <strong>L6</strong> blinks/is dimmed to reflect the value
+of the selected modulation source.</p>
+<p>The modulation sources are, in modern lovers precise order:</p>
+<ol>
+<li><strong>lfo1</strong>, <strong>lfo2</strong>: LFO output (centered).</li>
+<li><strong>stpseq</strong>: Step sequencer output.</li>
+<li><strong>stpsq1</strong>: Step sequencer's little brother 1: it cycles on the
+    first 8 steps of the sequence.</li>
+<li><strong>stpsq2</strong>: Step sequencer's little brother 2: it cycles on the last
+    8 steps of the sequence.</li>
+<li><strong>arp</strong>: Rhythmic gate signal, which outputs a high value when the
+    arpeggiator or sequencer contains a note at the current step, or 0
+    when there is no note.</li>
+<li><strong>mwheel</strong>: Modulation wheel value read from the MIDI input.</li>
+<li><strong>afttch</strong>: Aftertouch value read from the MIDI input.</li>
+<li><strong>bender</strong>: Pitch-bend controller value read from the MIDI input
+    (centered).</li>
+<li><strong>offset</strong>: A boring constant value. This is useful if you want to
+    output a fixed value to one of the CV outs.</li>
+<li><strong>cv1</strong>, <strong>cv2</strong>, <strong>cv3</strong>, <strong>cv4</strong>: Control voltages read from the
+    CV input pins. By default, the input pins are floating, so it's
+    likely that these modulation sources will sound just like noise.
+    These modulation sources do nothing on the Shruthi XT (which does
+    not have extra CV pads).</li>
+<li><strong>cc A</strong>, <strong>cc B</strong>, <strong>cc C</strong>, <strong>cc D</strong>: Value of the Control Change
+    16, 17, 18 and 19.</li>
+<li><strong>noise</strong>: Another noise generator! Mapped to the VCA, makes for
+    some super snares!</li>
+<li><strong>env1</strong>, <strong>env2</strong>: Envelopes.</li>
+<li><strong>velo</strong>: Note velocity.</li>
+<li><strong>random</strong>: A random value updated every time a new note is played.</li>
+<li><strong>note</strong>: Pitch of the currently played note (centered).</li>
+<li><strong>gate</strong>: Keyboard gate signal, null when no key is currently
+    pressed.</li>
+<li><strong>audio</strong>: Digital audio signal produced by the mixer. Please note
+    that since the modulation matrix is recomputed at 976Hz, some
+    serious aliasing is happening here. You're not going to do FM with
+    this thing, most of the time it sounds like crap, but it's something
+    fun to experiment with!</li>
+<li><strong>op. 1</strong>: Operator 1.</li>
+<li><strong>op. 2</strong>: Operator 2.</li>
+</ol>
+<p>The modulation destinations are, in modern lovers precise order:</p>
+<ol>
+<li><strong>pwm1</strong>: Oscillator 1 parameter (can be pulse width, but also
+waveshapping, phoneme, etc. depending on the oscillator type).</li>
+<li><strong>pwm2</strong>: Oscillator 2 parameter (can be pulse width, but also
+waveshapping, phoneme, etc. depending on the oscillator type).</li>
+<li><strong>osc1</strong>: Coarse oscillator 1 pitch, in a -16 / 16 semitones range.
+Also affects the sub-oscillator's pitch.</li>
+<li><strong>osc2</strong>: Coarse oscillator 2 pitch, in a -16 / 16 semitones range..</li>
+<li><strong>osc1+osc2</strong>: Coupled oscillator 1+2 pitch, in a -4 / 4 semitones
+range. Also affects the sub-oscillator's pitch.</li>
+<li><strong>fine</strong>: Fine oscillator 1+2 pitch, in a -1 / 1 semitones range.
+Also affects the sub-oscillator's pitch.</li>
+<li><strong>mix</strong>: Oscillator 1&amp;2 balance (or whatever the modulator does with
+the balance parameter).</li>
+<li><strong>noise</strong>: Noise volume.</li>
+<li><strong>subosc</strong>: Sub-oscillator volume.</li>
+<li><strong>cutoff</strong>: Filter cutoff.</li>
+<li><strong>reso</strong>: Filter resonance.</li>
+<li><strong>vca</strong>: VCA gain.
+13 <strong>cv1</strong>, <strong>cv2</strong>: Control signal for the CV output #1 and #2. When
+a special filter board is used, this controls a parameter of an
+additional sound processing unit, such as a secondary filter, a delay,
+etc. Please refer to the documentation specific to each filter
+board!</li>
+<li><strong>attack</strong>: Envelope 1 and 2 attack speed. For example, map velocity
+to this modulation destination to have a faster attack time on notes
+played with a high velocity.</li>
+<li><strong>tr11</strong>, <strong>a1</strong>, <strong>d1</strong>, <strong>s1</strong>, <strong>r1</strong>: Envelope 1 trigger, attack,
+decay, sustain, release.</li>
+<li><strong>tr12</strong>, <strong>a2</strong>, <strong>d2</strong>, <strong>s2</strong>, <strong>r2</strong>: Envelope 2 trigger, attack,
+decay, sustain, release.</li>
+<li><strong>atk</strong>: Envelope 1 &amp; 2 attack time.</li>
+<li><strong>lfo1</strong>, <strong>lfo2</strong>: Frequency modulation of the two LFOs.</li>
+</ol>
+<p>One thing that requires a bit of clarification is the notion of
+"centered" modulation source. Let's take an example. We have a triangle
+LFO mapped to the filter cutoff, with a modulation amount of 30. If the
+cutoff is set to 80, the actual value of the cutoff will oscillate
+between 50 (80-30) and 110 (80+30). On the other hand, if we have an
+envelope mapped to the cutoff with a modulation amount of 20, the cutoff
+will go from 80 to 120 (80 + 2 * 20), then down to 80 after the
+release. This is something to remember if you want to do PWM, for
+example. If you set the PWM modulation amount to 40, you also have to
+set the oscillator pulse width value to 40, so it will oscillates
+between 40-40 = 0 and 40+40=80. Otherwise, it will spend half of the
+time stuck at 0. But this makes things nicer for vibrato, tremolo,
+wah-wah or growl effects!</p>
+<p><img alt="" src="../../static/images/lfos_are_centered.png" /></p>
+<p>Quirk ahoy! The modulation amount of the last patch cord is adjusted by the
+modwheel. Huh? Let's say you set patch cord 12 to go from LFO 1 to the
+oscillators fine pitch with an amount of 16:</p>
+<pre><code> Mod src dst amt
+  12 lf1   ~  16
+</code></pre>
+<p>This modulation will be applied with an amount proportional to the
+modwheel position - by default it won't be active until you start moving
+the modulation wheel, and to get it at full strength, you'll have to
+push the modulation wheel to the max.</p>
+<h4 id="operators">Operators</h4>
+<p>Press the modulation matrix button twice to bring the operators page. In
+this page, you can configure the two "operators". An operator takes 2
+modulation sources, applies a fancy (or not) mathematical operation on
+them, and the result is made available as a new modulation source in the
+modulation matrix.</p>
+<pre><code> Op. in1 in2 out
+   1 lf1 lf2 add
+</code></pre>
+<p>Use the first setting (<strong>op.</strong>) to select which operator to modify. The
+second and third options allows you to select which modulation
+destination you want to operate on. The last setting is the operation to
+apply:</p>
+<ul>
+<li><strong>add</strong> adds the values of two modulation sources.</li>
+<li><strong>prd</strong> computes the product of the two modulation sources.</li>
+<li><strong>max</strong> takes the maximum of the two sources.</li>
+<li><strong>min</strong> takes the minimum of the two sources.</li>
+<li><strong>xor</strong> totally messes up the two sources.</li>
+<li><strong>[=]{style="text-align:right;"}</strong> outputs a large value if source 1
+    is above soure 2, 0 otherwise.</li>
+<li><strong>[=]{style="text-align:left;"}</strong> outputs a large value if source 1
+    is below soure 2, 0 otherwise.</li>
+<li><strong>qtz</strong> source 1 is quantized into a number of values set up by
+    source 2.</li>
+<li><strong>lag</strong> source 1 is low-pass filtered, with a cutoff frequency set
+    up by source 2.</li>
+</ul>
+<p>There are plenty of things to experiment with... Create a multi-stage
+envelope by taking the max of envelope 1 and 2 ; mask a LFO by the step
+sequencer ; build a chaotic LFO using feedback and xor modulation
+between the two LFOs ; Square the value of a LFO to change its shape...</p>
+<p>Here is a more precise example showing how to low-pass filter a square
+LFO to create a "soft" modulation source routed to the filter. First,
+route the operator 1 output to the filter cutoff:</p>
+<pre><code> Mod src dst amt
+   1 op1 cut  63
+</code></pre>
+<p>Then, specify that operator 1 is LFO1 transformed by a "lag processor".</p>
+<pre><code> Op. in1 in2 out
+   1 lf1  =4 lag
+</code></pre>
+<p>The <strong>in2</strong> is the filtering cutoff frequency. You can try setting this
+to <strong>velocity</strong> too: the harder the note is pressed, the harder the
+edges of the LFO are!</p>
+<p>Here is another example showing how to quantize an envelope to create a
+low-fi "steppy" modulation. First, route the operator 1 output to the
+filter cutoff:</p>
+<pre><code> Mod src dst amt
+   1 op1 cut  63
+</code></pre>
+<p>Then, specify that operator 1 is a quantized version of the envelope 1:</p>
+<pre><code> Op. in1 in2 out
+   1 en1  =4 qtz
+</code></pre>
+<h3 id="sequencer-and-arpeggiator">Sequencer and arpeggiator</h3>
+<p>Before going further, let's get things straight: the Shruthi sequencer
+has little in common with the sequencer of, say, a TB-303: it is not
+intended to be a "press play and let it do all the work" thing. Indeed,
+there's no "play" button on the Shruthi! You have to think of it as an
+arpeggiator-like tool - something to help create complex riffs and
+patterns with limited keyboard action.</p>
+<h4 id="sequencer-mode-and-clock">Sequencer mode and clock</h4>
+<pre><code> Mod bpm gro amt
+ stp 120 swi   0
+</code></pre>
+<ul>
+<li><strong>mod (mode)</strong>: Sequencer/arpeggiator mode. This deserves some
+    generous amount of explanations, please read further!</li>
+<li><strong>bpm (bpm)</strong>: Arpeggiator/step sequencer/LFOs tempo in BPM.
+    <strong>extern</strong> will sync the Shruthi clock to the ticks received from
+    the MIDI input.</li>
+<li><strong>gro (groove)</strong>: groove template. The options are <strong>swing</strong> (uneven
+    distribution of pairs of 1/8th notes), <strong>shuffle</strong> (uneven
+    distribution of pairs of 1/16th notes), <strong>push</strong> (push the beat),
+    <strong>lag</strong> (sloppy drummer!), <strong>human</strong> (humanization) and <strong>monkey</strong>
+    (humanization + shuffle). This setting only has an effect when
+    <strong>amt</strong> is set to a non-zero value. The swing is only applied to the
+    internal clock - not when the Shruthi is slaved to an external MIDI
+    clock.</li>
+<li><strong>amt (amount)</strong>: amount of groove to apply.</li>
+</ul>
+<p>Now let's dig into the sequencer modes...</p>
+<h5 id="stp-step-sequencer-only"><strong>stp</strong>: step sequencer only</h5>
+<p>When <strong>stp</strong> is selected, the arpeggiator and pattern sequencer are
+disabled. The only pulsating, modulating things running are the LFOs and
+the step sequencer.</p>
+<h5 id="arp-arpeggiator"><strong>arp</strong>: arpeggiator</h5>
+<p>When <strong>arp</strong> is selected, the chords played on the keyboard are
+arpeggiated. Releasing the keys for a short amount of time stops the
+arpeggio but keeps the clock ticking. Releasing the keys for a duration
+greater than that of a bar stops the arpeggio and resets the clock -- it
+will restart from the first beat once a chord will be played.</p>
+<h5 id="seq-pattern-player"><strong>seq</strong>: pattern player</h5>
+<p>In this mode, the pattern programmed in the sequencer is triggered by
+playing a note on the keyboard. Depending on the note you play, the
+pattern is transposed: play C4 to play the pattern as recorded, C#4 to
+play it one semi-tone higher, B3 to play it one semi-tone lower, etc.
+The pattern will stop whenever the key is released -- but the clock will
+continue ticking for the duration of a bar - and if a key is pressed
+during this interval, the pattern will resume in time. This mode is most
+useful for playing and transposing a bassline.</p>
+<h4 id="arpeggiator">Arpeggiator</h4>
+<pre><code> Dir rng pat div
+   ?   1   0 /16
+</code></pre>
+<ul>
+<li><strong>dir (direction)</strong>: Arpeggiator direction. The options are up,
+    down, up/down, random, and "as played".</li>
+<li><strong>rng (range)</strong>: Arpeggiator range, in octaves, from 1 to 4.</li>
+<li><strong>pat (pattern)</strong>: Arpeggiator rhythmic pattern. 15 patterns are
+    available (see the chart below). The last option in the list,
+    <strong>sequence</strong> uses the rhythmic pattern programmed in the sequencer.</li>
+<li><strong>div (division)</strong>: This option modifies on which subdivison of the
+    internal or external MIDI clock the arpeggiator and sequencer are
+    aligned.</li>
+</ul>
+<h5 id="arpeggiator-patterns">Arpeggiator patterns</h5>
+<pre><code> 1: o o o o o o o o
+ 2: ooo ooo ooo ooo
+ 3: o o ooooo o oooo
+ 4: o o oo oo o oo o
+ 5: oooo oo oooo oo
+ 6: o  o    o  o    
+ 7: o  o  o o  o  o
+ 8: o  o  o  o  o o
+ 9: o o  o  o  o  o
+10: oo oo oooo oo oo
+11: ooooo oo oo ooo
+12: o   o   o  o o o
+13: o  oo   o o o oo
+14: o     oooooo oo
+15: o       o   o oo
+</code></pre>
+<h4 id="pattern-editor">Pattern editor</h4>
+<p>The pattern editor page is very different from the other pages. Here is
+how it looks like:</p>
+<pre><code> |00| C3 - 7 0 |
+&gt;|01| C3 - 7 0 |
+</code></pre>
+<p>It contains 5 columns, showing, from left to right:</p>
+<ol>
+<li>The step number</li>
+<li>The note at this step</li>
+<li>The rhythmic event at this step: note (represented by a note icon),
+    tie/slide (represented by a -- sign), or rest (empty)</li>
+<li>The velocity (applies only to steps with a note)</li>
+<li>The step sequencer/controller value at this step, from 0 to 15
+    (values from 10 to 15 are represented by the letters a to f)</li>
+</ol>
+<p>The pattern can be edited with the potentiometers. <strong>P1</strong> scrolls
+through the steps, <strong>P2</strong> changes the note at the current step. <strong>P3</strong>
+changes the rhythmic event and velocity value at the current step.
+Finally, <strong>P4</strong> modifies the controller value.</p>
+<p>The encoder can be used to scroll through the steps. Clicking the
+encoder enters the edit mode: a blinking cursor is shown, and the
+encoder is now used to increase/decrease the note value. Clicking the
+encoder again leaves the edit mode.</p>
+<p>While in edit mode, pressing a key on the MIDI keyboard will record the
+note number at the current step, and move to the next step. This can be
+seen as a naive "step by step recording" mode, which can be used while a
+sequence is playing.</p>
+<p>Three important notes:</p>
+<ul>
+<li>The pattern length is by default 16 steps, but this can be changed
+    on the <strong>Rhythmic sequencer</strong> or <strong>Step sequencer</strong> pages.</li>
+<li>The note sequence, rhythmic pattern, and controller (steps) sequence
+    all have the same length.</li>
+<li>The step sequence (controller values) have an effect only when the
+    step sequencer is routed to a modulation destination in the
+    modulation matrix!</li>
+</ul>
+<h4 id="rhythmic-sequencer">Rhythmic sequencer</h4>
+<p>This page shows, on a single screen, the rhythmic content of the bar
+programmed in the pattern editor. It is particularly useful when
+programming a rhythmic pattern for the arpeggiator - a task for which
+the only information that really matter are the note velocities and
+rhythmic events.</p>
+<p>The first line of the screen shows the rhythmic events, the second line
+the programmed velocities:</p>
+<pre><code>xxx x x x---x---
+777 7 6 54443111
+</code></pre>
+<p>Use <strong>P2</strong> to move the cursor, <strong>P3</strong> to change the rhythmic
+event/velocity at the selected step, and <strong>P4</strong> to adjust the pattern
+duration. The encoder can be used for editing too: select a step, click,
+edit the step value, and click again when done.</p>
+<h4 id="step-sequencer">Step sequencer</h4>
+<p>This page shows a different view of the controller values programmed in
+the pattern editor.</p>
+<pre><code>step sequencer
+0000ffffcccc4444
+</code></pre>
+<p>Use <strong>P2</strong> to move the cursor, <strong>P3</strong> to change the controller value at
+the selected step, and <strong>P4</strong> to adjust the pattern duration. The
+encoder can be used for editing too: select a step, click, edit the step
+value, and click again when done.</p>
+<p><strong>P1</strong> can also be used to shift and cycle the sequence.</p>
+<h3 id="tuning-settings">Tuning settings</h3>
+<pre><code> Oct rag prt leg
+   0 equ   0 off
+</code></pre>
+<ul>
+<li><strong>oct (octave)</strong>: Transpose every note by -2, -1, 0, 1 or 2 octaves.</li>
+<li><strong>rag (raga)</strong>: Scale/keyboard mapping.</li>
+<li><strong>prt (portamento)</strong>: Portamento time.</li>
+<li><strong>leg (legato)</strong>: Legato on/off. This option specifies how the
+    Shruthi will interpret overlapping notes. When <strong>legato</strong> is off,
+    the envelope retriggers every time a new note is played, and the
+    portamento is always applied. When <strong>legato</strong> is on, the envelope
+    retriggers only when the new note does not overlap with the previous
+    one, and the portamento triggers only on overlapping notes.</li>
+</ul>
+<p>The different scales/keyboard mappings are:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>equal</strong></td>
+<td>Equal temperament</td>
+</tr>
+<tr>
+<td><strong>just</strong></td>
+<td>Just intonation (frequency ratios to C are rational numbers)</td>
+</tr>
+<tr>
+<td><strong>pythagorean</strong></td>
+<td>Pythagorean scale</td>
+</tr>
+<tr>
+<td><strong>1/4 eb</strong></td>
+<td>E and B are 1/4 tone lower</td>
+</tr>
+<tr>
+<td><strong>1/4 e</strong></td>
+<td>E is 1/4 tone lower</td>
+</tr>
+<tr>
+<td><strong>1/4 ea</strong></td>
+<td>E and A are 1/4 tone lower</td>
+</tr>
+<tr>
+<td><strong>bhaira</strong> ... <strong>rasia</strong></td>
+<td>A bunch of ragas of the <a href="http://en.wikipedia.org/wiki/Maihar_gharana">Maihar gharana</a> . Note that it is not possible to play notes outside of the raga - if you attempt to do so, the previously played note will be retriggered. The suggested mode of operation is to find out which keys are active in the raga, and improvise with them!</td>
+</tr>
+</tbody>
+</table>
+<h3 id="master-tune-and-midi-settings">Master tune and MIDI settings</h3>
+<pre><code> Tun chn mid
+   0   1 ful
+</code></pre>
+<ul>
+<li><strong>tun (tune)</strong>: Master tuning in the -1/+1 semitone range.</li>
+<li><strong>chn (midi chan)</strong>: MIDI channel the Shruthi is tuned to. Use 0 to
+    receive on all channels.</li>
+<li><strong>mid (midi out)</strong>: Data sent to the MIDI out. Refer to <a href="#midi_out">this
+    paragraph</a> from the MIDI implementation section.</li>
+</ul>
+<h3 id="system-settings">System settings</h3>
+<pre><code> Pau sna fil sta
+   8 off lpf spl
+</code></pre>
+<ul>
+<li><strong>pau (pause)</strong>: Duration (in increments of 0.128 seconds) during
+    which the long parameter name and value is shown on screen when a
+    potentiometer is adjusted. When set to 0, the screen always shows
+    the four parameters summary. This setting can also be used to enable
+    a screen-saver: select one of the options prefixed by 's', and the
+    display of the Shruthi will go blank after a few minutes of
+    inactivity. This extends the life of OLED displays (but has no
+    impact on LCD displays!).</li>
+<li><strong>sna (snap)</strong>: Enables potentiometers' "snap" mode. This mode makes
+    it less likely to accidentally change a parameter value when
+    switching pages. Suppose you're tweaking the filter resonance with
+    <strong>P2</strong> -- you rotate it all the way down to 0. Then you switch to
+    the oscillator 1 page to adjust the oscillator 2 parameter. If the
+    current value of the parameter is set to 64, you'll hear a
+    discontinuity, since the value of the parameter will instantly jump
+    to 0 or 1 when you start touching the pot. When <strong>snap</strong> is on,
+    things will happen differently: rotating the pot will have no effect
+    until the position of the pot actually reflects the current value of
+    the parameter. After that, the parameter value will track the
+    potentiometer's position. Another way to explain it: when <strong>snap</strong>
+    is <strong>on</strong> you have to move the pot to "grab" the current parameter
+    value before the parameter is modified.</li>
+<li><strong>fil (filter)</strong>: Enables software extensions for a specific filter
+    board. The default, <strong>lpf</strong> must be selected for the SMR4 filter
+    board. <strong>ssm</strong> must be selected for the legacy SSM2044 filter board.
+    <strong>svf</strong> is for the dual SVF filter board, <strong>dsp</strong> the digital
+    filter, <strong>pvk</strong> the Polivoks filter board, and <strong>dly</strong> the LP2+delay
+    filter board.</li>
+<li><strong>sta (startpage)</strong>: Selects on which page the Shruthi boots (splash
+    screen, filter page, preset load/save page).</li>
+</ul>
+<h2 id="the-loadsave-page">The load/save page</h2>
+<p>The Shruthi can save in persistent memory the following data:</p>
+<ol>
+<li>Patches (16 in internal memory, up to 464 on the external eeprom
+    chip). A patch includes all synthesis parameters and the
+    sequencer/arpeggiator data; at the exception of the tempo/clock
+    settings and the system settings such as MIDI channel,
+    transposition, etc.</li>
+<li>Global settings (in internal memory).</li>
+</ol>
+<p>To load/save a patch, press <strong>S6</strong> from any of the synthesis/sequencer
+editing pages.</p>
+<p>To load/save global settings, press <strong>S6</strong> from the tuning/MIDI settings
+pages, or from the system settings page.</p>
+<h3 id="patch-loadsave-page">Patch load/save page</h3>
+<pre><code>browse :patch
+1 init
+</code></pre>
+<p>The first line shows the action being performed (load, save, or
+compare). The second line shows the program number and its name.</p>
+<h4 id="browsing-the-patch-library">Browsing the patch library</h4>
+<p>Rotate the encoder to browse through the patches. Click the encoder to
+temporarily revert to the patch which was being edited before entering
+the load/save page: <strong>browse</strong> is replaced by <strong>compare</strong> on the screen.
+Click the encoder again to resume browsing patches.</p>
+<p>The Shruthi sends a MIDI program change message whenever a new patch is
+loaded.</p>
+<p>Note that when attempting to load a patch while a sequence or arpeggio
+is currently playing, the sequencer/arpeggiator settings stored with the
+patch are not loaded. This allows you to listen how different patches
+sound while keeping your sequence/arpeggio running.</p>
+<h4 id="saving">Saving</h4>
+<p>When the <strong>browse</strong> page is displayed, press <strong>S6</strong> again to jump to the
+<strong>save</strong> page. A blinking cursor is shown in front of the patch number:</p>
+<pre><code>save   :patch
+_1 init     ok
+</code></pre>
+<ul>
+<li>Click and rotate the encoder to select the program number. Click
+    again when done.</li>
+<li>Rotate the encoder to move the cursor to a letter of the patch name
+    you want to modify. Click and rotate the encoder to change the
+    letter. Click again when done.</li>
+<li>Once the patch number and patch name have been set, move the cursor
+    to the <strong>ok</strong> button. When selected, it will appear in brackets
+    <strong>[]{lang="ok"}</strong>. Click the encoder to confirm... The patch is
+    saved!</li>
+</ul>
+<p>To cancel and leave the <strong>save</strong> page, press any other switch.</p>
+<h4 id="special-functions">Special functions</h4>
+<p>While the <strong>browse</strong> page is displayed, hold <strong>S6</strong> and press:</p>
+<ul>
+<li><strong>S1</strong> to revert the current patch to <strong>init</strong>.</li>
+<li><strong>S2</strong> to program random values into all the parameters of the
+    current patch.</li>
+<li><strong>S3</strong> to dump the current patch to the MIDI output as a SysEx
+    block.</li>
+<li><strong>S4</strong> to bring up the <a href="#backup">global backup page</a>.</li>
+</ul>
+<h3 id="global-settings-save-page">Global settings save page</h3>
+<p>The default values of global settings such as octave transposition, MIDI
+channel, MIDI out mode, etc. are read from internal memory every time
+the Shruthi boots up. To use the current settings as default settings,
+press <strong>S6</strong> while one of the <strong>tuning</strong>, <strong>MIDI</strong> or <strong>system
+settings</strong> pages are displayed. The display will show the following
+confirmation message:</p>
+<pre><code>save midi/kbd
+settings? no
+</code></pre>
+<p>Leds <strong>L1</strong>, <strong>L3</strong>, <strong>L5</strong> and <strong>L7</strong> will be lit. Rotate the encoder
+until <strong>ok</strong> is displayed instead of <strong>no</strong>. Click the encoder to
+confirm.</p>
+<h3 id="global-backup-by-sysex"><a name="backup"></a> Global backup by SysEx</h3>
+<p>The global backup function is accessible by holding <strong>S6</strong> and <strong>S4</strong>
+together from the sequence or patch load pages. A confirmation message
+is displayed:</p>
+<pre><code>start full midi
+backup?       no
+</code></pre>
+<p>Leds <strong>L1</strong>, <strong>L3</strong>, <strong>L5</strong> and <strong>L7</strong> will be lit. Rotate the encoder
+until <strong>ok</strong> is displayed instead of <strong>no</strong>. Click the encoder to
+confirm. The entire content of the Shruthi patch and sequence memory
+will be sent as a sequence of SysEx messages.</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<h3 id="latch">Latch</h3>
+<p>While a note (in <strong>stp</strong> mode), arpeggio (in <strong>arp</strong> mode) or sequence
+(in <strong>seq</strong> mode) is playing, the encoder can be pressed for one second
+to latch the note. Dashes are shown on the display to indicate that the
+latch mode is active - for example:</p>
+<pre><code> Mod-bpm-gro-amt
+ stp 120 swi   0
+</code></pre>
+<p>Note off messages will be ignored. To leave the latch mode, press the
+encoder for one second. This will not immediately stop the
+arpeggiator/sequencer to give you some time to get back into action on
+the keyboard!</p>
+<h3 id="jam-mode">Jam mode</h3>
+<p>The Jam mode allows notes to be played, or sequences/arpeggios to be
+started and transposed without any external MIDI controller.</p>
+<p>On the Shruthi XT, the Jam mode is triggered with a dedicated button on
+the top-right section of the panel. The Jam mode can also be accessed by
+keeping the encoder pressed for one second while no
+note/arpeggio/sequence is playing.</p>
+<p>A note is played and held immediately when entering the Jam Mode. Turn
+the encoder to transpose it by semitone increments. Use the 4 main knobs
+to transpose it by octaves, along a pentatonic scale, or along two
+unusual scales.</p>
+<p>It is still possible to navigate to other pages and to tweak other
+parameters while the Jam mode is active. In this case, pressing the Jam
+button or holding the encoder will simply bring back the Jam mode page
+(root note selection).</p>
+<p>Pressing the Jam button / holding the encoder while the Jam Mode is
+active and the Jam mode page is shown will stop the
+sequencer/arpggio/note.</p>
+<h3 id="hardware-selection">Hardware selection</h3>
+<p>The Shruthi firmware can run on 3 versions of the hardware:</p>
+<ul>
+<li>"Classic" version with 4 knobs.</li>
+<li>"XT classic" - original design by fcd72.</li>
+<li>"XT" - with aluminum panel, sold as a kit.</li>
+</ul>
+<p>The kits are sold with chips already configured for the correct version
+of the hardware. However, you might face the situation in which a chip
+configured for one version of the Shruthi is inserted into another
+version.</p>
+<p>This might lead to unexpected behavior such as flickering values on the
+screen, or buttons not correctly reacting to presses. To configure the
+correct version of the hardware, power the Shruthi on with the encoder
+pressed. The screen displays which version of the hardware is currently
+active. Repeat the procedure until the correct version is displayed.</p>
+<h2 id="midi">MIDI</h2>
+<h3 id="midi-out-modes"><a name="midi_out"></a>MIDI out modes</h3>
+<p>The Shruthi can be used in a variety of MIDI configurations. In
+particular, different functions can be assigned to the MIDI out port,
+through the <strong>midi out</strong> option of the <strong>midi</strong> settings page.</p>
+<h4 id="off"><strong>off</strong></h4>
+<p>The MIDI out port is disabled. This settings brings a tiny, tiny
+improvement in responsivity to the MIDI input and to knob movements,
+since no MIDI out means less work for the CPU.</p>
+<h4 id="thru"><strong>thru</strong></h4>
+<p>The MIDI out port outputs verbatim what was received on the MIDI input
+(soft-thru). This setting is not very CPU intensive, since no
+reformatting of the MIDI stream is done.</p>
+<h4 id="seq"><strong>seq</strong></h4>
+<p>The MIDI out port outputs only the <em>note on</em> and <em>note off</em> events
+processed by the synthesizer -- be they generated by the internal
+sequencer and arpeggiator, or received by MIDI.</p>
+<h4 id="ctrl"><strong>ctrl</strong></h4>
+<p>The MIDI out port outputs only NRPN and CC messages capturing knobs
+tweaking. This mode is ideal for using the Shruthi with both its IN/OUT
+ports connected to the same device. The other modes are not suitable for
+operation in this configuration since they can cause unwanted MIDI
+loops.</p>
+<h4 id="full"><strong>full</strong></h4>
+<p>In this mode, every incoming message is forwarded to the Midi output. In
+addition, NRPNs and CC messages capturing the knob movements are
+inserted into the MIDI stream and written to the MIDI out. These
+messages can be used to record knob movements in a sequencer, or to
+synchronize 2 Shruthi in Unison mode.</p>
+<h4 id="polychaining"><strong>polychaining</strong></h4>
+<p>In this mode, several Shruthi units chained together by MIDI can behave
+like a polysynth. Each unit will implement a "distributed
+voice-stealing" scheme, in which they will either play a note, or
+forward it to the chain. To this purpose, each unit must be aware of the
+number of units that will follow in the chain. This is done through one
+of the 8 polychaining settings: <strong>1&gt;|</strong> indicate that this unit is at
+the end of the chain, <strong>2&gt;1</strong> indicates that this unit is followed by
+one unit, <strong>3&gt;2</strong> indicates that this unit is followed by 2 units,
+etc.</p>
+<p>Here's an example of configuration to turn 3 Shruthi units into a
+triphonic synth:</p>
+<p><img alt="" src="../../static/images/shruthi_polychain.png" /></p>
+<p>The 3 units obviously have to be sent to a common audio mixer or sound
+card.</p>
+<p>Some caveats regarding the polychaining mode:</p>
+<ul>
+<li>The arpeggiator and sequencer do not work in polychaining mode ; and the LFOs of each unit won't be synchronized with each other</li>
+<li>There is a latency of up to 2ms between each unit. Thus, this feature works best on small chains.</li>
+<li>Any parameter change done on the first unit in the chain is forwarded downstream, so tweaking is possible (and encouraged). Furthermore, when a patch is loaded on the master unit, it is dumped as a SysEx to each unit of the chain for synchronization purposes. However, this doesn't work the other way round: if you tweak a parameter or reload a new patch on the last unit in the chain, the other units upstream won't be aware of it!</li>
+</ul>
+<h3 id="updating-the-shruthi-firmware-by-midi">Updating the Shruthi firmware by MIDI</h3>
+<p>To update the Shruthi firmware, hold the <strong>S6</strong> switch (or the <strong>OSC 2
+SHAPE +</strong> switch on the XT) while the synth is being powered on.</p>
+<p>The screen remains empty, and the LEDs <strong>L1</strong>, <strong>L3</strong>, <strong>L5</strong> and <strong>L7</strong>
+are lit. The Shruthi is now waiting for SysEx data containing firmware
+update commands.</p>
+<p>This data is compiled into a MIDI file you can download on the <a href="../../static/firmware/shruthi1_1.02.syx">Mutable
+Instruments
+website</a>.
+During the firmware update procedure, the LEDs will light up one by one
+- the last LED being lit will also blink as the data is received. The
+update takes about 1 minute. If something goes wrong during the update
+procedure, the Shruthi is not bricked: it is possible to restart it with
+<strong>S6</strong> held down, to retry the update procedure.</p>
+<p>If you want to use a dedicated SysEx transfer tool, we recommend
+<a href="http://www.elektron.se/support-and-downloads">Elektron's C6 tool</a>
+available for both Windows and OS X, with the following timing settings:</p>
+<p><img alt="" src="../../static/images/c6_win.jpg" /></p>
+<p><img alt="" src="../../static/images/c6_osx.png" /></p>
+<h3 id="midi-implementation">MIDI implementation</h3>
+<p>A standard MIDI implementation chart <a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdEdaYlhoTVF5Uzg1NFgxM1AzVi0zcUE&amp;output=html">can be viewed
+here</a>.</p>
+<h4 id="received-messages">Received messages</h4>
+<h5 id="note-onoff-0x80-and-0x90-aftertouch-0xa0-0xd0-and-pitch-bend-0xe0">Note on/off (0x80 and 0x90), aftertouch (0xa0, 0xd0) and pitch-bend (0xe0)</h5>
+<p>Note that the aftertouch is always global, and that its effect depends
+on the patching of the <strong>afttch</strong> modulation source in the modulation
+matrix (by default, none).</p>
+<h5 id="program-change-0xc0">Program change (0xc0)</h5>
+<p>This loads a patch from the internal or external memory. You can use the
+bank MSB CC (0x00) to load patches above 127. Note that the patch
+numbers shown in the load/save page are numbered from 1, but the MIDI
+patch numbers are numbered from 0, so the first patch is loaded with
+program change 0 even if it appears to be #1 on the load/save page.</p>
+<h5 id="control-changes-0xb0">Control changes (0xb0)</h5>
+<p>The Shruthi responds to the following system control change messages:</p>
+<ul>
+<li>All sound off (0x78)</li>
+<li>Reset all controllers (0x79)</li>
+<li>All notes off (0x7b)</li>
+<li>Omni on/off (0x7c, 0x7d)</li>
+<li>Hold pedal (0x40)</li>
+</ul>
+<p>Most synthesis parameters are accessible by non-standard control changes
+or NRPNs. Please refer to the <a href="#param">Parameters accessible by MIDI</a>
+section.</p>
+<h5 id="clock-tick-0xf8">Clock tick (0xf8)</h5>
+<p>This advances the system clock when the <strong>bpm</strong> setting is set to
+<strong>external</strong> or one of its multiples.</p>
+<h5 id="play-and-stop-0xfa-and-0xfc">Play and stop (0xfa and 0xfc)</h5>
+<p>The <strong>Play</strong> message must be sent to activate the LFO, arpeggiator or
+sequencer when the <strong>bpm</strong> setting is set to <strong>external</strong>. The <strong>Stop</strong>
+message kills all notes and stops the sequencer or arpeggiator.</p>
+<h5 id="system-exclusive-messages-0xf0">System exclusive messages (0xf0).</h5>
+<p>The Shruthi sends or receives System Exclusive messages for the
+following operations:</p>
+<ul>
+<li>Patch data dump</li>
+<li>Sequence data dump</li>
+<li>Wavetable dump</li>
+<li>Bulk memory dump</li>
+<li>Firmware update</li>
+<li>Post firmware-update reset</li>
+</ul>
+<p>Please refer to the <a href="#sysex">SysEx data format</a> section for more
+information.</p>
+<h4 id="synthesis-parameters-accessible-by-midi"><a name="param"></a>Synthesis parameters accessible by MIDI.</h4>
+<p>Most of the synthesis parameters are accessible by NRPN or CC.</p>
+<p>Editing a parameter by CC is fool-proof: send any value between 0 and
+127, and it will mapped to the range of the parameter. For example, when
+adjusting the oscillator 1 range, the value 0 will be mapped to -24, and
+the value 127 will be mapped to +24. There is a bit of resolution loss
+for parameters with a large range (eg: tempo).</p>
+<p>This is not the case when using NRPN: in this case, the value in the
+data entry message will need to be exactly the requested value (no
+scaling occurs). Since most parameters have their range in a subset of
+0--127, only a data entry LSB message has to be sent. When the maximum
+value of the parameter exceeds 127, or when it accepts negative values,
+a data entry MSB will have to be sent. Negative values are represented
+using 2's complement. For example, the MIDI messages to send to set the
+Oscillator 1 range to -12:</p>
+<pre><code>176 99 0 (NRPN MSB set to 0)
+176 98 2 (NRPN LSB set to 2, from the table below: Oscillator 1 range)
+176 6 1 (Data Entry MSB set to 1 -- value above 127 or negative)
+176 38 116 (Data Entry LSB set to 116, because 116 - 128 = -12)
+</code></pre>
+<p>The following table summarizes all the synthesis parameters, with their
+NRPN and CC numbers:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter number</th>
+<th>Range</th>
+<th>NRPN number</th>
+<th>CC number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oscillator 1 shape</td>
+<td>0-34</td>
+<td>0</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Oscillator 1 parameter</td>
+<td>0-127</td>
+<td>1</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Oscillator 1 range</td>
+<td>-24-24</td>
+<td>2</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Modulation operator</td>
+<td>0-13</td>
+<td>3</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Oscillator 2 shape</td>
+<td>0-34</td>
+<td>4</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Oscillator 2 parameter</td>
+<td>0-127</td>
+<td>5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Oscillator 2 range</td>
+<td>-24-24</td>
+<td>6</td>
+<td>26</td>
+</tr>
+<tr>
+<td>Oscillator 2 detune</td>
+<td>0-127</td>
+<td>7</td>
+<td>27</td>
+</tr>
+<tr>
+<td>Oscillator balance</td>
+<td>0-63</td>
+<td>8</td>
+<td>29</td>
+</tr>
+<tr>
+<td>Sub oscillator volume</td>
+<td>0-63</td>
+<td>9</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Noise volume</td>
+<td>0-63</td>
+<td>10</td>
+<td>31</td>
+</tr>
+<tr>
+<td>Sub oscillator/transient generator shape</td>
+<td>0-10</td>
+<td>11</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Filter cutoff</td>
+<td>0-127</td>
+<td>12</td>
+<td>14, 74</td>
+</tr>
+<tr>
+<td>Filter resonance</td>
+<td>0-63</td>
+<td>13</td>
+<td>15, 71</td>
+</tr>
+<tr>
+<td>Envelope-&gt;cutoff modulation amount</td>
+<td>0-63</td>
+<td>14</td>
+<td>102</td>
+</tr>
+<tr>
+<td>Lfo-&gt;cutoff modulation amount</td>
+<td>0-63</td>
+<td>15</td>
+<td>103</td>
+</tr>
+<tr>
+<td>Envelope 1 attack</td>
+<td>0-127</td>
+<td>16</td>
+<td>104</td>
+</tr>
+<tr>
+<td>Envelope 1 decay</td>
+<td>0-127</td>
+<td>17</td>
+<td>105</td>
+</tr>
+<tr>
+<td>Envelope 1 sustain</td>
+<td>0-127</td>
+<td>18</td>
+<td>106</td>
+</tr>
+<tr>
+<td>Envelope 1 release</td>
+<td>0-127</td>
+<td>19</td>
+<td>107</td>
+</tr>
+<tr>
+<td>Envelope 2 attack</td>
+<td>0-127</td>
+<td>20</td>
+<td>108, 73</td>
+</tr>
+<tr>
+<td>Envelope 2 decay</td>
+<td>0-127</td>
+<td>21</td>
+<td>109</td>
+</tr>
+<tr>
+<td>Envelope 2 sustain</td>
+<td>0-127</td>
+<td>22</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Envelope 2 release</td>
+<td>0-127</td>
+<td>23</td>
+<td>111</td>
+</tr>
+<tr>
+<td>LFO 1 waveform</td>
+<td>0-20</td>
+<td>24</td>
+<td>112</td>
+</tr>
+<tr>
+<td>LFO 1 rate</td>
+<td>0-143</td>
+<td>25</td>
+<td>113</td>
+</tr>
+<tr>
+<td>LFO 1 rise time</td>
+<td>0-127</td>
+<td>26</td>
+<td>114</td>
+</tr>
+<tr>
+<td>LFO 1 master/slave</td>
+<td>0-3</td>
+<td>27</td>
+<td>115</td>
+</tr>
+<tr>
+<td>LFO 2 waveform</td>
+<td>0-20</td>
+<td>28</td>
+<td>116</td>
+</tr>
+<tr>
+<td>LFO 2 rate</td>
+<td>0-143</td>
+<td>29</td>
+<td>117</td>
+</tr>
+<tr>
+<td>LFO 2 rise time</td>
+<td>0-127</td>
+<td>30</td>
+<td>118</td>
+</tr>
+<tr>
+<td>LFO 2 master/slave</td>
+<td>0-3</td>
+<td>31</td>
+<td>119</td>
+</tr>
+<tr>
+<td>Modulation n source</td>
+<td>0-27</td>
+<td>32 + 3 * (n - 1)</td>
+<td></td>
+</tr>
+<tr>
+<td>Modulation n destination</td>
+<td>0-26</td>
+<td>33 + 3 * (n - 1)</td>
+<td></td>
+</tr>
+<tr>
+<td>Modulation n amount</td>
+<td>-63-63</td>
+<td>34 + 3 * (n - 1)</td>
+<td></td>
+</tr>
+<tr>
+<td>Operator n source 1</td>
+<td>0-31</td>
+<td>94 + 3 * (n - 1)</td>
+<td></td>
+</tr>
+<tr>
+<td>Operator n source 2</td>
+<td>0-31</td>
+<td>95 + 3 * (n - 1)</td>
+<td></td>
+</tr>
+<tr>
+<td>Operator n operation</td>
+<td>0-9</td>
+<td>96 + 3 * (n - 1)</td>
+<td></td>
+</tr>
+<tr>
+<td>Sequencer mode</td>
+<td>0-2</td>
+<td>100</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Tempo</td>
+<td>35-248</td>
+<td>101</td>
+<td></td>
+</tr>
+<tr>
+<td>Groove template</td>
+<td>0-5</td>
+<td>102</td>
+<td>76</td>
+</tr>
+<tr>
+<td>Groove amount</td>
+<td>0-127</td>
+<td>103</td>
+<td>77</td>
+</tr>
+<tr>
+<td>Arpeggiator direction</td>
+<td>0-3</td>
+<td>104</td>
+<td>78</td>
+</tr>
+<tr>
+<td>Arpeggiator range</td>
+<td>1-4</td>
+<td>105</td>
+<td>79</td>
+</tr>
+<tr>
+<td>Arpeggiator pattern</td>
+<td>0-15</td>
+<td>106</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Sequencer clock division</td>
+<td>0-11</td>
+<td>107</td>
+<td>81</td>
+</tr>
+<tr>
+<td>Octave transposition</td>
+<td>0-11</td>
+<td>82</td>
+<td></td>
+</tr>
+<tr>
+<td>Scale/raga</td>
+<td>0-32</td>
+<td>83</td>
+<td></td>
+</tr>
+<tr>
+<td>Portamento</td>
+<td>0-63</td>
+<td>84</td>
+<td></td>
+</tr>
+<tr>
+<td>Legato</td>
+<td>0-1</td>
+<td>68</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The following control changes are specific to special filter boards:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>CC number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SVF Filter cutoff 2</td>
+<td>12</td>
+</tr>
+<tr>
+<td>SVF Filter resonance 2</td>
+<td>13</td>
+</tr>
+<tr>
+<td>SVF Filter mode 1</td>
+<td>85</td>
+</tr>
+<tr>
+<td>SVF Filter mode 2</td>
+<td>86</td>
+</tr>
+<tr>
+<td>DSP FX param 1</td>
+<td>12</td>
+</tr>
+<tr>
+<td>DSP FX param 2</td>
+<td>13</td>
+</tr>
+<tr>
+<td>DSP FX mode</td>
+<td>87</td>
+</tr>
+<tr>
+<td>DSP FX program</td>
+<td>88</td>
+</tr>
+<tr>
+<td>Polivoks filter mode</td>
+<td>89</td>
+</tr>
+<tr>
+<td>Polivoks overdrive</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Polivoks FM feedback</td>
+<td>91</td>
+</tr>
+<tr>
+<td>4PM filter mode</td>
+<td>92</td>
+</tr>
+<tr>
+<td>4PM resonance flavor</td>
+<td>93</td>
+</tr>
+<tr>
+<td>Delay time</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Delay level</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Delay feedback</td>
+<td>94</td>
+</tr>
+<tr>
+<td>Delay EQ flavor</td>
+<td>95</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sysex-data-format"><a name="sysex"></a>SysEx data format</h3>
+<p>SysEx messages all share the same format:</p>
+<pre><code>0xf0  (SysEx)
+0x00 0x21 0x02  (Manufacturer ID for Mutable Instruments)
+0x00 0x02  (Product ID for Shruthi)
+Command
+Argument
+Payload
+Checksum
+0xf7  (End of SysEx)
+</code></pre>
+<p><strong>Command</strong> indicates what the receiver should do with the data in the
+<strong>payload</strong> block, and <strong>argument</strong> is a byte that might contain an
+additional piece of information about what to do with the data.</p>
+<p><strong>Payload</strong> is a sequence of bytes in nibblized form. For example, the
+sequence <code>0x80 0x56 0x13</code> is transmitted as
+<code>0x08 0x00 0x05 0x06 0x01 0x03</code>.</p>
+<p><strong>Checksum</strong> is equal to the nibblized-sum, modulo 256, of the bytes. In
+the example above, the checksum is equal to <code>0x80 + 0x56 + 0x13 = 0xe9</code>
+and is transmitted as <code>0x0e 0x09</code>.</p>
+<h4 id="patch-transfer">Patch transfer</h4>
+<p>For patch transfer, <strong>command</strong> is equal to <strong>0x01</strong> and <strong>argument</strong> is
+null. The <strong>payload</strong> is a 92 bytes (184 nibbles) data structure
+<a href="https://github.com/pichenettes/shruthi-1/blob/master/shruthi/patch.h#L75">described
+here</a>.
+Upon reception, the Shruthi checks the patch data, and loads it in
+memory, in place of the currently edited patch.</p>
+<p>When receiving a patch by SysEx, the received patch is not written to persistent patch memory, it is only temporarily loaded in memory so you can edit it, and if you're happy with it, save it yourself. Since you don't risk overwriting stuff in memory when using SysEx patch transfer, use it and abuse it! For example, embed at the beginning of each of your tracks a dump of the patch, so your Shruthi will always recall the correct patch settings when you play the track back.</p>
+<h4 id="sequence-transfer">Sequence transfer</h4>
+<p>For sequence transfer, <strong>command</strong> is equal to <strong>0x02</strong> and <strong>argument</strong>
+is null. The <strong>payload</strong> is a 32 bytes (64 nibbles) data structure
+<a href="https://github.com/pichenettes/shruthi-1/blob/master/shruthi/sequencer_settings.h#L40">described
+here</a>.
+Upon reception, the Shruthi loads the sequence data in memory, in place
+of the currently edited sequence.</p>
+<h4 id="waveform-transfer">Waveform transfer</h4>
+<p>For waveform transfer, <strong>command</strong> is equal to <strong>0x03</strong> and <strong>argument</strong>
+is null. The <strong>payload</strong> is a sequence of 8x129 bytes (2064 nibbles)
+describing 8 single cycle waveforms, each of them being 129 samples
+long. The period must be 128 samples - the 129th sample must be equal to
+the first one and is used for interpolation wrap-around. The waveform is
+described with 8 bits unsigned samples.</p>
+<h4 id="storage-memory-dump">Storage memory dump</h4>
+<p>The storage memory of the Shruthi is 2 + 8n kb large: 2kb of internal
+eeprom and 8n kb of external eeprom. It is partitioned as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Logical range</th>
+<th>Physical medium</th>
+<th>Physical range</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0000 - 0x0010</td>
+<td>Internal eeprom</td>
+<td>0x0000 - 0x0010</td>
+<td>System settings</td>
+</tr>
+<tr>
+<td>0x0010 - 0x05d0</td>
+<td>Internal eeprom</td>
+<td>0x0010 - 0x05d0</td>
+<td>16 internal patches</td>
+</tr>
+<tr>
+<td>0x05d0 - 0x07d0</td>
+<td>Internal eeprom</td>
+<td>0x05d0 - 0x07d0</td>
+<td>16 internal sequences</td>
+</tr>
+<tr>
+<td>0x07d0 - 0x0800</td>
+<td>Internal eeprom</td>
+<td>0x07f0 - 0x0800</td>
+<td>unused</td>
+</tr>
+<tr>
+<td>0x0800 - 0x1f00</td>
+<td>External eeprom</td>
+<td>0x0000 - 0x1700</td>
+<td>64 external patches</td>
+</tr>
+<tr>
+<td>0x1f00 - 0x2700</td>
+<td>External eeprom</td>
+<td>0x1700 - 0x1f00</td>
+<td>64 external sequences</td>
+</tr>
+<tr>
+<td>0x2700 - 0x2800</td>
+<td>External eeprom</td>
+<td>0x1f00 - 0x2000</td>
+<td>unused</td>
+</tr>
+<tr>
+<td>0x2800 - 0x3f00</td>
+<td>External eeprom</td>
+<td>0x0000 - 0x1700</td>
+<td>64 external patches</td>
+</tr>
+<tr>
+<td>0x3f00 - 0x4700</td>
+<td>External eeprom</td>
+<td>0x1700 - 0x1f00</td>
+<td>64 external sequences</td>
+</tr>
+<tr>
+<td>0x4700 - 0x4800</td>
+<td>External eeprom</td>
+<td>0x1f00 - 0x2000</td>
+<td>unused</td>
+</tr>
+</tbody>
+</table>
+<p>And so on as the external eeprom size increases...</p>
+<p>When doing a bulk backup, <strong>command</strong> is equal <strong>0x40</strong>, <strong>argument</strong> is
+a block index, from 0 to 127, and <strong>payload</strong> is a 128 bytes (256
+nibbles) memory block. Upon reception, the Shruthi copies the received
+128 bytes block to the logical address <strong>argument</strong> x 128. Thus, the
+first 16384 bytes of memory are addressed by this scheme. The next 16384
+bytes of memory are transmitted by using the <strong>0x41</strong> command, and so
+on.</p>
+<h4 id="transfer-request">Transfer request</h4>
+<p>For a patch transfer, <strong>command</strong> is equal to <strong>0x11</strong> and <strong>argument</strong>
+is null. The payload is empty. In other words, the full SysEx string is:
+0xf0 0x00 0x21 0x02 0x00 0x02 0x11 0x00 0x00 0x00 0xf7 (the last pair of
+0x00 being the checksum). Upon reception, the Shruthi dumps the current
+patch to the MIDI out. For a sequence transfer, <strong>command</strong> is equal to
+<strong>0x12</strong>.</p>
+<h4 id="write-request">Write request</h4>
+<p>For a patch write request, <strong>command</strong> is equal to <strong>0x21</strong>,
+<strong>argument</strong> is null, and the payload is a 14-bits integer indicating a
+memory slot number (0-based indexing). Upon reception, the Shruthi
+writes the current patch to the memory location designated by the
+number. For a sequence write request, <strong>command</strong> is equal to <strong>0x22</strong>.</p>
+<p>For example, to write the current patch to slot 303 (302 in 0-based
+indexing, 0x012e in hexadecimal), the message is:</p>
+<pre><code>0xf0  (SysEx)
+0x00 0x21 0x02  (Mutable Instruments)
+0x00 0x02  (Shruthi)
+0x21  (Patch write command)
+0x00  (No argument)
+0x00 0x01 0x02 0x0e  (Patch number nibbles)
+0x02 0x0f  (Checkum)
+0xf7  (End of SysEx)
+</code></pre>
+<h4 id="firmware-update">Firmware update</h4>
+<p>For firmware update, <strong>command</strong> is equal <strong>0x7e</strong>, <strong>argument</strong> is
+null, and <strong>payload</strong> contains a 256 bytes (512 nibbles) block of
+code/data to be written to flash ROM. Upon reception of this message,
+the Shruthi writes the data block in flash ROM at the address pointer,
+and increments the address pointer by 256. The address pointer is
+initialized at <strong>0x0000</strong></p>
+<p>At the end of the update procedure, a SysEx message with <strong>command =
+0x7f, argument = 0x00</strong> and no <strong>payload</strong> is sent. Upon reception, the
+Shruthi reboots into the newly updated firmware.</p>
+<h2 id="credits">Credits</h2>
+<p>The following patches have been programmed by Florian Fourmy:</p>
+<ul>
+<li>Flo bass</li>
+<li>Follow!</li>
+<li>ElectroB</li>
+</ul>
+<p>The following patches have been programmed by stuartm:</p>
+<ul>
+<li>woblbass</li>
+<li>digobass</li>
+<li>pythagor</li>
+<li>noleleva</li>
+<li>ahhparis</li>
+<li>repliknt</li>
+<li>pwmstrng</li>
+<li>dahkand</li>
+<li>deetoon</li>
+<li>cowgirl</li>
+<li>voxelito</li>
+<li>woodtock</li>
+</ul>
+<p>The following patches have been programmed by Trackdriver:</p>
+<ul>
+<li>bitbass</li>
+<li>shorty</li>
+<li>VICdbass</li>
+<li>sawwy</li>
+<li>reason</li>
+<li>puddle</li>
+<li>blopbass</li>
+<li>borg</li>
+<li>fatbass</li>
+<li>wowwy</li>
+<li>pulsar</li>
+<li>stringe</li>
+<li>bigStrng</li>
+<li>simplBra</li>
+<li>pwmBrass</li>
+<li>arpSynth</li>
+<li>wasp</li>
+<li>rendezVo</li>
+<li>fullbell</li>
+<li>loFiFlut</li>
+<li>NESsie</li>
+<li>noisBell</li>
+<li>woice</li>
+<li>wavesurf</li>
+<li>lazrBird</li>
+</ul>
+<p>The remaining patches have been programmed by Émilie Gillet</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../firmware/" class="btn btn-neutral float-right" title="Firmware development">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Firmware development - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firmware development";
+        var mkdocs_page_input_path = "midipal/firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Firmware development</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>MIDIpal &raquo;</li>
+      <li>Firmware development</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="latest-firmware">Latest firmware</h2>
+<p><a href="../../static/firmware/midipal_1.4/midipal_stdclock_shseq.syx">Grab the latest MIDIpal firmware
+here</a>.
+Scroll to the bottom of this page for the upgrade procedure.</p>
+<h2 id="variants-for-v14">Variants for v1.4</h2>
+<p>The latest firmware version is v1.4.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Monitor</th>
+<th>Event processing</th>
+<th>Clock source</th>
+<th>HD clock source</th>
+<th>SH-seq</th>
+<th>Step seq</th>
+<th>JX-seq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../static/firmware/midipal_1.4/midipal_stdclock_shseq.syx">Download</a></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>.</td>
+<td>X</td>
+<td>.</td>
+<td>. </td>
+</tr>
+<tr>
+<td><a href="../../static/firmware/midipal_1.4/midipal_stdclock_stepseq.syx">Download</a></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>.</td>
+<td>.</td>
+<td>X</td>
+<td>. </td>
+</tr>
+<tr>
+<td><a href="../../static/firmware/midipal_1.4/midipal_hdclock_shseq.syx">Download</a></td>
+<td>X</td>
+<td>X</td>
+<td>.</td>
+<td>X</td>
+<td>X</td>
+<td>.</td>
+<td>. </td>
+</tr>
+<tr>
+<td><a href="../../static/firmware/midipal_1.4/midipal_hdclock_stepseq.syx">Download</a></td>
+<td>X</td>
+<td>X</td>
+<td>.</td>
+<td>X</td>
+<td>.</td>
+<td>X</td>
+<td>. </td>
+</tr>
+<tr>
+<td><a href="../../static/firmware/midipal_1.4/midipal_poly_sequencer.syx">Download</a></td>
+<td>X</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>List of changes:</p>
+<ul>
+<li>The <strong>Ear Training game</strong> app has been deprecated. All versions linked above are built with the <strong>Tanpura</strong> app instead.</li>
+<li>The arpeggiator has two new modes: <code>pla</code> (<code>as played</code> - notes are arpeggiated in the same order as they have been played) and <code>cho</code> (<code>chord</code> - all notes are played simultaneously, as a chord).</li>
+<li>The length of the arpeggiator rhythmic pattern can be altered - this allows many new crazy irregular rhythms!</li>
+<li>The CC LFO app can now send pitch bend messages. Wowowowow. To do so, select CC# 127 - a modulated pitch-bend message will be sent instead of a CC# 127.</li>
+<li>The clock divider app now has a built-in clock delay function. For example, when the delay is set to 6; the transmission of the MIDI <strong>Start</strong> message and of the subsequent clock ticks is delayed by 6 clock ticks. This can be used to create interesting time-shifting effects between two drum machines or sequencers.</li>
+<li>The <code>clock</code> app has an extra setting called <code>con</code>. When enabled, the clock messages continue to be sent even when the transport is stopped.</li>
+<li>A new app called <code>settings</code> allows some global system settings to be defined, such as 0xFE message handling (let them go or filter them), and more goodies (see below).</li>
+<li>The MIDIpal can now be edited using CC messages. CC #80 changes the first parameter, CC# 81 the second parameter and so on. The whole CC range (0 to 127) is mapped to the range of each parameter. The <strong>remote control</strong> channel is defined in the settings app (setting called <code>ccc</code> for <code>cc channel</code>), and can be of course disabled - when the channel is set to 0.</li>
+<li>The MIDIpal can now be clocked by note messages on a user-selectable channel:<ul>
+<li>Go to the settings app and select the MIDI channel (<code>clc</code> for <code>clock channel</code>) and note (<code>cln</code> for <code>clock note</code>) which will be interpreted as a clock message.</li>
+<li>Select the clock resolution (<code>div</code>): by how many ticks each note will move the clock forward.</li>
+<li>Go back to the application you want to control with note messages (sequencer, arpeggiator...).</li>
+<li>Select the <code>not</code> clock source.</li>
+<li>Repeatedly play a note on the selected channel to start and advance the clock.</li>
+</ul>
+</li>
+</ul>
+<h2 id="third-party-firmware-versions">Third party firmware versions</h2>
+<p>Michael Lauter has developed his <a href="http://lauterzeit.com/midipal/firmware/">own version of the MIDIpal arpeggiator
+and synchlatch apps</a> that
+support MIDI SPP messages. This allows the MIDIpal to be slaved to some
+hardware sequencers that make use of this MIDI synchronization
+technique.</p>
+<h2 id="updating-the-midipal-firmware">Updating the MIDIpal firmware</h2>
+<p>Keep the encoder pressed while you power on the MIDIpal. You'll see the
+MIDI in and MIDI out LEDs rapidly blink in sequence, and the MIDI in LED
+will stay on. The MIDIpal is ready to receive the update data, which can
+be sent as a SysEx (with a 250ms or more delay between packets) or
+MIDIfile. The MIDI in LED blinks on every received packet, an update
+containing up to 256 packets. The update takes about 1 minute, and can
+be restarted in case of accident during the transmission. Upon reception
+of the last packet, the MIDIpal immediately boots with the new firmware.</p>
+<p>If you want to use a dedicated SysEx transfer tool rather than a
+sequencer, we recommend <a href="http://www.elektron.se/support-and-downloads">Elektron's C6
+tool</a> available for both
+Windows and OS X, with the following timing settings:</p>
+<p><img alt="" src="../../static/images/c6_win.jpg" /></p>
+<p><img alt="" src="../../static/images/c6_osx.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../manual/" class="btn btn-neutral float-left" title="Manual"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../build/" class="btn btn-neutral float-right" title="Build instructions">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../manual/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../build/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Technical notes - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Technical notes";
+        var mkdocs_page_input_path = "ambika/technotes.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build Instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Technical notes</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Ambika &raquo;</li>
+          <li>Build Instructions &raquo;</li>
+      <li>Technical notes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="overall-design">Overall design</h2>
+<p>Ambika consists of one motherboard and up to 6 voicecards - each of them
+containing a complete sound synthesis voice under the control of the
+motherboard.</p>
+<p>The main motivation behind this design was the choice of the low
+performance 8-bit AVR as a platform for the digital oscillators code. At
+the time Ambika was designed, this was the only through-hole part with a
+well-supported, easily available open-source toolchain based on gcc -
+the fact that the Shruthi-1 codebase was already proven on this platform
+was a plus. This required one MCU per voice, and it was thus decided to
+keep each voicecard as close as possible to a simple standalone synth.
+An advantage of this is that it suits well the "mix and match different
+filters/voicecards". The inconvenient is that a multi-processor system
+is always more difficult to troubleshoot than a single processor system!</p>
+<h2 id="motherboard">Motherboard</h2>
+<h3 id="power-supply">Power supply</h3>
+<p>Earlier versions of Ambika used a single +9V supply for the analog
+section with a virtual ground; but the noise floor was higher (it
+required a lot of bypassing on the virtual ground).</p>
+<p>Thus, a proper +/- 8V symmetric supply was chosen. The advantage of 8V
+is that there exists fixed output positive and negative regulators for
+this voltage; and that it is relatively close to +5V -- a lot of current
+is drawn on the +5V rail, so there's an incentive to use an input
+voltage which is not too high, to avoid having to dissipate too much
+power on the +5V regulator.</p>
+<p>The requirements for a fully loaded unit with SMR4 voicecards are the
+following: 310mA for the +5V; and 130mA for the +/- 8V rails.</p>
+<p>We decided to work from an AC wallwart (which is really just a step down
+transformer) to keep builders away from anything dealing with mains
+voltage. The big inconvenient of those is that they do not have a center
+tap, so a full-wave rectification input stage is not possible. Half-wave
+rectification is what is used on the Ambika power supply. It requires
+fairly large input capacitors and/or will cause quite some ripple at the
+rectification stage.</p>
+<p>Our original design used a 4700uF cap for positive rectification, and
+7805 / 7808 / 7908 regulators. When powered with 12V AC, the 7805 was
+getting too hot; when powered with 9V AC, the ripple on the rectified
+positive input of the 7808 was dipping below 10.5V and caused ripple on
+the output. We thus replaced the 7808 with a LDO (LM2940-8.0) more
+tolerant to the ripple (it would have required more than 10000u of caps
+in the rectifier to make the ripple go away). It is still possible to
+run Ambika on 12V AC if a switching-mode pin-compatible 7805 replacement
+is used such as the PT78ST105H - this is indeed the best solution to
+minimize heating inside the case.</p>
+<table>
+<thead>
+<tr>
+<th>Input supply</th>
+<th>+8V regulator</th>
+<th>+5V regulator</th>
+<th>Observations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+9V AC</td>
+<td>LM2940-8</td>
+<td>7805</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td>+12V AC</td>
+<td>7808</td>
+<td>PT78ST105H</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td>+9V AC</td>
+<td>7808</td>
+<td>7805</td>
+<td>50Hz Hum on audio output when too many voicecards are installed</td>
+</tr>
+<tr>
+<td>+12V AC</td>
+<td>7808</td>
+<td>7805</td>
+<td>Works, but 7805 heatsink gets very hot</td>
+</tr>
+</tbody>
+</table>
+<h3 id="midi-input">MIDI input</h3>
+<p>Note that the pull-up resistor on the 6N137 has an unusually high value
+of 10k. This softens the edges of the MIDI signal, since some DIP
+ATMega644p running at 20 MHz suffer from a bug causing random memory
+corruption when sharp spikes are injected on the UART input (this is
+apparently a <a href="http://www.seanet.com/~karllunt/1284pmemprob.html">rarer instance of this
+problem</a>).</p>
+<h3 id="sd-card">SD card</h3>
+<p>The SD card is the only part of Ambika running on +3.3V. It has its own
+small (TO92) regulator, an MCP1700. Level translation from +5V to +3.3V
+is handled by a 4050N. There is no level translation from +3.3V to +5V
+as the ATMega has a logic threshold below +3.3V.</p>
+<h3 id="audio-output">Audio output</h3>
+<p>The audio output of each voicecard is connected to the corresponding
+individual output jack through a 470R resistor which serves as extra
+short circuit protection. When the jack is not inserted, the signal is
+routed to an inverting mixer with a gain of 1, then through the volume
+pot, then through an inverting mixer with a gain of 1 (to get the
+original phase) - this yields the "mixed" output. This realizes the same
+behavior as drum machines like the 808, in which plugging a jack in an
+individual output removes the corresponding instrument from the global
+mix.</p>
+<h3 id="user-interface">User interface</h3>
+<p>The 8 switches are read into a parallel-in / serial-out shift register
+(165).</p>
+<p>The 15 LEDs are addressed by two daisy-chained parallel-out / serial-in
+shift registers (595). The LEDs are bicolor (green or orange depending
+on the polarity). The 16th output of the 595s chain is used to either
+source/sink current into the LEDs, controlling their colors. This works
+because the 595 can source/sink up to 10mA. For example, to light the
+first LED in green, the bit pattern is: 10000000 00000000. To light the
+first LED in orange, the bit pattern is: 01111111 11111111. 00000000
+00000000 or 11111111 11111111 switches off all LEDs. To allow different
+brightness levels and the simultaneous display of green and orange, we
+alternate between displaying the green field (with 16 brightness levels
+achieved through software PWM); and the orange field.</p>
+<p>The LCD module is a HD44780 compatible device, it is refreshed using the
+same approach as on the Shruthi.</p>
+<p>The 8 pots are directly connected to the MCU's ADC inputs without
+external hardware multiplexing.</p>
+<p>The rotary encoder is directly connected to the MCU and is debounced /
+decoded in software.</p>
+<h3 id="spi-bus">SPI bus</h3>
+<p>The SPI bus is used in a 1-master / 8-slave configuration. The slaves
+are the 6 voicecards (address 0 to 5); an expansion port used for future
+peripherals/controllers (address 6) and the SD card (address 7). Slave
+selection is done by a 3 to 8 decoder (74hc138), whose output pins are
+hooked to the SS pin of each slave. The hardware SPI module of the 644p
+is used, to allow fast communications - 10 MHz when communicating with
+the SD card; 2.5 MHz when communicating with a voicecard (this is
+because the ATMega's SPI receiver needs the clock to be strictly slower
+than Fclk / 4). The SS pin of the ATMega SPI unit enables/disables the
+74hc138 - one just has to write the address of the peripheral we want to
+talk to to the 74hc138, and do a transaction using the ATMega644p SPI
+module as if there was only one slave!</p>
+<h3 id="voicecard-connectors">Voicecard connectors</h3>
+<p>Each voicecard connector can be used to stack two voicecards. The lower
+layer directly connected to the motherboard is called "Layer A", the
+upper layer is called "Layer B".</p>
+<p>Here is the pinout of the voicecards connector:</p>
+<p><img alt="" src="../../static/images/voicecard_connector.png" /></p>
+<p>The physical audio outputs 1, 3, 5 are playing the signals from the
+layer A voicecards audio outs. The physical audio outputs 2, 4, 6 are
+playing the signals from the layer B voicecards.</p>
+<p>At the exception of the audio output and the SS line, all signals are
+common to the two voicecards in the stack. Jumpers are present on the
+voicecard to indicate whether it will "respond" to SS A or SS B; and to
+indicate whether it will output its signal to the Audio A or Audio B
+line.</p>
+<p>Note that it might be possible to design a "dual" voicecard responsing
+to both SS A and SS B; and producing audio on both Audio A and Audio B.</p>
+<h2 id="voicecard">Voicecard</h2>
+<h3 id="spi-bus_1">SPI bus</h3>
+<p>The MISO/MOSI/SCK lines of the SPI bus are connected to the voicecard
+MCU through 220R resistors. This has little impact on signal integrity;
+and this allows the ISP programmer (which uses the same pins as the
+hardware SPI module) to be isolated from the SPI bus during programming
+(see AVR910).</p>
+<p>The SS A / SS B lines are connected to a 3 pins header + jumper to
+assign the voicecard to a layer. One of them is hooked to the SS pin of
+the ATMega328p's hardware SPI receiver. Note that the voicecard MCU does
+not use interrupts for SPI reception (<a href="http://www.avrfreaks.net/index.php?name=PNphpBB2&amp;file=viewtopic&amp;t=109367">some exploration
+here</a>).
+Instead, it polls the SPI peripheral. Normally, the polling is done
+sparsely (every time an audio sample is written to the DAC); though it
+can temporarily enter a busy loop when the master MCU sends a large
+block of patch data.</p>
+<h3 id="vca-compensation">VCA compensation</h3>
+<p>The SVF voicecard uses an exponential VCA whose response curve needs to
+be linearized in software. To allow the same firmware to be used on all
+voicecards, a pin of the ATMega328p (pin 14) is tied to ground on the
+SVF voicecard to instruct the firmware to do the compensation. On the
+other voicecards, this pin is unconnected (internally pulled-up), and no
+correction is applied.</p>
+<h3 id="output-signalscv">Output signals/CV</h3>
+<p>A voicecard needs to generate at least 4 control signals: oscillators
+mix, VCF CV, VCA CV and resonance CV. We have chosen an external 12-bits
+dual DAC for the oscillators mix and VCA CV; and 8-bits PWM for the
+others. The DAC eliminates some of the weird low frequency tones
+obtained on the Shruthi-1 when the filter self-oscillation starts
+interacting with the 39kHz PWM carrier. The bandwidth constraint on the
+VCF and Q CVs is lower and 1-pole filtering can be applied to them to
+eliminate the PWM carrier. In any case, any remain of the PWM carrier in
+those CV does not show up in the audio signal.</p>
+<p>The DAC (MCP4822) has a SPI interface. Since the SPI module of the
+ATMega328p is already used for communication with the master MCU; what
+is used for communicating with the DAC is the USART in SPI mode. It is
+actually more convenient to talk to the DAC through the USART in SPI
+mode, since it has a 4-byte buffer.</p>
+<h3 id="digital-control-of-filter-routing">Digital control of filter routing</h3>
+<p>The SVF voicecard uses a digitally controlled switch (4052) to route the
+various filter nodes to the VCA. Because the 4052 is powered by +/- 8V,
+it needs some level translation to correctly be switched from +5V
+outputs (Vishay DG405x series have +5V compatible inputs, but they are
+harder to find). This is done with simple MOSFET inverters.</p>
+<h3 id="signaling">Signaling</h3>
+<p>The meaning of the LEDs patterns is as follows</p>
+<table>
+<thead>
+<tr>
+<th>LED pattern</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orange on</td>
+<td>Voicecard is normally refreshed by master</td>
+</tr>
+<tr>
+<td>Green on</td>
+<td>Voicecard is playing a note</td>
+</tr>
+<tr>
+<td>Green and Orange blink simultaneously</td>
+<td>Voicecard has failed to boot successfully, either due to a corrupted firmware update, or to a power supply disruption during boot. It is now locked in firmware upgrade mode, and is waiting for the master to send an upgraded firmware from the SD card</td>
+</tr>
+<tr>
+<td>Green and Orange blink in turns</td>
+<td>Voicecard firmware has been successfully upgraded</td>
+</tr>
+</tbody>
+</table>
+<h3 id="firmware-update-and-initialization-sequence-check">Firmware update and initialization sequence check</h3>
+<p>Firmware update is triggered by the master, which sends a dedicated
+command to the voicecard. Upon reception of this command, the voicecard
+writes a value in internal EEPROM, resets itself, and lands into its
+bootloader. The bootloader checks this value in EEPROM, and enters the
+firmware update mode accordingly. This design works well but does not
+handle the following situation: after a failed firmware update, the
+voicecard is left with a non-bootable firmware, and thus it cannot
+receive the firmware update command from the master!</p>
+<p>To solve this, the bootloader always set a flag in internal EEPROM
+during boot -- flag which is cleared in the main firmware after a
+successful initialization. During the next boot, the bootloader checks
+this flag. If it has not been cleared, it means that the main firmware
+could not complete the initialization sequence, and this is interpreted
+as a sign of crash and/or corrupted firmware. Thus, the bootloader will
+force the voicecard into firmware update mode even if not instructed to
+do so by the master.</p>
+<p>What this means is that if for any reason a voicecard does not complete
+its initialization (for example, if it is disconnected or removed during
+the boot process), it will lock itself into firmware update mode.</p>
+<h2 id="master-voicecard-communication-protocol">Master &lt;-&gt; voicecard communication protocol</h2>
+<p>During a SPI transaction, the master and the voicecard exchange a byte
+of data. Except when noted otherwise, the voicecard only sends 0xff to
+the master - as communication is mostly done in the master -&gt; slave
+direction.</p>
+<h3 id="0x00-patch-send">0x00 PATCH SEND</h3>
+<p>This command is followed by an 8-bit integer N indicating the size of
+the data block sent in bulk. Then, N bytes follow. These bytes are
+copied into the patch data structure of the voicecard. Please refer to
+the <a href="https://github.com/pichenettes/ambika/blob/master/common/patch.h#L246">patch data
+structure</a>.</p>
+<h3 id="0x10-trigger-note-0x11-trigger-note-legato">0x10 TRIGGER NOTE / 0x11 TRIGGER NOTE LEGATO</h3>
+<p>This command is followed by 3 bytes: the MSB of the note pitch, the LSB
+of the note pitch, and the velocity. The pitch is represented by a
+14-bit integer, the 7 MSB being the MIDI note number. The velocity is
+represented by an 8-bit integer, twice the MIDI velocity value. The LSB
+of the command indicates whether the note is played legato. Whether this
+should actually retrigger the envelopes or not is a function of the
+legato mode setting of the patch.</p>
+<h3 id="0x20-write-patch-data">0x20 WRITE PATCH DATA</h3>
+<p>This command is followed by an address byte and a value byte; and writes
+data into the <a href="https://github.com/pichenettes/ambika/blob/master/common/patch.h#L246">patch data
+structure</a>.</p>
+<h3 id="0x30-write-part-data">0x30 WRITE PART DATA</h3>
+<p>This command is followed by an address byte and a value byte; and writes
+data into the <a href="https://github.com/pichenettes/ambika/blob/master/voicecard/voice.h#L37">part data
+structure</a></p>
+<h3 id="0x40-write-modulation-source">0x40 WRITE MODULATION SOURCE</h3>
+<p>This command is followed by a modulation source index and its value. The
+modulation sources are <a href="https://github.com/pichenettes/ambika/blob/master/common/patch.h#L162">listed
+here</a>.
+At the exception of envelopes, LFO4, operators and noise (which are
+internally generated), all modulation sources values come from the
+master MCU.</p>
+<h3 id="0x50-0x51-0x52-write-lfo">0x50 / 0x51 / 0x52 WRITE LFO</h3>
+<p>This command is followed by a byte, and sets the value of the LFO
+indexed by the lower nybble of the command byte (0x50 writes LFO1, 0x51
+writes LFO2 etc.). The same thing could have been achieved with a 0x40
+command, but this command is shorter; and thus allows a faster refresh
+rate of the LFOs.</p>
+<h3 id="0x60-release">0x60 RELEASE</h3>
+<p>This command releases all envelopes.</p>
+<h3 id="0x70-kill-all-sound">0x70 KILL ALL SOUND</h3>
+<p>This command releases and sets to zero all envelopes.</p>
+<h3 id="0x80-0x81-0x82-retrigger-envelope">0x80 / 0x81 / 0x82 RETRIGGER ENVELOPE</h3>
+<p>This command retriggers the envelope indexed by the lower nybble of the
+command byte (0x80 for envelope 1; 0x81 for envelope 2; 0x82 for
+envelope 3).</p>
+<h3 id="0xf8-reset-all-controllers">0xf8 RESET ALL CONTROLLERS</h3>
+<p>This command resets to their default position the pitch bend,
+aftertouch, modulation wheels and expression pedal controllers.</p>
+<h3 id="0xf9-reset">0xf9 RESET</h3>
+<p>This command stops all sound and resets the voicecard to a blank
+(silent) patch.</p>
+<h3 id="0xfa-lights-out">0xfa LIGHTS OUT</h3>
+<p>This command instructs a voicecard that it should stop blinking its LEDs</p>
+<h3 id="0xfb-start-firmware-upgrade">0xfb START FIRMWARE UPGRADE</h3>
+<p>This command instructs a voicecard to resets into its bootloader so that
+its firmware can be upgraded. The voicecard is expected to reply with
+the size of a flash memory block divided by 16. It is followed by a
+100ms pause; then this command is repeated 250 times. The master then
+sends the firmware nibble by nibble; and finally an 0xfb is issued to
+indicate that the transmission of the firmware is over.</p>
+<h3 id="0xfc-get-slave-id">0xfc GET SLAVE ID</h3>
+<p>This command instructs a voicecard to send (during the next
+transaction), its slave id. The slave id is 0x01 for a sound synthesis
+voice.</p>
+<h3 id="0xfd-get-version-id">0xfd GET VERSION ID</h3>
+<p>This command instructs a voicecard to send (during the next
+transaction), its firmware version id. The higher nybble is the major
+version number; the lower nybble is the minor version number.</p>
+<h3 id="0xff-sync">0xff SYNC</h3>
+<p>This command can be used in three contexts:</p>
+<ul>
+<li>Receive a byte from a previously issued command.</li>
+<li>A long string of 0xff messages can be used to resynchronize the
+    state of a voicecard's protocol decoder in case it has skipped a
+    byte.</li>
+<li>When a voicecard boots, it waits for a first SPI message to decide
+    whether it should boot into the normal code, or enter the firmware
+    upgrade mode. Receiving a 0xff SYNC message makes it boot into the
+    normal code; while receiving a 0xfb START FIRMWARE UGPRADE message
+    makes it stay in bootloader land for firmware upgrade.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../anushri/manual/" class="btn btn-neutral float-right" title="Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../anushri/manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

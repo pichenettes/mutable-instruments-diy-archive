@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Firmware development - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firmware development";
+        var mkdocs_page_input_path = "shruthi/firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Firmware development</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+      <li>Firmware development</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="where">Where?</h2>
+<p>The firmware code is hosted on <a href="http://github.com/pichenettes/shruthi-1">github</a>.</p>
+<p><a href="../../static/firmware/shruthi1_1.02.syx">Latest version (v1.02)</a>.</p>
+<h2 id="what">What?</h2>
+<p>To build the firmware you need:</p>
+<ul>
+<li>A GCC toolchain for the AVR platform, the AVR includes/libraries, and the AVRDude utility. All those guys are bundled with the Arduino development environment, which you can get <a href="http://arduino.cc/en/Main/Software">here</a> ; or with <a href="http://www.obdev.at/products/crosspack/index.html">CrossPack</a>. If you use Windows, you can find them in <a href="http://winavr.sourceforge.net/">WinAVR</a>. Make sure your avr-gcc is as close as possible to 4.3.3 since the most recent versions of gcc are performing optimizations differently and can cause the firmware to grow out of the size constraints.</li>
+<li>Python (2.5 or above) and <a href="http://numpy.scipy.org/">numpy</a>. I love numpy!</li>
+</ul>
+<p>To flash it, you need either:</p>
+<ul>
+<li>An AVR ISP programmer, with a 2x3 connector. The one used for the Shruthi development is <a href="http://uk.farnell.com/atmel/atavrisp2/programmer-avr-mcu-isp/dp/1135517?Ntt=1135517">this one</a>.</li>
+<li>OR you can also use the firmware update by MIDI procedure described at the end of the user manual. It will take longer to load your program using this method (1 min vs 5s) - thus it is recommended only if you are really scared of wires and circuits!</li>
+</ul>
+<p>The Shruthi build environment is command-line / makefile based. <strong>OS X</strong> is the system on which Mutable instruments develops ; but getting it to work on Linux is straightforward. On Windows machines you might have to fiddle a bit with system paths to get things to work.</p>
+<h2 id="how">How?</h2>
+<h3 id="building-the-firmware">Building the firmware</h3>
+<ol>
+<li>Get the source from <a href="http://github.com/pichenettes/shruthi-1">github</a> (or run <code>git clone ...</code>).</li>
+<li>Move to the directory created by git (or the directory created when decompressing the .zip).</li>
+<li>Run <code>git submodule init</code> and <code>git submodule update</code> to pull the dependencies.</li>
+<li>Edit the <code>avrlib/makefile.mk</code> file (extended by all makefiles) to change the path <code>(AVR_TOOLS_PATH / AVR_ETC_PATH)</code> to the directory containing the AVR toolchain. This path depends on your system.</li>
+<li>In the same file, change <code>PROGRAMMER</code> to the reference of your ISP programmer (don't care about this if you want to upload your modified firmware by MIDI).</li>
+<li>Build the resources: <code>make resources</code>. Pre-compiled resource files (<code>resources.cc</code>, <code>resources.h</code>) are already bundled with the source code, so if you don't modify the Python resources file, you don't need this step.</li>
+<li>Build the firmware: <code>make</code>.</li>
+<li>Make sure that the firmware size is below 64512 bytes: <code>make size</code> (If you don't have figlet and cowsay installed, you're going to miss some awesome Moose action, but you can still type: cat shruthi1.size and add the first 2 numbers). Note that trying to upload with the standard MIDI update procedure a firmware size too large can "brick" your unit.</li>
+<li>If you want to upload the firmware by MIDI (or realease a mod to the community): <code>make midi</code> (you need python installed on your computer for this step). The resulting file is in <code>build/shruthi1/shruthi1.mid</code>.</li>
+</ol>
+<h3 id="bootloader-development">Bootloader development</h3>
+<p>The "firmware update by MIDI" feature is made possible by a 1k bootloader programmed into the chips distributed with the kits. The source code of this <a href="http://github.com/pichenettes/shruthi-1/tree/master/bootloader/">bootloader</a> can be compiled with <code>make -f bootloader/makefile</code> ; and uploaded with <code>make -f bootloader/makefile upload</code></p>
+<h3 id="starting-from-a-blank-chip">Starting from a blank chip</h3>
+<p>The single command: <strong>make bake_all</strong> first sets up the fuses at a slow speed ; and then flashes the firmware, bootloader and internal eeprom at high speed.</p>
+<h2 id="installing-the-factory-presets">Installing the factory presets</h2>
+<p>This is not properly speaking firmware development, but hey, here we go. The factory data for the eeprom is <a href="../../static/firmware/shruthi1_factory_data.syx">in this file</a>. Play the .syx file into the Shruthi (with its firmware installed of course).</p>
+<h2 id="some-notes-about-the-code">Some notes about the code</h2>
+<h3 id="avr-development-library-avrlib">AVR development library (avrlib)</h3>
+<p>Most of the code directly dealing with the hardware is in the <code>avrlib</code> directory, which is an import for the <a href="http://github.com/pichenettes/avril">avril project</a>. You'll find there various template classes allowing hardware resources (serial ports, switches, LCD display...) to be manipulated with a friendly, high-level syntax... without the cost associated with abstraction since everything is flattened/evaluated/inlined at compile time. A good example (I think) of what C** can bring to embedded development.</p>
+<h3 id="resources">Resources</h3>
+<p>All the data residing in program flash ROM (strings, lookup tables, waveforms) is contained in the <code>shruthi/resources.h</code> and <code>shruthi/resources.cc</code> files, which are automatically generated from some python code (this is where the wavetable generation happens). If you want to add a string to your program, add the string to the list <code>shruthi/resources/strings.py</code>, build the resources, and use the <code>ResourcesManager::LoadStringResource(STR_RES_MY_STRING, buffer, size);</code> idiom to copy it to RAM whenever you want to access it.</p>
+<h3 id="code-tour">Code tour</h3>
+<h4 id="core-data-structures">Core data structures</h4>
+<p><strong>Patch</strong> (<code>patch.h</code>) is the data structure holding the synthesis parameters. <strong>SequencerSettings</strong> (<code>sequencer_settings.h</code>) is the data structure holding the sequencer configuration (tempo, quantize, arpeggiator pattern) and the sequence itself. <strong>SystemSettings</strong> (<code>system_settings.h</code>) is holding the global configuration data (MIDI options, transpose, tuning).</p>
+<p><strong>Storage</strong> (<code>storage.h</code>) contains the routines for loading patch or sequence data from the internal or external eeprom ; and for parsing incoming SysEx MIDI messages (since all of them are related to reception/transmission of user data).</p>
+<h4 id="synthesis">Synthesis</h4>
+<p><strong>Envelope</strong> (<code>envelope.h</code>) has two instances for the two envelope generators. Just like <strong>Lfo</strong> in <code>lfo.h</code>.</p>
+<p><strong>Oscillator</strong> (<code>oscillator.h</code>) contains the main oscillator code. To add an oscillator algorithm:</p>
+<ol>
+<li>Add the oscillator name in the oscillator names list in <code>strings.py</code></li>
+<li>Add an entry in the <strong>OscillatorAlgorithm</strong> enum in <code>patch.h</code></li>
+<li>In <code>oscillator.cc</code>, locate the table of function pointers at the end of the file. Add an entry: <code>&amp;Osc::RenderMyAlgo</code>. Note that you have to make sure that the string, enum entry, and function pointer entry are in the same order! For example, if you've added the string at the end of the list, you'll have to add the enum entry and function pointer entries at the end of their respective lists too.</li>
+<li>Add a <code>void RenderMyAlgo(uint8_t* buffer)</code> forward declaration in <code>oscillator.h</code> ; and implement <code>void Oscillator::RenderMyAlgo(uint8_t* buffer)</code> in <code>oscillator.cc</code>. Your function must fill <code>kAudioBlockSize</code> samples of audio into the buffer passed as an argument. The macros <code>BEGIN_SAMPLE_LOOP</code>, <code>END_SAMPLE_LOOP</code> and <code>UPDATE_PHASE</code> can be used to take care of phase incrementation and sync. <code>RenderDirtyPwm</code> is probably the simplest example to study!</li>
+</ol>
+<p><strong>TransientGenerator</strong> (<code>transient_generator.h</code>) is the sound generator responsible for adding clicks/attacks at the beginning of the note.</p>
+<p><strong>NoteStack</strong> (<code>note_stack.h</code>) is a stack (implemented as a linked list with "pointers in a pool array" instead of pointers) used for storing the depressed keys and doing voice allocation.</p>
+<p><strong>SynthesisEngine</strong> (<code>synthesis_engine.h</code>) contains the bulk of the synthesis code, and integrates all the synthesis-related objects described above. The synthesis engine can handle several voices (at the moment only one) and start/stop a sound on each voice. However, it is not responsible for doing all the voice stealing / arpeggiation stuff. The classes responsible for turning sequencer data and incoming MIDI messages into actual notes routed to the synthesis voice are <strong>VoiceController</strong> (<code>voice_controller.h</code>) and <strong>VoiceAllocator</strong> (<code>voice_allocator.h</code>). <strong>VoiceAllocator</strong> is used in polychaining mode, and implements a LRU voice-stealing algorithm. <strong>VoiceController</strong> is used otherwise, and handles the note priority (through a <code>NoteStack</code>) and all the additional events generated by the sequencer or arpeggiator.</p>
+<h4 id="interaction-with-the-rest-of-the-world">Interaction with the rest of the world ®</h4>
+<p><strong>Editor</strong> (<code>editor.h</code>) is responsible for all the UI, pages navigation, etc. There are 3 modes for the editor, corresponding to the 5th key: patch ; sequence ; and performance. Each mode contains grouped pages. Each page has a UI Type (sequencer, traditional 4 parameters view). For each UI type, callback functions for drawing the screen, handling pots or encoder events are implemented.</p>
+<p><strong>ParameterDefinitions</strong> (<code>parameter_definitions.h</code>) is the central repository of everything the Shruthi needs to know about each synthesis parameter: its name, unit, descriptive string, and range. It is used by the editor, the random patch generator, to validate incoming NRPN data, and to scale incoming CC data.</p>
+<p><strong>MidiDispatcher</strong> (<code>midi_dispatcher.h</code>) is the class that will handle the reception of MIDI messages. All the handlers (NoteOn, ControlChange) will be inlined into the MIDI parsing state machine. Those handlers are responsible for updating the LCD display (status character), the Editor (step by step recording), the MIDI out and obviously the synthesis engine.</p>
+<h4 id="beast">Beast</h4>
+<p>The main code is in <code>shruthi.cc</code>. It consists of short chunks of code, aka "tasks" called in turns. The most important task, called inbetween all the other ones, is <strong>AudioRenderingTask</strong> which fills as much as possible of the audio buffer. Very few things happens in timer ISR-land (clocked at 39kHz):</p>
+<ol>
+<li>Pop a sample from an audio buffer and write it to the PWM output</li>
+<li>Every 16th call, pop a nibble from the display buffer and write it to the LCD</li>
+<li>Every 16th call, pop a byte from the MIDI out buffer and write it to the UART (This means the Shruthi can only achieve 78% of the maximum MIDI bandwidth).</li>
+<li>Every 16th call, debounce the switches</li>
+<li>Every 32th call, do the math to keep track of the number of ms elapsed since boot</li>
+</ol>
+<h2 id="releases">Releases</h2>
+<h3 id="v102">v1.02</h3>
+<p>This version improves the scanning rate of knobs for the "classic" (4-knob) Shruthi, and contains several minor bug fixes.</p>
+<h3 id="v101">v1.01</h3>
+<p>Major code rewrite!</p>
+<h4 id="synthesis_1">Synthesis</h4>
+<ul>
+<li>Single-cycle LFO mode.</li>
+<li>Individual ADSR parameters are modulation destinations.</li>
+</ul>
+<h4 id="sequencing">Sequencing</h4>
+<ul>
+<li>The <strong>warp</strong> modes for the sequencer/arpeggiator have been deprecated.</li>
+<li>The <strong>impro</strong> and <strong>rec</strong> modes for the sequencer have been deprecated.</li>
+<li>The internals of the sequencer/arpeggiator are now that of a reasonable 24 ppqn MIDI sequencer. External MIDI sync is tighter, and the Shruthi can output a MIDI clock to control other devices.</li>
+<li>Tempo-synchronized LFOs do not have the occasional reset/glitching they sometimes had in the previous version.</li>
+<li>The <strong>Warp</strong> setting has been replaced by an adjustable MIDI clock divider, which allows the arpeggiator or sequencer to run at other divisions than sixteenth notes, from 1/96 notes to whole notes. This new feature explains the disappearance of "turbo" tempi and dividers in the external clock mode.</li>
+</ul>
+<h4 id="performance-and-system">Performance and system</h4>
+<ul>
+<li>Duophonic mode behaves in a more predictable way, especially when coupled with the arpeggiator.</li>
+<li>Arpeggiator, portamento/legato and sequencer settings are now saved with the patch. When an arp or sequence is already running, loading a new patch will only load the synth settings (to keep your sequence running...)</li>
+<li>Pressing the encoder for 1 second will latch whatever the synth is playing (arpeggio, sequence, or single note), and will put the unit in latched mode unless the encoder is pressed again for 1s.</li>
+<li>Using the latch function when no note is playing puts the synth in "jam" mode - you can scroll through preset scales using the knobs. It works with the sequencer and arpeggiator too, so it effectively replaces the "test note".</li>
+<li>It is no longer possible to individually save/load sequences. Sequences are now part of a patch.</li>
+</ul>
+<h4 id="midi">MIDI</h4>
+<ul>
+<li>The MIDI <strong>split</strong> mode has been deprecated.</li>
+<li>The code handling CC/NRPN has been rewritten. Major benefit: knob moves are transmitted as CC rather than as NRPN - whenever possible of course.</li>
+</ul>
+<h4 id="ui">UI</h4>
+<ul>
+<li>Support for the XT digital control board.</li>
+<li>The UI is much more responsive.</li>
+<li>The <strong>Performance page</strong> has been deprecated.</li>
+<li>The <strong>Triggers</strong> feature has been deprecated.</li>
+<li>What used to be the "split point" setting is now an option to choose the behaviour at boot: splash screen on/off and boot on the presets page on/off.</li>
+<li>Screensaver (for OLED displays).</li>
+</ul>
+<h4 id="filter-board-handling">Filter board handling</h4>
+<ul>
+<li>Support for an upcoming filter board by TubeOhm.</li>
+</ul>
+<h3 id="v098">v0.98</h3>
+<p>Minor bug fixes, and extended SysEx support for <a href="http://www.vauxlab.com/downloads/shreditor/">third party editors</a>.</p>
+<h3 id="v097">v0.97</h3>
+<h4 id="synthesis_2">Synthesis</h4>
+<ul>
+<li>The envelopes have a different behaviour - the attack does not reset 0 at the beginning of each note, but rather starts from the current level of the envelope.</li>
+<li>The way velocity is managed in the context of note priority handling has been changed. When you play and hold a note, play a new note and release it, the held note is retriggered with its original velocity.</li>
+<li>Phase increments are computed using a new interpolation technique, saving 1.3kb of code size.</li>
+</ul>
+<h4 id="filter-board-handling_1">Filter board handling</h4>
+<ul>
+<li>Support for the "LP2+Delay" filter board.</li>
+</ul>
+<h4 id="ui_1">UI</h4>
+<ul>
+<li>When using the programmer, the screen shows the value of the edited parameter.</li>
+</ul>
+<h3 id="v096">v0.96</h3>
+<h4 id="synthesis_3">Synthesis</h4>
+<ul>
+<li>The LFSR used for the noise oscillator can now be reset by oscillator sync. This allows the creation of pitched sounds with a very rich timbre.</li>
+<li>Constant values have been introduced in the mod matrix. They can be combined with operators to attenuate, translate, or quantize a modulation source by a known value.</li>
+<li>A Quantize operation has been added to the operators. It reduces the bit-depth of a modulation source to create a Sample &amp; Hold like effect on any modulation.</li>
+<li>A Lag processor operation has been added to the operators. It smoothes the slope of a modulation source to create more progressive modulations.</li>
+<li>Two MIDI channel/note combo can be defined as "triggers". When such a MIDI message is received, a note is not played. Instead, a modulation source ("trigger 1" and "trigger 2" in the mod matrix) changes. This can be used to trigger effects (such as a pitch change or LFO speed boost) from a keyboard or an external MIDI sequencer.</li>
+<li>2 new modulation destinations, "env 1" and "env 2" allow the envelopes to be triggered whenever a modulation source crosses a threshold.</li>
+<li>A new mixing mode, "duo", allows the synth to be used in a pseudo-duophonic mode. The least recently played note is played on osc 2, and the most recently played note is played on osc 1.</li>
+<li>3 new mixing modes, "2 steps", "4 steps" and "8 steps" allow the oscillators (or oscillators, sub-oscillator and noise source) to be triggered rythmically at each note.</li>
+<li>A new mixing mode, "seqmix" allows the oscillators/sub/noise sources to be rythmically disabled according to the pattern input in the step sequencer. This allows very crude rythmic patterns to be programmed (using noise as a snare drum and the sub-oscillator as a kick).</li>
+<li>The attack time modulation destination now accepts both positive (faster attack) and negative (slower attack) modulations.</li>
+</ul>
+<h4 id="filter-board-handling_2">Filter board handling</h4>
+<ul>
+<li>The cutoff range of the Polivoks filter board has been shifted up by one octave.</li>
+</ul>
+<h4 id="code">Code</h4>
+<ul>
+<li>256 bytes have been saved by using the same table for the lowest octaves of the triangle oscillator.</li>
+<li>129 bytes have been saved by simplifying the "vibes" wavetable.</li>
+<li>A bug that caused random corruption of an unused memory area during program startup has been fixed.</li>
+<li>2.5 kbytes have been saved by de-specialization the Oscillators code.</li>
+</ul>
+<h3 id="v095">v0.95</h3>
+<h4 id="synthesis_4">Synthesis</h4>
+<ul>
+<li>A page has been added to configure the routing of the Polivoks filter board.</li>
+<li>The page showing the hpf settings for the SSM2044 filter board simultaneously displays the cutoff/resonance of the lpf - allowing both filters to be tweaked at the same time.</li>
+<li>Added a cutoff-coupling mode for the dual SVF filter board.</li>
+<li>MIDI notes in the 120-128 range are no longer wrapped to 108-116.</li>
+<li>Fixed a bug causing a faint VCA bleed with some specific combinations of modulation sources routed to the VCA.</li>
+<li>Added a new mixing mode, "fold", which equally mixes oscillator 1 and 2 and send the output to a fold-back distortion, the amount of which is controlled by "mix"</li>
+<li>Added a new mixing mode, "bits", which equally mixes oscillator 1 and 2 and send the output to a bit-reduction distortion, the amount of which is controlled by "mix".</li>
+</ul>
+<h4 id="code_1">Code</h4>
+<ul>
+<li>512 bytes have been saved by using the same table for the lowest octaves of the triangle oscillator.</li>
+</ul>
+<h4 id="ui_2">UI</h4>
+<ul>
+<li>Fixed a bug occurring when scrolling backwards from the second filter page.</li>
+<li>Fixed a bug preventing the tempo and LFO rate parameters to be edited with the pot, when the unit is configured in "snap" mode.</li>
+</ul>
+<h3 id="v094">v0.94</h3>
+<h4 id="synthesis_5">Synthesis</h4>
+<ul>
+<li>Fixed a bug that caused a loudness drop of the vowel oscillator</li>
+<li>Fixed a bug that caused the filtered noise "oscillator" to output incorrect values when the parameter was set to a high value.</li>
+<li>The envelopes now have a smoother curve, and slower attack / decay / release times can be achieved.</li>
+<li>Fixed a timing bug that caused the main oscillators pitch to be off by 8cents.</li>
+</ul>
+<h4 id="code_2">Code</h4>
+<ul>
+<li>The z-family oscillators now share common code, saving \~700 bytes of code.</li>
+<li>Resource table de-duplication saved \~200 bytes of code.</li>
+<li>The vowel oscillator code has been simplified by \~100 bytes.</li>
+<li>MIDI input is polled from the 39kHz audio interrupt rather than interrupt-driven. This saves \~80 CPU cycles per byte of MIDI data received,since there is no extra ISR intro/outtro when a MIDI byte is received.</li>
+</ul>
+<h4 id="midi-implementation">MIDI implementation</h4>
+<ul>
+<li>The Shruthi now uses an officially registered manufacturer ID for SysEx communication. As a result, patch dumps/backups made with previous versions willstill be readable with v0.94 and onwards, but patch dumps made with v0.94 won't be readable with earlier versions.</li>
+<li>CC90 and CC87 can be used to control the cutoff frequency and resonance of the second filter on the dual SVF filter board.</li>
+</ul>
+<h3 id="v093">v0.93</h3>
+<h4 id="synthesis_6">Synthesis</h4>
+<ul>
+<li>A menu has been added to control the routing of the dual SVF filter board.</li>
+<li>A menu has been added to control the effects of the digital FX board.</li>
+<li>The wavetable synthesis code has been rewritten to allow interpolation between waveforms which are not contiguous in memory. This allows the definition of wavetables which are a subset, or a permutation, or a mix of the existing wavetables. 10 such wavetables have been added to oscillator 1, approximating classic Waldorf Microwave wavetables.</li>
+</ul>
+<h4 id="midi_1">MIDI</h4>
+<ul>
+<li>Upon reception of a program change, the active patch number is updated (in v0.92, the patch was loaded but the patch number was not changed).</li>
+</ul>
+<h4 id="code_3">Code</h4>
+<ul>
+<li>Removed some cruft left after the oscillators rendering rewrite of v0.92. Saved 110 bytes of code.</li>
+<li>The classes and functions in the 'hal' directory are now an independent project called AVRil.</li>
+<li>I/O pins are now referenced by port/bit rather than by an Arduino-style pin number.</li>
+</ul>
+<h3 id="v092">v0.92</h3>
+<h4 id="ui_3">UI</h4>
+<ul>
+<li>Patches can be tweaked from the load/save page. In this case, the 4 knobs have the functions assigned to them in the performance page for this patch.</li>
+<li>The Shruthi can be configured to boot directly on the presets page (aka "presets mode").</li>
+<li>Non-blocking ADC scanning increases UI responsiveness.</li>
+<li>The "mix" and "osc 1" pages have been modified. The sub-oscillator settings are now on the same page as the oscillator 1 settings.</li>
+<li>Holding the load/save switch (S6) pressed down while rotating the encoder allows the values to be incremented/decremented by steps of 10. Useful for browsing patches!</li>
+</ul>
+<h4 id="system">System</h4>
+<ul>
+<li>Different options are available for using the 4 CV: 4 CV ins (assignable in mod matrix -- default setting), 32-knobs programmer, or simple mapping to cutoff, param1/param2 for pedals and joystick.</li>
+<li>External eeproms larger than 64kb are supported, up to 512kb. Note that when a 512kb eeprom is used, the last 64kb block is not used (this is due to the fact that 16-bit arithmetic is used to compute addresses, and that the address space includes the 16kb of the internal eeprom).</li>
+<li>Patches / sequences loading and saving can now be linked together (loading patch 15 simultaneously loads sequence 15...). Since it is not clear how this feature will be exposed in the UI, it is for now dormant.</li>
+</ul>
+<h4 id="midi_2">MIDI</h4>
+<ul>
+<li>SysEx Patch request command (0x11 0x00). Upon reception of this command, the Shruthi dumps the currently edited patch. Might be useful for an editor!</li>
+<li>SysEx Patch write command (0x21 0x00 0xnn 0xnn). Upon reception of this command, the Shruthi writes the current patch to a target memory.</li>
+<li>Support for NRPN increment/decrement.</li>
+<li>The SysEx backup protocol has been extended to support backing up / restoring more than 16kb of patch data.</li>
+<li>A bank and program change message is sent whenever a preset is loaded.</li>
+<li>Bank change messages are handled, to allow patches above 128 to be loaded.</li>
+<li>Volume change messages (CC 7) are handled.</li>
+<li>A new MIDI out mode has been added in which only user-initiated knobs changes are sent to the MIDI out. This mode is ideal for using the Shruthi with both its IN/OUT ports connected to the same device. The other modes are not suitable for operation in this configuration since they can cause unwanted MIDI loops.</li>
+</ul>
+<h4 id="synthesis_7">Synthesis</h4>
+<ul>
+<li>The shape of the envelope (approximation of an exponential) has been refined.</li>
+<li>The "2 bits" modulation destination is gone, since there are now better ways (extra TX pin, shift register out) to communicate with a filter board.</li>
+<li>A new modulation destination (replacing "2 bits") allows the attack of both envelopes to be sped up. This settings is particularly useful when velocity is used as a modulation source.</li>
+<li>The "digital silencing" of oscillators when envelopes have reached zero has been improved. The oscillators are now digitally silenced whenever the VCA destination in the modulation matrix has reached a value of zero.</li>
+<li>The noise source in the mixer is now refreshed at 40kHz instead of 10kHz, giving it a richer timbre.</li>
+<li>The phase counters are now 24 bits instead of 16 bits. This allows more subtle detuning effects between the oscillators, especially in the lowest notes.</li>
+<li>The audio engine has been rewritten from a "breadth first" to a "depth first" perspective, and as a result, is faster.</li>
+<li>As a result of the audio engine rewrite, the vowel oscillator can now be used with the noise and sub generators.</li>
+<li>The crossfading between wavetable zones is more subtle on the pulse oscillator (square with a parameter &gt; 0).</li>
+<li>To make more room for upcoming features, the waves wavetable has been downsampled to 128 samples/waveform instead of 256.</li>
+<li>New mixing modes (&gt;&gt;4, &gt;&gt;8) allow the oscillators signal to be bitcrushed (sample rate reduction with a S&amp;H) before being sent to the filter.</li>
+<li>A new feature ("operators") allows 2 pairs of modulation sources to be combined through a variety of mathematical operations (addition, multiplication, comparison) to yield two new complex modulation sources.</li>
+</ul>
+<h4 id="code_4">Code</h4>
+<ul>
+<li>Various code size optimizations saved 1kb.</li>
+<li>The modulation matrix processing code has been simplified.</li>
+<li>Changed compilation flags to achieve smaller code size.</li>
+<li>A menu in the UI and code infrastructure is ready to provide filter-board specific menus and parameters in future firmware revisions.</li>
+</ul>
+<h3 id="v091">v0.91</h3>
+<ul>
+<li>Improved encoder debouncing/decoding algorithm.</li>
+<li>Changed "load" label to "browse" in patch load/save page.</li>
+</ul>
+<h3 id="v090">v0.90</h3>
+<ul>
+<li>Original release.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../manual/" class="btn btn-neutral float-left" title="Manual"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../build/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../manual/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../build/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

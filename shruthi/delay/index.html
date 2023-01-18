@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Yellow magic filter board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Yellow magic filter board";
+        var mkdocs_page_input_path = "shruthi/delay.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Yellow magic filter board</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>Yellow magic filter board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/ym_analog.jpg" /></p>
+<p>This filter boards combines a raw OTA-C 2-pole filter, combined with a classic lo-fi delay.</p>
+<h2 id="using-this-filter-board">Using this filter board</h2>
+<p><strong>Important!</strong> The Shruthi-1 control board needs to send specific digital control signals to drive this filter board.</p>
+<ul>
+<li>Make sure that both the analog (CV1 to +5V) and digital (RX to +5V) ports of the filter and control boards are connected.</li>
+<li>Make sure that the Shruthi-1 firmware v0.97 (or above) is installed, and that the <strong>fil</strong> (filter board) setting is set to <strong>dly</strong> on the system settings page.</li>
+</ul>
+<p>The delay settings can be accessed by pressing the <strong>S2</strong> switch (Filter page) a second time:</p>
+<pre><code> Tim lev fdb eq.
+  60  48  12   0
+</code></pre>
+<p>The delay parameters are the following:</p>
+<ol>
+<li><strong>tim (time)</strong>: Delay time. The delay time is expressed in arbitrary units. Due to parts tolerance, the actual delay time might vary by a few percents, and this parameter is not accurately calibrated. The delay time typically ranges from 30ms (0) to 550ms (127). This parameter has a logarithmic scale, so the intermediate delay time (64) is close to 120ms.</li>
+<li><strong>lev (level)</strong>: Delay level. This controls the wet signal level. No delay effect can be heard when this parameter is set to 0.</li>
+<li><strong>fdb (feedback)</strong>: Delay feedback. This parameter controls the level of the signal taken at the output of the delay loop and fed back to the input.</li>
+<li><strong>eq. (fdbck. eq)</strong>: Feedback tone color. A simple EQ circuit is present in the feedback loop. When this parameter is set to 0, the signal fed back into the delay is colored by a low-pass filter with a cutoff of 500 Hz. This causes the echoes to get darker and darker, an effect which is not unlike reverb with short delay times. When this parameter is set to 15, the signal fed back into the delay is colored by a high-pass filter with a cutoff of 500 Hz. This gives the echoes a "dub" flavor.</li>
+</ol>
+<p>A few observations about the lo-fi-ness of the delay:</p>
+<ul>
+<li>Using a longer delay time causes a degradation of the sound quality. Unlike traditional analog BBD delays, this degradation is not a bandwidth reduction, but rather a combination of a bandwidth reduction and the addition of quantization noise. This is due to the 1-bit sigma/delta conversion used in the PT2399.</li>
+<li>The frequency response of the filter circuit in place around the PT2399 has a slight bump near 3kHz. This means that when feedback level is too high, a 3kHz tone will build up into the delay line. Whether this build-up is musically useful or annoying is up to you to decide, but we deliberately allowed this to occur. Thus, some combinations of the <strong>fdb</strong> and <strong>eq.</strong> parameter, particularly with <strong>eq.</strong> set to a high value and <strong>fdb</strong> greater than 10, will cause pathological feedback to occur.</li>
+<li>In order to make quantization noise less audible when long delay times are used, the signal is heavily amplified in the mixer at the input of the delay line, with a soft-limiter in place to prevent clipping. Don't be surprised if the echoes are more "fuzzy" than the original signal. This is particularly noticeable with high feedback times when many echoes add up to each other, causing the soft-limiter to get into action and add harmonics to the sound.</li>
+</ul>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p><img alt="" src="../../static/images/shruthi_delay.png" /></p>
+<p>You can find the Eagle files for this board in the shruthi/hardware_design/pcb directory of the source code hosted on <a href="http://github.com/pichenettes/shruthi-1">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-Analog-LP2Delay-v02.pdf">here</a>.</p>
+<p>You can refer to Tim Stinchcombe's <a href="http://www.timstinchcombe.co.uk/synth/MS20_study.pdf">notes</a> for an analysis of the filter core.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdFZXbG9FVEk4WW1Mc056M1BhQUpKVUE&amp;output=html&amp;widget=true">Bill of materials.</a></p>
+<p><strong>Important note to builders using self-sourced PT2399s.</strong></p>
+<p>Some batches of PT2399s are more prone to clock latchup when short delay times are used (something that happens when the board is powered up and the delay time is initialized to its minimal value). If you encounter problems with the delay - such as the delay randomly not working when the board is powered on - simply replace R58 by a higher value, such as 27k or 30k. This has the side-effect of shifting up the delay times range.</p>
+<p>The PT2399s that come with the kits have been tested and do not require the modification (R58 = 22k as printed on the board).</p>
+<h2 id="assembly">Assembly</h2>
+<p>For parts placement, you can refer to <a href="../../static/images/shruthi_delay.pdf">this pdf file</a> during assembly.</p>
+<p><img alt="" src="../../static/images/7663629756_f57dd99a1b_z.jpg" /></p>
+<p>Start with the smaller resistors:</p>
+<ul>
+<li>6x 220R (red, red, black, black).</li>
+<li>4x 470R (yellow, purple, black, black).</li>
+<li>4x 2.2k (red, red, black, brown).</li>
+<li>3x 4.7k (yellow, purple, black, brown).</li>
+</ul>
+<p><img alt="" src="../../static/images/7663631680_dc7f005a26_z.jpg" /></p>
+<p>More resistors:</p>
+<ul>
+<li>14x 10k (brown, black, black, red).</li>
+<li>1x 12k (brown, red, black, red).</li>
+<li>7x 15k (brow, green, black, red).</li>
+<li>5x 22k (red, red, black, red).</li>
+<li>1x 33k (orange, orange, black, red).</li>
+<li>1x 47k (yellow, purple, black, red).</li>
+<li>4x 68k (blue, grey, black, red).</li>
+</ul>
+<p><img alt="" src="../../static/images/7663633468_7950ea683d_z.jpg" /></p>
+<p>More resistors:</p>
+<ul>
+<li>2x 100k (brown, black, black, orange).</li>
+<li>1x 150k (brown, green, black, orange).</li>
+<li>1x 330k (orange, orange, black, orange).</li>
+<li>1x 1M (brown, black, black, yellow).</li>
+</ul>
+<p>Note that 3 bridges have been added on the IN, OUT and SW pads - since we don't use input/output gain pots and power switches.</p>
+<p><img alt="" src="../../static/images/7663634724_bd62999b5e_z.jpg" /></p>
+<p>Add 6x 1N4148 diodes. They are polarized, make sure that the black ring follows the pattern silkscreened on the PCB. Add 2x 2.4V Zener diodes (this photo of an older board shows 2.7V, but the right value is 2.4V). They are polarized too.</p>
+<p><img alt="" src="../../static/images/7663635648_9e0c0a4ea2_z.jpg" /></p>
+<p>Add the polarity protection diode (1N4001 or 1N4004). It is polarized.</p>
+<p><img alt="" src="../../static/images/7663637518_49c9543103_z.jpg" /></p>
+<p>Add the ceramic capacitors. They are not polarized:</p>
+<ul>
+<li>1x 10pF (labelled 100).</li>
+<li>2x 100pF (labelled 101).</li>
+<li>1x 330pF (labelled 331).</li>
+<li>6x 560pF (labelled 561).</li>
+<li>20x 100nF (labelled 104).</li>
+<li>4x 220nF (labelled 224).</li>
+</ul>
+<p><img alt="" src="../../static/images/7663639440_d71877660e_z.jpg" /></p>
+<p>Add the IC sockets.</p>
+<p><img alt="" src="../../static/images/7663641308_32b8cd0577_z.jpg" /></p>
+<p>Add the film capacitors (2x 33nF, 2x 1nF, 2x 6.8nF or 5.6nF). They are clearly labelled with their value, and are not polarized.</p>
+<p><img alt="" src="../../static/images/7663643146_dd1afa48c8_z.jpg" /></p>
+<p>Add the 4x 2N3906 transistors, and the 2N3904 transistor. Beware of their polarity!</p>
+<p><img alt="" src="../../static/images/7663645032_e111a6bf7b_z.jpg" /></p>
+<p>Add the electrolytic capacitors. The 6x 4.7uF capacitors are not polarized (a + and - are silkscreened on the PCB, don't bother with those). The 5x 100uF and 2x 220uF capacitors are polarized. The white stripe on the edge of the capacitor indicates the minus lead (which is also the shortest one).</p>
+<p>Here is another view of the board:</p>
+<p><img alt="" src="../../static/images/7663646668_e684446b7a_z.jpg" /></p>
+<p>Add the tantalum capacitor. A stripe indicates the + the lead.</p>
+<p><img alt="" src="../../static/images/7663648362_ece3d6e359_z.jpg" /></p>
+<p>Add the 20k trimmer.</p>
+<p>Add the connectors and the 2 voltage regulators (7905 and 7805). <strong>Don't mix them up, these are different parts!</strong></p>
+<p>You can finally insert all ICs</p>
+<p><img alt="" src="../../static/images/7663650074_6cab8ccfa7_z.jpg" /></p>
+<p>The last step consists in tuning the filter, to make sure that the cutoff frequency of the filter follows a musical scale: increasing the cutoff setting on the Shruthi by 12 (or playing a note 1 octave = 12 semitones higher) should double the cutoff frequency.</p>
+<p>First, you'll need to assemble the filter and control boards. Maybe you can start screwing them together onto the bottom plate of the enclosure or you can just temporarily sandwich female 1x8 and 1x6 connectors between the boards for testing.</p>
+<p>Dial the following settings on the Shruthi-1:</p>
+<ul>
+<li>Oscillator 1 shape: <strong>none</strong></li>
+<li>Oscillator 2 shape: <strong>none</strong></li>
+<li>Filter cutoff: <strong>64</strong></li>
+<li>Filter resonance: <strong>63</strong> (maximum value)</li>
+<li>Filter envelope and LFO modulations: <strong>0</strong></li>
+</ul>
+<p>Play on the keyboard. You should hear a pure tone (sine wave), which does not come from the Shruthi-1 oscillators but from the filter self-oscillating. Adjust the V/Oct trimmer so that the <strong>intervals</strong> are respected - that is to say, when you play C3 then C4, you should hear two notes, maybe not C3s and C4s, but they must be one octave apart. If you do not have a good sense of pitch, you can try a software tuner like Tuna Pitch on OS X. If the filter is correctly tuned, you should be able to play the filter "self oscillation tone" across roughly 4 octaves with correct tuning.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><img alt="" src="../../static/images/shruthi_delay_troubleshoot.jpg" /></p>
+<ul>
+<li>RED: +5V</li>
+<li>BLUE: -5V</li>
+<li><strong>1</strong>: Mixer output (raw oscillators signal)</li>
+<li><strong>2</strong>: Filter output</li>
+<li><strong>3</strong>: VCA output</li>
+<li><strong>4</strong>: Delay mixer input (this is what goes into the delay: input signal + feedback)</li>
+<li><strong>5</strong>: Delay output. This signal is referenced to +2.5V</li>
+<li><strong>6</strong>: Output amp output. This is the sum of the signal at the output of the VCA + the delay output attenuated according to the dry/wet control.</li>
+<li><strong>F</strong>: Filter cutoff expo converter input. Should swing by +/- 100mV when cutoff is adjusted.</li>
+<li><strong>C</strong>: Delay clock. High frequency signal visible with a scope, should speed up/slow down proportionally to delay time.</li>
+<li><strong>M</strong>: Wet signal attenuation CV. 0V when delay level is set to 63 ; 4.1V when delay level is set to 0.</li>
+<li><strong>T</strong>: Delay time CV. 0V when delay time is set to 0 ; 1.0V when delay time is set to 127.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>This circuit and PCB layout is made available under a <strong>cc-by-sa-3.0</strong> license.</p>
+<h2 id="releases">Releases</h2>
+<h3 id="v02">v0.2</h3>
+<ul>
+<li>First stable prototype. v0.1 used a digital pot to control the delay time and level and this was a rather bad design choice.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ym_build/" class="btn btn-neutral float-left" title="Yellow magic kit"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dsp/" class="btn btn-neutral float-right" title="DSP filter board">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ym_build/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../dsp/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Digital control board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Digital control board";
+        var mkdocs_page_input_path = "shruthi/digital.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Digital control board</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>Digital control board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p>The digital/control board hosts the main microcontroller (ATMega644p), the switches/pots/LEDs, the LCD display, and the MIDI interface. It is powered by a regulated 5V supply located on the analog filter board.</p>
+<p>Here's a view of the board:</p>
+<p><img alt="" src="../../static/images/shruthi_control_top.png" />\
+<img alt="" src="../../static/images/shruthi_control_bottom.png" /></p>
+<p>It has parts on both sides, but there's no overlap between the two regions, so when there's parts on one side, there won't be much action on the other side! The LCD has to be soldered last, since it will cover the ATMega644p pins. Otherwise you can start from whichever side you prefer.</p>
+<p>You can find the Eagle files for this board in the <code>shruthi/hardware_design/pcb</code> directory of the source code hosted on <a href="http://github.com/pichenettes/shruthi-1">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-Digital-v08.pdf">here</a>.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdG83ZnN2MWxSRmZaWkJPNWRhTmNndFE&amp;output=html&amp;widget=true">Full-page version</a></p>
+<p>Some notes:</p>
+<ol>
+<li>Resistors don't have to be 1% metal film, 5% carbon are fine for this board. But since there are 1% resistors with the same values in the filter board, it's a better deal to get 1% for everything.</li>
+<li>The reference from Farnell is for a 1+8 network that will have to be cut (ouch) to get the required network of 6 resistors. The reference from Digikey is a 1+7 network.</li>
+<li>The quartz sold on Reichelt have a surprisingly high capacitance (32pF). Buy at your own risks!</li>
+</ol>
+<h3 id="parts-to-avoid">Parts to avoid.</h3>
+<ol>
+<li><strong>Reichelt ST 24C64 BN6</strong>. Slow as molasses. If you really insist on using it, you need a hardware fix (increase the value of the 2.2k pull-ups to 6.8k or 10k) and a software fix (change the write delay to 10ms, set the I2C speed to 25kHz).</li>
+<li><strong>Reichelt RK09K113-LIN10K</strong>. Do not have a D-shaped shaft. The end of the shaft is supposed to look like a miniknob.</li>
+<li><strong>Crystalfontz LCDs</strong>. Very clean and bright display at a cost: they draw too much current. You need to replace R20 by a 8R resistor, but then the display dim and there's some heavy "motorboating" in the sound whenever you play a note, unless you put a beefier power supply (a 500mA rated wall-wart might not be enough, worked well with 650mA or 1500mA wall-warts).</li>
+<li><strong>Displaytech LCDs</strong>. Their metallic, conducting frame might cause shorts between the pins of the ATMega644p beneath.</li>
+</ol>
+<h2 id="assembly-instructions">Assembly instructions</h2>
+<p>If you are building a complete Shruthi-1 kit, it is recommended to build the filter board (or at least its power supply section) before starting this board.</p>
+<h3 id="getting-ready">Getting ready</h3>
+<p>Locate the following parts/bags from the kit:</p>
+<p><img alt="" src="../../static/images/4949004599_2c4ec1dc93_z.jpg" /></p>
+<p>Some equipment you'll need:</p>
+<ol>
+<li>Soldering iron + solder (nothing fancy, a 15 or 20W will do).</li>
+<li>Cutters.</li>
+</ol>
+<p>We assume you know soldering. If you don't, look first at <a href="http://www.instructables.com/id/How-to-solder/">this tutorial</a>. We highly recommend you to purchase a simple kit from <a href="http://www.adafruit.com">adafruit</a> or <a href="http://www.sparkfun.com">sparkfun</a> to practice on something that you won't regret breaking.</p>
+<p>A last word: be patient! we know you're just a couple of hours away from playing your Shruthi-1, but if you do something stupid, those hours will turn into days or weeks.</p>
+<p><strong>DISCLAIMER:</strong> We are not responsible for anything wrong (including electric shocks, malfunctions, fires, accidents involving a soldering iron) that might happen during the assembly of the kit. Everything you do while assembling the kit is at your own risks.</p>
+<h3 id="step-1">Step 1</h3>
+<p><img alt="" src="../../static/images/5231395228_e5d521bdff_z.jpg" /></p>
+<p>First, we will populate the bottom side of the board - starting by the shortest and smallest parts. Add the following resistors:</p>
+<ol>
+<li>R20 (68R, blue, grey, black, gold). <strong>This resistor sets the brightness of the LCD display. If you find a smaller resistor in your kit, such as 3.3 ohms (orange, orange, black, silver), instead of 68 ohms, use it there!</strong> This is because different LCD displays have different requirements in terms of brightness.</li>
+<li>R19 and R18 (220R, red, red, black, black)</li>
+<li>R1, R14 (10k, brown, black, black, red)</li>
+<li>R16 and R15 (2k2, red, red, black, brown)</li>
+</ol>
+<h3 id="step-2">Step 2</h3>
+<p><img alt="" src="../../static/images/5230803249_ab1aa9bae6_z.jpg" /></p>
+<p>Then, add the capacitors. These are small ceramic capacitors, and thus, they are not polarized.</p>
+<ol>
+<li>C1, C4, C8, C5 (100nF caps, not polarized). The latest revision of the board (v0.7) has two more of those, C9 and C10.</li>
+<li>C6, C7 (18pF caps, not polarized)</li>
+</ol>
+<p>The 18pF capacitors might look different from those on the picture, but you can recognize them with the <strong>180</strong> or <strong>18</strong> label. 100nF capacitors are labelled <strong>104</strong>.</p>
+<h3 id="step-3">Step 3</h3>
+<p><img alt="" src="../../static/images/5230803399_70608f49fd_z.jpg" /></p>
+<p>Finally, add the diode D1, which is <strong>polarized</strong>. The black ring of the diode should point towards the MIDI connectors.</p>
+<h3 id="step-4">Step 4</h3>
+<p><img alt="" src="../../static/images/5231395618_0e25b0c46d_z.jpg" /></p>
+<p>Add:</p>
+<ol>
+<li>The 20MHz quartz at the position labelled Q1.</li>
+<li>The trimmer (resistor adjustable with a screwdriver) R21. You can mount it in either orientations.</li>
+</ol>
+<h3 id="step-5">Step 5</h3>
+<p><img alt="" src="../../static/images/5231395764_dab2e32ddb_z.jpg" /></p>
+<p>Add:</p>
+<ol>
+<li>The 3 IC sockets (2 DIL8 and 1 DIL40). Make sure that the notch is in the same direction as printed on the PCB.</li>
+<li>The 2 MIDI connectors. You can start by the biggest pad at the center to keep the part in place, then solder the other pads.</li>
+</ol>
+<p>At this step, you'll need to carefully cut, on the other side of the board, the leads of the parts (including the IC socket) in the area covered by the LCD module. Since there are a few SMT parts at the bottom of the LCD module PCB, you'll have to make sure that the leads are cut as short as possible to avoid unwanted shorts between the two boards.</p>
+<h3 id="step-6">Step 6</h3>
+<p><img alt="" src="../../static/images/5231395936_98fb91def5_z.jpg" /></p>
+<p>&lt;div class="warning"&gt;The 220R resistors soldered at this step are current-limiting resistors for the LEDs - they set the brightness of the LEDs. The 220R value printed on the circuit board is suitable for standard low-intensity green, yellow or red LEDs - and a lower value could indeed damage the LEDs. For blue or white LEDs, a higher value, such as 1k, must be used.&lt;/div&gt;</p>
+<p>Now insert and solder the small parts on the top side of the board:</p>
+<ol>
+<li>R2 to R9 (220R ; red, red, black, black - or if your kit is supplied with them: 1k ; brown, black, black, brown).</li>
+<li>C2, C3 (100nF caps marked <strong>104</strong>, not polarized).</li>
+</ol>
+<h3 id="step-7">Step 7</h3>
+<p><img alt="" src="../../static/images/5231396086_cf14450670_z.jpg" /></p>
+<p>Insert and solder the following parts:</p>
+<ol>
+<li>IC2 and IC3 (74hc165 and 74hc595). If you have an older version of the kits, these have to be soldered directly on the PCB - in which case you have to be very very careful about the orientation of the chips (the notch on the PCB must be on the same side as the notch on the chip), and of course not swapping them. The new batches of kits have IC sockets, so just solder the sockets here; and socket the chips.</li>
+<li>RN1 (10k). This part is a network of 6 resistors sharing a common pin. It is <strong>polarized</strong>: The common pin is marked by a white dot. This dot should be near the "RN1" and "-" markings of the board.</li>
+</ol>
+<p><img alt="" src="../../static/images/5230804227_93a4a8702e_z.jpg" /></p>
+<h3 id="step-8">Step 8</h3>
+<p><img alt="" src="../../static/images/5230804329_f6394645ee_z.jpg" /></p>
+<p>Add the LEDs. They are <strong>polarized</strong>, the shortest lead and flat side of the LED (-) are on the side of the switches ; the longest lead and rounded side of the LED (+) are on the side of the resistors.</p>
+<p>Note that the colors and types of LEDs vary from batch to batch of kits - but no matter how they look, they need to be soldered the same way!</p>
+<h3 id="step-9">Step 9</h3>
+<p>Solder the 8-pin male connector through which the two boards will be connected. Here is a photo of a <strong>finished</strong> assembly, with the part to solder highlighted:</p>
+<p><img alt="" src="../../static/images/5231396544_b95f6d5e49_z.jpg" /></p>
+<p>The connection between the two boards is ensured by a 8-pin female header on the filter board, a 8-pin female header stacked onto it, and the connector you have just soldered. You might need to clip the leads of the header in the middle.</p>
+<p><img alt="" src="../../static/images/5231397158_97cd7f69e2_z.jpg" />\
+<img alt="" src="../../static/images/5230804741_59d3272c7e_z.jpg" /></p>
+<h3 id="step-10">Step 10</h3>
+<p><img alt="" src="../../static/images/5231396668_9e70f33c30_z.jpg" /></p>
+<p>Add the controls - the 4 potentiometers, the encoder and the 6 switches.</p>
+<p>If the 2 legs on the side of the potentiometers do not fit in the holes on the PCB, don't panic! There is a wide tolerance in the PCB plating process which can cause an excessive accumulation of conductor on the PCB holes. File the holes until the potentiometers fit. It is not recommended to leave these 2 joints unsoldered - they help keeping the potentiometers solidly attached to the PCB.</p>
+<h3 id="step-11-a-first-test">Step 11: a first test!</h3>
+<p>Even if the LCD screen is not soldered yet, you can already try to power up the Shruthi-1. Indeed, it is highly recommended to do so, since the LCD module will later cover some solder pads, preventing you to fix a bad solder point on the MCU. For now, the pads are still apparent, so it's a good time to make a first test.</p>
+<p>&lt;div class="error"&gt;When temporarily connecting the control board to a filter board, without any spacer in place, make sure that the solder points at the bottom of the control board do not touch parts on the filter board, especially the metal tab of the regulators. This could easily short and damage parts on the control board.&lt;/div&gt;</p>
+<p>Insert the 3 ICs (ATMega644p, AT24C and 6N137) in their sockets on the bottom side of the board. Be careful with their <strong>orientation</strong>. Connect a filter board, or, if you have not assembled the filter, a 5V power supply to +5V and GND. The Shruthi-1 should boot and the 3rd and 7th LED should be lit.</p>
+<p><img alt="" src="../../static/images/5230805635_2b4409eb4d_z.jpg" /></p>
+<p>Press each of the switches several times to verify that the Shruthi reacts to key presses, and that all the LEDs are lit. Rotating the encoder should scroll through the different pages - which will be shown as different LED patterns. You can even connect it to a MIDI keyboard and an amp/mixer to play it.</p>
+<h3 id="step-12">Step 12</h3>
+<p><img alt="" src="../../static/images/5230805849_f5471cf4f4_z.jpg" /></p>
+<p>If all sounds good, insert the 16x1 connector between the LCD module and the PCB, and solder it first to the LCD module, and then to the main PCB. Be careful and keep the module aligned with the PCB!</p>
+<p>As you can see on this picture, the PCB of the LCD module is maintained at a height of 2.5mm above the main PCB by the black plastic part of the 16x1 connector. No need to add some extra height. The 6 black "feet" of the LCD module rest on the PCB. Don't worry about shorts: the material of the LCD bezel does not conduct.</p>
+<h3 id="step-13">Step 13</h3>
+<p>Finally, adjust the contrast of the LCD:</p>
+<ol>
+<li>Turn the screw of the trimpot R21 counterclockwise until you have reached the end.</li>
+<li>Power the Shruthi-1 and check that the display is very bright but illegible.</li>
+<li>Turn the trimpot a few turns clockwise (it really depends on the LCD type - from one or two turns for the red ones, to four or five for the blue ones).</li>
+</ol>
+<h3 id="step-14">Step 14</h3>
+<p>If your filter board is ready, you can now add the spacers and screw the two boards together.</p>
+<p>If you are using an "official" plexiglass case, start with the following steps:</p>
+<ol>
+<li>Remove the protective sheets from the plexiglass panels</li>
+<li>Clean the panels to remove the dust</li>
+<li>Try putting together the 6 panels and check that the case does not appear bent / warped. If this happens, swap (inside &lt;-&gt; outside) the bottom panel ; then the side panels. The heat of the laser might bend the material by a fraction of mm ; so the concave side must be on the inside.</li>
+<li>Notice the little dot engraved on the bottom panel. It indicates the front side</li>
+<li>Ready to go? Start assembling the "sandwich" from the bottom to the top:</li>
+</ol>
+<p>The composition of the "sandwich" is, from bottom to top:</p>
+<ol>
+<li>12mm screw (15mm in some kits)</li>
+<li>Bottom enclosure panel</li>
+<li>2mm nut</li>
+<li>Filter PCB</li>
+<li>Washer</li>
+<li>22mm Spacer (older kits have a 20mm spacer and four extra 2mm nuts)</li>
+<li>Digital/control PCB</li>
+<li>6mm screw</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="when-the-digital-board-is-powered-the-leds-show-a-x-x-x-x-pattern-and-the-unit-seems-to-freeze">When the digital board is powered, the LEDs show a x-x-x-x- pattern and the unit seems to freeze.</h3>
+<p>This could be one of the following problems:</p>
+<ul>
+<li>Bad solder point on the 74hc165 or the resistor network.</li>
+<li>Damaged 74hc165 (this might happen if the solder points under the digital board made contact with another part on the filter board).</li>
+<li>Swapped 74hc165 and 74hc595.</li>
+</ul>
+<h3 id="the-shruthi-seems-to-boot-correctly-leds-3-and-7-are-lit-but-the-display-is-empty">The Shruthi seems to boot correctly (LEDs 3 and 7 are lit), but the display is empty.</h3>
+<p>If the display shows a filled line (16 7x5 filled squares) and an empty line: there's a communication problem between the LCD module and the MCU. One of the LCD module pins is not correctly soldered or is shorted with its neighbor. In last resort check the continuity between the pins of the MCU that are connected to the LCD. If you observe shorts between some of those pins, it's likely that the AVR has been damaged by an electrostatic discharge.</p>
+<p>If the display shows 2 filled lines: the contrast is set to its maximum value, in the wrong direction. Turn the R21 trimmer by about 5 turns (you'll notice it if you turn it in the wrong direction – you'll have reached the end of the trimmer and a slight click will be heard at each turn).</p>
+<p>If the display shows nothing: the contrast is set to an incorrect value. Try adjusting the R21 trimmer until you see the text or the filled line. Check for bad joint in the contrast trimpot – in particular check that the GND pin is correctly soldered. Grounded points are more difficult to solder due to the ground-plane absorbing the heat.</p>
+<p>Remember that even if the MCU is dead, blank, or removed from its socket, the LCD module will show a filled line. If you don't see the filled line or the splash screen, there's a problem with the contrast setting.</p>
+<h3 id="midi-does-not-work">MIDI does not work.</h3>
+<p>When a MIDI note arrives in the Shruthi on the right channel, it shows a note icon in a corner of the screen. The first thing is to make sure that the controller/keyboard sends on the right channel, 1 by default.</p>
+<p>Other things to check:</p>
+<ul>
+<li>Is the 6N137 correctly oriented? Check that it has not been swapped with the eeprom chip.</li>
+<li>Check that pin 5 of the 6N137 is continuous with ground, and pin 8 is at a voltage of +5V.</li>
+<li>Check that pin 6 is at +5V, and drops to a lower voltage when a large string of MIDI messages is sent (for example, wiggle the pitch bend lever).</li>
+</ul>
+<h3 id="the-parameter-values-seem-to-be-flickering-as-if-the-pots-were-constantly-tweaked-by-an-invisible-and-ghostly-hand">The parameter values seem to be "flickering" – as if the pots were constantly tweaked by an invisible and ghostly hand.</h3>
+<p>Your power supply is not providing enough current, and this cause oscillations on the +5V rail. Try a different power supply with a higher current rating.</p>
+<h2 id="kudos">Kudos</h2>
+<p><a href="http://narrat1ve.com/">Todd Bailey</a> for useful board layout reviews!</p>
+<h2 id="releases">Releases</h2>
+<h3 id="v08">v0.8</h3>
+<ul>
+<li>Rounded corners</li>
+<li>Logo and text redesign</li>
+</ul>
+<h3 id="v06-v07">v0.6, v0.7</h3>
+<ul>
+<li>Changed position of ISP header and modified routing of clock lines to reduce digital noise.</li>
+<li>Added an extra bypass cap on the MCU RST line, and near the digital supply pin for extra stability.</li>
+<li>Added extension port for external programmer or LED array.</li>
+<li>Added solder pads for MIDI connector.</li>
+<li>Changed MIDI pull-up resistor to 10k.</li>
+<li>Changed labeling of ports.</li>
+</ul>
+<h3 id="v05">v0.5</h3>
+<ul>
+<li>Original release.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../build/" class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../smr4mkii/" class="btn btn-neutral float-right" title="SMR4 mkII filter board">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../build/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../smr4mkii/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

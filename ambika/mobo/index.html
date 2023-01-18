@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Motherboard - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Motherboard";
+        var mkdocs_page_input_path = "ambika/mobo.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build Instructions</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Motherboard</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Ambika &raquo;</li>
+          <li>Build Instructions &raquo;</li>
+      <li>Motherboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/ambika_mobo.png" /></p>
+<p>The motherboard supports up to 6 voicecards, and contains everything
+<strong>not</strong> related to sound generation: power supply, MIDI interface, audio
+outputs, SD card storage, user interface and the main processor.</p>
+<p>It is strongly advised to start the assembly with the motherboard.</p>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p>The schematics in PDF format are <a href="../../static/schematics/Ambika-Mobo-v09.pdf">available
+here</a>.</p>
+<p>You can find the Eagle files for this board in the source code hosted on
+<a href="https://github.com/pichenettes/ambika/tree/master/controller/hardware_design/pcb">github</a>.</p>
+<p>If you need a reference during soldering, you can download this printout
+of the
+<a href="../../static/images/ambika_mobo_bottom.pdf">bottom</a>
+and <a href="../../static/images/ambika_mobo_top.pdf">top</a>
+sides of the board.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdHl4MG1PWkxONzg2ZFdRYXJrMzZvTWc&amp;single=true&amp;gid=0&amp;output=html">Bill of
+materials</a>.</p>
+<p>Some friendly notes for the self-sourcing crowd:</p>
+<ul>
+<li>The resistance of the potentiometer adjusting the output volume does
+    not matter much as long as you connect Ambika to an audio interface,
+    mixer, amp (anything with a reasonably high input impedance). You
+    can even bypass it.</li>
+<li>Given the lead spacing and height constraint, there isn't much
+    choice for the big electrolytics. Check the dimensions carefully
+    when ordering from an unlisted source.</li>
+<li>C12 is not needed for now - it might be needed if additional digital
+    peripherals/extensions drawing a lot of current on the +5V rail are
+    added.</li>
+<li>Do not attempt to use a 7808 instead of a LM2940-8.0.</li>
+<li>Be extremely careful in your choice of LCD module. Some of them
+    won't fit in the cutout in the PCB, so you might have to file the
+    PCB to get them through ; or solder them above the PCB.</li>
+<li>Heatsinks are absolutely necessary! The part from digikey (HS336-ND)
+    or Mouser (567-265-118ABH-22) has two "legs" that need to be cut.</li>
+<li>The 2-color LED from Mouser (604-WP937GYW) has to be mounted
+    backwards because the Y and G LEDs are oriented differently. The
+    2-color LED from Reichelt is not green &amp; yellow, but red &amp; yellow.</li>
+</ul>
+<h2 id="assembly-instructions">Assembly instructions</h2>
+<p>Some equipment you'll need:</p>
+<ol>
+<li>Soldering iron + solder (nothing fancy, a 15 or 20W will do).</li>
+<li>Cutters.</li>
+</ol>
+<p>We assume you know soldering. If you don't, look first at <a href="http://www.instructables.com/id/How-to-solder/">this
+tutorial</a> .</p>
+<p><strong>DISCLAIMER: </strong> We are not responsible for anything wrong (including electric shocks, malfunctions, fires, accidents involving a soldering iron) that might happen during the assembly of the kit. Everything you do while assembling the kit is at your own risks.</p>
+<h3 id="resistors">Resistors</h3>
+<p>Resistors are not polarized, though it is a good idea to align them as
+on the pictures, to make your boards more "readable" to other people who
+might have to look at them.</p>
+<p><img alt="" src="../../static/images/7449275504_dbc951b4f0_z.jpg" /></p>
+<p>3x 220R (red, red, black, black) and 1x 10k (brown, black, black, red)
+resistor for the MIDI in/out</p>
+<p><img alt="" src="../../static/images/7612395228_0c7dc4f4c5_z.jpg" /></p>
+<ul>
+<li>7x 470R (yellow, purple, black, black) for output protection of the
+    audio out op-amps</li>
+<li>1x 10k (brown, black, black, red) or lower (down to 4.7k)</li>
+<li>2x 100k (brown, black, black, orange)</li>
+</ul>
+<p>Note the bridge done with the leg of a resistor on the resistor labelled
+0R. This is because the LCD module provided by Mutable Instruments does
+not need a current limiting resistor for its backlight. However, if your
+LCD module comes from Optrex (green on black, with a white frame), you
+need to solder a 100 ohm resistor there - otherwise the internal
+backlight LED of the module will be damaged.</p>
+<p>The 10k resistor just above the resistor network RN1 determines the gain
+of the final mixing stage. A value of 10k might cause clipping if the
+level of all voicecards is set to the maximum value and if all 6
+voicecards are playing at the same time. To prevent this, a lower value
+of 6.8k or 4.7k is recommended. You can keep 10k if you do not plan to
+install all 6 voicecards in your Ambika.</p>
+<p><img alt="" src="../../static/images/7449277724_78af6fa9c5_z.jpg" /></p>
+<p>Unless you intend to solder a main on/off switch, bridge the pads
+labelled SW.</p>
+<p><img alt="" src="../../static/images/7449278954_09062a7842_z.jpg" /></p>
+<p>Add a 10k resistor (brown, black, black, red) near the ATMega (it pulls
+up the RST line of the MCU). Add the 20 MHz crystal.</p>
+<p><img alt="" src="../../static/images/7449280510_8ba77fc2f2_z.jpg" />\
+<img alt="" src="../../static/images/7449281540_13ae1a45ea_z.jpg" /></p>
+<p>Add 15x 470R resistors (yellow, purple, black, black). They are used for
+limiting the current flowing through the LEDs. Lower values might
+increase the brightness of the LEDs, at the risk of damaging them.</p>
+<p><img alt="" src="../../static/images/7449296090_3f5684c5db_z.jpg" />\
+<img alt="" src="../../static/images/7612396430_a8b57c19fb_z.jpg" /></p>
+<p>Add the 10k resistor networks. The 9 pins one pulls up the switches; the
+7 pins one is used for mixing the voicecards signals. The dot on the
+resistor network must match the <strong>1</strong> marking on the board. Check the
+photos.</p>
+<p><img alt="" src="../../static/images/7449307542_3c5ac682b6_z.jpg" /></p>
+<p>Add the 5k adjustable resistor used for LCD contrast adjustment (the
+photo shows that it is called R47, but it has been renamed R36 in later
+revisions of the board).</p>
+<h3 id="diodes">Diodes</h3>
+<p>The polarity of the diode is indicated by the ring (black on the
+1N4148); white on the 1N4004 and 1N5819. Make sure that it matches the
+ring on the symbol silkscreened on the PCB. The 1N4004 is somehow
+overkill because Ambika does not use high-voltages - you might find a
+1N4001 instead with your kit.</p>
+<p><img alt="" src="../../static/images/7449282936_bb8448abd4_z.jpg" /></p>
+<p>Add 1x 1N4148 (MIDI input protection)</p>
+<p><img alt="" src="../../static/images/7449284396_362a613073_z.jpg" /></p>
+<p>Add 2x 1N4004s (or 1N4001s) - they rectify the input AC voltage.</p>
+<p><img alt="" src="../../static/images/7449285478_c6598c4042_z.jpg" />\
+<img alt="" src="../../static/images/7449286752_632f4a18a4_z.jpg" /></p>
+<p>Add 3x 1N4004 (or 1N4001) and 3x 1N5819. These diodes protect the
+regulators from weird things that can happen during the power on/off
+phases.</p>
+<h3 id="ceramic-capacitors">Ceramic capacitors</h3>
+<p>Ceramic capacitors (the yellow "drops") are not polarized.</p>
+<p><img alt="" src="../../static/images/7612397842_c1d6c77257_z.jpg" /></p>
+<p>Add 1x 100pF (labelled 101) and 1x 18pF (labelled 180) capacitors. They
+limit the bandwidth of the op-amps and keep them stable. The TL072s
+don't strictly need them though. Note that 22pF capacitors (220) can be
+used without problem in place of 18pF.</p>
+<p><img alt="" src="../../static/images/7449289024_45fda7bed0_z.jpg" /></p>
+<p>Add 2x 18pF (labelled 180) capacitors. Note that 22pF capacitors (220)
+can be used without problem in place of 18pF.</p>
+<p><img alt="" src="../../static/images/7612399916_4430b47a91_z.jpg" />\
+<img alt="" src="../../static/images/7449292574_75379ea09b_z.jpg" /></p>
+<p>Add all the bypass 100nF capacitors (labelled 104).</p>
+<h3 id="ics-and-sockets">ICs and sockets</h3>
+<p><img alt="" src="../../static/images/7449293798_69deb3bb81_z.jpg" />\
+<img alt="" src="../../static/images/7612401392_f2376c1e70_z.jpg" /></p>
+<p>Add the DIP40, 2xDIP16 and 2x DIP8 sockets for the ATMega644p, 4050,
+74hc138, 6N138 and the TL072.</p>
+<p>Some logic ICs on the top of the board are not socketed. Solder the 2x
+74hc595 (shift registers for the LEDs) ; and 1x 74hc165 (shift register
+for reading the 8 switches).</p>
+<p><img alt="" src="../../static/images/7449302928_4bcf2fe638_z.jpg" />\
+<img alt="" src="../../static/images/7449304888_7f57285780_z.jpg" /></p>
+<h3 id="power-supply">Power supply</h3>
+<p><strong>Be very careful about the polarity of the electrolytic capacitors</strong>.
+When incorrectly polarized, they can pop and/or poop. The long lead of
+the capacitor indicates the positive lead, marked (+) on the PCB. A
+white strip on the edge of the capacitor indicates its negative lead.</p>
+<p><img alt="" src="../../static/images/7449298126_d7c50e4e06_z.jpg" /></p>
+<p>Add the MCP1700 3.3V regulator and the 100µF capacitor adjacent to it. I
+used here a short capacitor but the one that comes with the kit might be
+taller.</p>
+<p><img alt="" src="../../static/images/7449300010_72f57c4c5e_z.jpg" /></p>
+<p>Add the power connector - add enough solder to get a "lake" of solder
+forming inside the solder pad. Solder only one pin of the connector,
+adjust its position while keeping the solder joint hot, then solder the
+other pins.</p>
+<p>Add the 1uF film capacitor. Note that it is not polarized.</p>
+<p><img alt="" src="../../static/images/7449301294_0898fefd2f_z.jpg" /></p>
+<p>Add the 3 regulators. The 7908 and LM2940-8.0 have a small heatsink
+attached to them. Insert the part into the heatsink. You might have to
+bend some of the metal wings to make it fit to the regulator.</p>
+<p>The 7805 gets very hot and needs a very big heatsink. Use a 6mm M3 screw
+and a nut to keep the heatsink in place, and make sure that the metal
+tab of the 7805 is touching the heatsink. Check that the heatsink is not
+shorting the three leads of the 7805.</p>
+<p><img alt="" src="../../static/images/7449305924_ececc49322_z.jpg" /></p>
+<p>Add the two big capacitors (2200µF and 4700µF) used in the rectifier.
+Check and double-check their polarity.</p>
+<p><img alt="" src="../../static/images/7449306918_1c91c3a147_z.jpg" /></p>
+<p>Add the 3x 100µF capacitors stabilizing the regulators.</p>
+<h3 id="connectors">Connectors</h3>
+<p><img alt="" src="../../static/images/7449308578_eae22d412c_z.jpg" /></p>
+<p>Add the SD card connector. This is fortunately the only surface-mount
+soldering you will have to do here. A friendly note: it is not a big
+deal if you mess up the 3 smaller pins on the right. They are not used
+on Ambika.</p>
+<p><img alt="" src="../../static/images/7449309828_ffca8280cd_z.jpg" /></p>
+<p>Add the 2x MIDI connectors and all the voicecard connectors (6x 1x6
+female headers).</p>
+<p><img alt="" src="../../static/images/7449310824_fbecf37668_z.jpg" /></p>
+<p>If you intend to hack the firmware and send your own code to the
+motherboard, add a 2x3 male connector for an AVR ISP programmer.</p>
+<p><img alt="" src="../../static/images/7612403424_a09e337ddf_z.jpg" /></p>
+<p>Add 7x audio connectors.</p>
+<h3 id="lcd-module-and-leds">LCD module and LEDs</h3>
+<p>Solder the 2x8 connector to the top of the LCD module. Insert the LCD
+module through the board, and add 2x nuts + 1x 10mm screw on each corner
+to keep it in place.</p>
+<p><img alt="" src="../../static/images/7449311640_c15b81a3b7_z.jpg" /></p>
+<p>Solder the LCD module to the PCB.</p>
+<p><img alt="" src="../../static/images/7449312472_03fef37d8f_z.jpg" />\
+<img alt="" src="../../static/images/7449313162_b9274a4656_z.jpg" /></p>
+<p>Add the 15 LEDs. The LED symbol printed on the PCB has a round edge and
+a flat edge. The shortest lead of the LED goes on the same side as the
+flat edge ; and the long lead is on the same side as the round edge.</p>
+<p>Note that soldering a LED backwards will make it shine with the wrong
+color.</p>
+<h3 id="controls">Controls</h3>
+<p><img alt="" src="../../static/images/7449314226_b065f65929_z.jpg" /></p>
+<p>Add the 8x 10k linear pots, the encoder, and the 8x switches.</p>
+<p><img alt="" src="../../static/images/7449315096_133289dbed_z.jpg" /></p>
+<p>Add the 100k audio taper pot ; or bridge its middle and right pins if
+you think this pot is breaking some symmetry...</p>
+<h3 id="getting-ready-for-voicecards">Getting ready for voicecards</h3>
+<p><img alt="" src="../../static/images/7612406574_21af1ac2b0_z.jpg" />\
+<img alt="" src="../../static/images/7612408910_27ce64ddcf_z.jpg" /></p>
+<p>Add 12x male/female spacers (with a 6mm M3 screw on the other side of
+the board) to welcome the voicecards.</p>
+<p>Hooray! We're done!</p>
+<p><img alt="" src="../../static/images/7612413902_db0f8c0c57_z.jpg" /></p>
+<h2 id="testing">Testing</h2>
+<h3 id="power-supply-testing">Power supply testing</h3>
+<p>For now, do not insert any IC</p>
+<p><img alt="" src="../../static/images/ambika_mobo_psu_test_points.png" /></p>
+<p>Before powering Ambika, check that there is no short between one of the
+colored points and ground ; and no short between any pair of those
+points.</p>
+<p>Plug the +9V <strong>AC</strong> wall transformer.</p>
+<p>Check that the voltages are:</p>
+<ul>
+<li>+5V on the green point</li>
+<li>+3.3V on the yellow point</li>
+<li>+8V on the red point</li>
+<li>-8V on the blue point</li>
+</ul>
+<p>You can now power off the unit, and safely insert the 6N137, the TL072,
+the 4050, the 74hc138 and the ATMega644p.</p>
+<h3 id="lcd-adjustment-and-ui-test">LCD adjustment and UI test</h3>
+<p>Power the unit back on. LED9 should be lit in green. The first LED of
+the part indicator (block of 6) should be lit in green.</p>
+<p>Adjust the LCD contrast with the R36 trimmer.</p>
+<p>Press the first switch to go to the oscillators page and test that the 8
+knobs are modifying values. Click the encoder and turn it left/right to
+check that it modifies values.</p>
+<p>Press the 8 switches one by one and check that all pages are reached,
+with the corresponding LED lighting up.</p>
+<p>Insert a FAT32 formatted SD card with the contents of the <a href="../../static/firmware/ambika_golden_card.zip">following
+archive</a>.
+Press the last switch. You should be able to load presets from the card
+(you should see A000 Junon). If there is a problem with the SD card
+circuitry, an error message is displayed. If the card is simply blank,
+(empty) is shown in place of the preset name.</p>
+<p>Connect a MIDI source to the MIDI in. A note icon should be displayed in
+the top left of the screen whenever you play a note. Different symbols
+are shown when the pitch bend lever or the modulation wheels are
+touched.</p>
+<h3 id="a-first-voicecard">A first voicecard!</h3>
+<p><strong>Never attempt to connect a voicecard</strong> while the motherboard is
+powered on.</p>
+<p><strong>Make sure that spacers are present before stacking voicecards</strong> - you
+don't want the bottom of the voicecard to touch any bit of circuitry
+below it.</p>
+<p>Make sure that the two layer jumpers are set to A if the voicecard is
+stacked directly on top of the motherboard ; or to B if the voicecard is
+stacked on top of another voicecard.</p>
+<p>Connect your first voicecard to Port 1 and power Ambika on. The orange
+LED on the voicecard should light up - indicating that it receives data
+from the motherboard. During tests, it is recommended to temporarily set
+the first part to mono - this way, whatever you play, the first
+voicecard will always receive the note. To do so, go to the keyboard and
+tuning page (by pressing S5), and change the second setting to <strong>mono</strong>:</p>
+<pre><code>Volu 120|mode mono|lega off|port    0
+octv   0|tune    0|sprd   0|raga equa
+</code></pre>
+<p>Play some notes and check that a green LED lights up on the voicecard
+every time it receives a note. Check the mix audio output and the first
+individual out.</p>
+<h2 id="license">License</h2>
+<p>This circuit and PCB layout is made available under a <strong>cc-by-sa-3.0</strong>
+license.</p>
+<h2 id="kudos">Kudos</h2>
+<p>Todd Bailey, Neil Johnson and Yves Usson for useful board layout
+reviews!</p>
+<h2 id="releases">Releases</h2>
+<h4 id="v08">v0.8</h4>
+<p>Original release.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../manual/" class="btn btn-neutral float-left" title="Manual"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../smr4/" class="btn btn-neutral float-right" title="SMR-4 voicecard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../manual/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../smr4/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

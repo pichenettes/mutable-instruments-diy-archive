@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>DSP filter board - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "DSP filter board";
+        var mkdocs_page_input_path = "shruthi/dsp.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Build instructions</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">DSP filter board</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../midipal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Shruthi &raquo;</li>
+          <li>Build instructions &raquo;</li>
+      <li>DSP filter board</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="../../static/images/shruthi_dsp.jpg" /></p>
+<p>This filter board is a bit unusual. Contrary to its friends, it does not feature any analog signal processing modules. Instead, the oscillators signals (along with the audio input) are converted back into the digital domain and processed by another AVR microcontroller. You don't get the warmth of analogue, but instead, you gain plenty of whacky filter and FX combinations!</p>
+<p>We are not ashamed of saying that the sounds coming out of this filter board are pure lo-fi. At best, it's Amiga-scronch, at worst, it's <em>[insert here the name of your favorite Arduino-based bleeper]</em> crap. In your dreams, this filter board will sound like a WTPA, but when you wake up it won't, and there will be an Alpaca sleeping on your couch.</p>
+<p>The signal processing is done with a 12-bits resolution ; except for everything involving delay lines in which case the samples are converted to crunchy 8-bits when written to the delay line.</p>
+<h2 id="using-this-filter-board">Using this filter board</h2>
+<p>Please make sure that both the analog (CV1 to +5V) and digital (RX to +5V) ports of the filter and control boards are connected.</p>
+<p>Beware! Only the Shruthi-1 firmware v0.93 or above generates the digital signals required to control this filter board. These digital signals are sent through the output labelled <strong>TX&gt;</strong>. This means that you <strong>can</strong> use the programmer and the digital filter board at the same time. To activate the digital filter board, select <strong>dsp</strong> in the system settings page. If you don't do so, you will not get any sound from the board.</p>
+<p>When pressing the <strong>S2</strong> switch (Filter page) a second time, a new page is displayed allowing you to configure the filter and the effects.</p>
+<pre><code> Mod fx. pr1 pr2
+ l&gt;f del  30   8
+</code></pre>
+<p>The parameters are the following:</p>
+<ul>
+<li>mod (mode): Filter configuration. The options are <strong>l&gt;f</strong> (low-pass filter sent to an FX), <strong>h&gt;f</strong> (high-pass filter sent to an FX), <strong>f&gt;l</strong> (FX applied first, sent to a LPF), <strong>f&gt;h</strong> (FX applied first, sent to a HPF), and <strong>[fx]{style="text-align:right;"}</strong> (no filtering, just the DCA and the FX).</li>
+<li>fx. (fx progr.): Digital effect to apply.</li>
+<li>pr1 (param. 1): First parameter of the digital effect.</li>
+<li>pr2 (param. 2): Second parameter of the digital effect.</li>
+</ul>
+<p>Here is a list of the available effect programs.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Param 1</th>
+<th>Param 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distrt</td>
+<td>Distortion</td>
+<td>Amount of foldback distortion</td>
+<td>Amount of fuzz</td>
+</tr>
+<tr>
+<td>crushr</td>
+<td>Bit crusher</td>
+<td>Sample rate reduction</td>
+<td>Bit depth reduction</td>
+</tr>
+<tr>
+<td>+cmbfl</td>
+<td>Comb filter with positive feedback</td>
+<td>Cutoff frequency</td>
+<td>Feedback amount</td>
+</tr>
+<tr>
+<td>-cmbfl</td>
+<td>Comb filter with negative feedback</td>
+<td>Cutoff frequency</td>
+<td>Feedback amount</td>
+</tr>
+<tr>
+<td>ringmd</td>
+<td>Ring modulator</td>
+<td>Carrier frequency</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>delay</td>
+<td>Simple delay</td>
+<td>Delay time</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>fb dly</td>
+<td>Delay with 30% feedback</td>
+<td>Delay time</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>dubdly</td>
+<td>Delay with 80% feedback</td>
+<td>Delay time</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>!fbdelay</td>
+<td>Delay with 30% feedback and no antialiasing</td>
+<td>Delay time</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>!dbdly</td>
+<td>Delay with 80% feedback and no antialiasing</td>
+<td>Delay time</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>/16 dl</td>
+<td>Tempo-synchronized delay</td>
+<td>Feedback amount</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>/12 dl</td>
+<td>Tempo-synchronized delay</td>
+<td>Feedback amount</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>/8 dl</td>
+<td>Tempo-synchronized delay</td>
+<td>Feedback amount</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>3/16 dl</td>
+<td>Tempo-synchronized delay</td>
+<td>Feedback amount</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>looper</td>
+<td>Looper</td>
+<td>Loop duration/Pitch</td>
+<td>Trigger</td>
+</tr>
+<tr>
+<td>pitch</td>
+<td>Pitch shifter</td>
+<td>Relative pitch</td>
+<td>Amount</td>
+</tr>
+</tbody>
+</table>
+<p>The looper works as follows. When trigger is below 32, it lets the input goes through, and keeps ready a small loop (less than 1 second), whose duration is adjusted by the first parameter. When trigger is above 32, it stops playing the incoming signal and instead plays the recorded loop. The playback pitch can be controlled by the first parameter. Try mapping the pitch bend lever or modwheel to CV1, and an envelope to CV2, and connect an external audio source: every time you press a key, the audio starts looping, and you can use the pitch bend lever to "scratch" it.</p>
+<p>The pitch-shifter pitch parameter works as follows: 64 is the original pitch, 65 is the original +1 quarter-tone, 63 is the original -1 quarter-tone. For example, use 64 - 2 x 12 = 40 to generate a sub-octave, or 64 + 2 x 7 = 78 to generate a fifth. Try modulating the pitch with an LFO to get a chorus effect.</p>
+<p>There is no flanger program, because a flanger is just a comb filter modulated by a LFO! Thus, you can use the positive or negative feedback comb-filter, and route an LFO to CV1 to make it shine and shimmer. Try something different from an LFO (for example a step sequencer) for more fun!</p>
+<p>Given the limited amount of RAM on an ATMega328p (2kb), some pretty heavy downsampling happens when the delay time exceeds 30ms, and the echoes sound more like smudgy bitcrushed sludge than echoes - but early BBD based delay pedals sound like that, too. The first 3 delays, and the tempo-synchronized ones, use a 1-pole low-pass filter on the delay line input and output to make things a bit more tolerable. The versions with a "!" in the name don't use any filtering and will sound like a circuit-bent Dub Barbie.</p>
+<p>The G blinkenlight indicates the output level, the R blinkenlight indicates the input level.</p>
+<h2 id="dirty-technical-details">Dirty technical details</h2>
+<h3 id="signal-path">Signal path</h3>
+<p><img alt="" src="../../static/images/5635139009_6a3d0482b6_z.jpg" /></p>
+<p>The Shruthi-1 output signals are PWM-modulated: they have a high frequency peak at the PWM modulation frequency (39kHz) which would cause some horrible amount of aliasing if sampled directly. For this reason, the mix of the oscillators and external audio input is filtered by an 8-pole Chebyshev filter (response in blue) with a cutoff frequency of 16kHz.</p>
+<p>After being digitally processed on the AVR, the signal is converted back to the analogue domain by a proper 12-bits DAC, and further filtered to remove high frequency components (something that is not done on the other filter boards, since there is an analog filter to do all this cleaning up!). Chebyshev filters have some ripple in the pass-band (and even more if you constrain RC components values to be in the E24/E6 series), but they are steep! The response of this final filter is plotted in green on the graph above. The ripple translates into some slightly "resonant" coloration of the high-end. At least that's what Sonic Visualizer told me.</p>
+<h3 id="what-about-the-cvs">What about the CVs?</h3>
+<p>The original plan was to filter the 5 CV signals (VCA, cutoff, resonance, CV1, CV2) with passive RC filters with a 150 Hz cutoff (R = 47k, C = 22n), and sample them using the ADC of the AVR. We even had found a smart way of doing this: use a timer clocked at 80kHz, sample from the oscillators signal every even frame, and from one of the CVs on every odd frame. This plan did not work well for three reasons:</p>
+<ol>
+<li>The extra code required to round-robin and switch the ADC, but most importantly the ISR preludes/postludes (10 register to push, then pop, twice per sample), ended up using too much CPU.</li>
+<li>The ADC clock needed to be run at a pretty high speed (actually above the maximum rated speed), with incessant switching between the channels, to allow the sampling of the audio signal and the CVs. This caused all kinds of annoying signal degradations.</li>
+<li>The RC filter was not good enough at removing the PWM carrier from the CV signals. This introduced a lot of nasty ringing noise on all the CVs. Digital filtering of the CV signals did help - but introduced a delay/slew rate limitation that harmed the envelope speed. Suddenly it was all foamy and bubbly.</li>
+</ol>
+<p>The solution? It is a digital filter board after all, so let's send the CVs digitally. No kidding. When the filter board is set to <strong>dsp</strong> on the Shruthi digital board, the second UART of the main ATMega644p (whose TX line is exposed on the <strong>Output expansion</strong> port) runs at 115200 baud and transmits the CVs. The ATMega328p on the digital filter board reads them. It means that:</p>
+<p><strong>This filter board can only be controlled by a Shruthi-1</strong>. You cannot use it as a stand-alone filter by feeding CVs into it. Indeed, it will not do anything with the signals fed to the VCA, frequency, resonance, CV1 and CV2 inputs.</p>
+<p>Well, it is not entirely true: this filter board can be controlled by whatever speaks our patent-pending <em>CV update through a 115200 bps serial link</em> protocol. The protocol consists of repeatedly sending the following sequence of 12 bytes. At the exception of the first byte in the sequence, all values are in the 0-254 (0xfe) range. The interleaving of cutoff / VCA values allows a higher refresh rate for those sensitive signals.</p>
+<ol>
+<li>Beginning of sequence marker, always equal to 0xff.</li>
+<li>Cutoff value.</li>
+<li>Configuration byte 0xmn, where the nibble m is the configuration of the filter (0 for LP, 1 for BP, 2 for HP), and where the nibble n is the FX program number.</li>
+<li>VCA value.</li>
+<li>Tempo byte.</li>
+<li>Cutoff value.</li>
+<li>Resonance value.</li>
+<li>VCA value.</li>
+<li>FX parameter 1 value (CV1).</li>
+<li>Cutoff value.</li>
+<li>FX parameter 2 value (CV2).</li>
+<li>VCA value.</li>
+</ol>
+<p>Note that the PCB still has the 5 passive RC filters on the CV inputs and traces connecting them to the ADC inputs of the AVR, and that you can build a version of the DSP firmware that reads them, instead of receiving the data from the serial link (Just #define USE_ANALOG_CV in <code>dsp.h</code>). So if analog CVs and gritty digital noises are your thing, you can hack them back - but beware that some effects will be broken because of the increased CPU load.</p>
+<h2 id="schematics-and-pcb">Schematics and PCB</h2>
+<p><img alt="" src="../../static/images/shruthi_dsp.png" /></p>
+<p>You can find the Eagle files for this board in the dsp/hardware_design/pcb directory of the source code hosted on <a href="http://github.com/pichenettes/shruthi-1/tree/master/dsp">github</a>.</p>
+<p>The schematics in PDF format are <a href="../../static/schematics/Shruthi-DSP-v02.pdf">here</a>.</p>
+<h2 id="bill-of-materials">Bill of materials</h2>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdDU1UkFfLVppTWlMYjVocEVEeE9JekE&amp;output=html&amp;widget=true">Bill of materials</a>.</p>
+<p>If you want to process some CV signals (beware: you'll need to write code for that!), the following parts can be added:</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Description</th>
+<th>Value</th>
+<th>Quantity</th>
+<th>Reichelt</th>
+<th>Digikey</th>
+<th>Farnell</th>
+<th>Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R24, R25, R27, R28, R29</td>
+<td>Resistor 1%</td>
+<td>47k</td>
+<td>5</td>
+<td>METALL 47,0k</td>
+<td>47.5KXBK-ND</td>
+<td><strong>9341960</strong></td>
+<td> </td>
+</tr>
+<tr>
+<td>C21, C22, C24, C26, C28</td>
+<td>Film cap</td>
+<td>22n</td>
+<td>5</td>
+<td><strong>MKS-2-5 22N</strong></td>
+<td>BC1646-ND</td>
+<td>1166080</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="firmware">Firmware</h2>
+<p>The firmware code is hosted on <a href="http://github.com/pichenettes/shruthi-1">github</a>, in the <code>dsp</code> directory. It can be built and sent to the MCU with:</p>
+<pre><code>make -f dsp/makefile bake
+</code></pre>
+<p>Sorry, there's no "firmware update over MIDI" thing for this, since the MCU on the board runs independently of the ATMega644p on the digital board -- which is the guy connected to the MIDI input.</p>
+<p>If you want to hack your own FX algos, the place to look at is one of the <code>void FxEngine::RenderEffectName</code> static methods. Your mission, if you accept it, is to transform (in place) the buffer of <code>kAudioBlockSize</code> samples called <code>samples_</code>. Samples are 12 bits, signed (from -2048 to +2047). You can read the parameters with <code>filtered_cv(CV_1)</code> and <code>filtered_cv(CV_2)</code>. You have roughly 200 CPU cycles per sample, and if you want to time your code, you can probe the &gt;TX pin (pin 3) of the AVR - when this line is high the MCU is processing samples, when it is low it is, as we say in french, <em>en train de se branler la nouille</em>.</p>
+<h2 id="license">License</h2>
+<p>w00t, this filter board is made available under a <strong>cc-by-sa-3.0</strong> license.</p>
+<h2 id="releases">Releases</h2>
+<h3 id="v02">v0.2</h3>
+<ul>
+<li>Added bypass caps on Vcc/2 line.</li>
+<li>Added tStop/bStop layers on "Shruti" text.</li>
+<li>Increased CV filtering caps (yeah, before realizing they won't be needed...).</li>
+</ul>
+<h3 id="v01">v0.1</h3>
+<ul>
+<li>First prototype.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../delay/" class="btn btn-neutral float-left" title="Yellow magic filter board"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../polivoks/" class="btn btn-neutral float-right" title="Polivoks filter board">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../delay/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../polivoks/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

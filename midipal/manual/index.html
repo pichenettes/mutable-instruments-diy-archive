@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments prehistoric projects</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "midipal/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments prehistoric projects
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Shruthi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../shruthi/firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/build/">Home</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital/">Digital control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4mkii/">SMR4 mkII filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm_build/">4 Pole-mission kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/4pm/">4 pole-mission filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ym_build/">Yellow magic kit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/delay/">Yellow magic filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/dsp/">DSP filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/polivoks/">Polivoks filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/smr4/">SMR4 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/ssm2044/">SSM2044 filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf/">SVF filter board (old)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/svf2/">SVF filter board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/digital_xt/">XT control board</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shruthi/xt_enclosure/">XT enclosure</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ambika</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ambika/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Build Instructions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mobo/">Motherboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/smr4/">SMR-4 voicecard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/voicecards/">Other voicecards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/mechanical/">Mechanical assembly</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/firmware/">Firmware setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ambika/technotes/">Technical notes</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Anushri</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../anushri/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CVpal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/manual/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/specs/">Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cvpal/build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIDIpal</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../build/">Build instructions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclic/">Cyclic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../module_tester/">Module Tester</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bbf/">Breadboard Friends</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments prehistoric projects</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>MIDIpal &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>The MIDIpal is a powerful MIDI processor - like a multi-effect operating
+on MIDI data! It features 19 different MIDI "apps", ranging from MIDI
+debugging or routing utilities (monitoring messages, remapping a channel
+to another one...) to complex compositional or inspirational tools like
+arpeggiators or pattern generators.</p>
+<h2 id="overview">Overview</h2>
+<p><img alt="" src="../../static/images/mp-overview.png" /></p>
+<h2 id="basic-setup">Basic setup</h2>
+<p><img alt="" src="../../static/images/mp-connections-540x202.png" /></p>
+<p>Connect a MIDI message source, such as a keyboard, control surface or
+computer interface to the MIDI in port of the MIDIpal.</p>
+<p>Connect a MIDI message receiver, such as a synth module, expander, or
+computer interface to the MIDI out port of the MIDIpal.</p>
+<p>The MIDIpal can be powered by either a 9V battery or a 5V-9V unregulated
+DC supply, with a minimum current rating of 150mA. Make sure that the
+connector has a center pin (or tip) positive / outer collar (or sleeve)
+negative pin polarity. Most universal power supplies allows the polarity
+to be selected — the polarity being often represented by a diagram like
+this: – (o +.</p>
+<h2 id="user-interface">User interface</h2>
+<p>Incoming and outgoing MIDI signals are visualized by the red and green
+LEDs near the MIDI sockets.</p>
+<p>The 8 characters LCD display is used to display the name and value of
+the currently edited parameter. Editing is done with the clickable
+rotary encoder.</p>
+<h3 id="launching-apps">Launching apps</h3>
+<p><img alt="" src="../../static/images/mp-app-selection.png" /></p>
+<p>Each "feature" of the MIDIpal can be seen as an independent "app". Only
+one app can be running at a time - that is to say, you cannot run an
+arpeggiator, a drum sequencer and a MIDI monitor on the same unit! To
+select the app to use, keep the encoder pressed. The name of the current
+app is shown on the screen.</p>
+<pre><code>sequencr
+</code></pre>
+<p>Turn the encoder to select an app. Click on the encoder to launch this
+app.</p>
+<p>Note that the last three entries in the list are not regular apps:</p>
+<ul>
+<li><code>notenuke</code> sends a NoteOff message, for all possible MIDI notes, on
+    all MIDI channels.</li>
+<li><code>sysxdump</code> outputs a SysEx backup of all the MIDIpal settings.</li>
+<li><code>!reset!</code> resets the unit to its factory settings.</li>
+</ul>
+<h3 id="navigation-within-an-app">Navigation within an app</h3>
+<p>Though there are a few exceptions, most of the apps are operated the
+following way:</p>
+<p>Turn the encoder to scroll through the lists of parameters.</p>
+<pre><code>bpm 123
+</code></pre>
+<p>If you want to change a parameter, click on the encoder. Brackets appear
+around the parameter value.</p>
+<pre><code>bpm[123]
+</code></pre>
+<p>Turn the encoder to increase or decrease the value. Click again once you
+are done.</p>
+<pre><code>bpm 123
+</code></pre>
+<p>The brackets disappear, and your modification is kept in memory, even if
+the MIDIpal is powered down - no need for a save button!</p>
+<h3 id="reverting-to-factory-settings">Reverting to factory settings</h3>
+<p>In order to revert the MIDIpal to its factory settings, keep the encoder
+pressed for 2s to display the app list. Scroll to the end of the list to
+reach the <code>!reset!</code> item:</p>
+<pre><code>!reset!
+</code></pre>
+<p>Click the encoder. Kaboom! All your settings are lost to the factory
+defaults.</p>
+<h2 id="apps">Apps</h2>
+<p>Please note that some of these applications might not be available on
+your unit. Please <a href="../firmware">refer to this page</a> and to the
+firmware update section to find out how you can replace the standard
+MIDIpal firmware with alternate versions containing extra applications.</p>
+<h3 id="debugging-apps">Debugging apps</h3>
+<h4 id="midi-monitor-monitor">MIDI monitor (<code>monitor</code>)</h4>
+<p>This app monitors the incoming MIDI traffic. The MIDI data itself is
+passed through the MIDI output - so you can insert it through a MIDI
+link in your home studio to look at what's going on...</p>
+<pre><code>chn all
+</code></pre>
+<p>Press the encoder to select the MIDI channel to monitor. By default, all
+channels are monitored.</p>
+<p>The monitor displays the following text for note on/off messages:</p>
+<pre><code>1*A#4 3f
+</code></pre>
+<ul>
+<li>The first character is the MIDI channel.</li>
+<li>A star is displayed as the second character whenever an active
+    sensing message is received. A dot is displayed whenever a MIDI
+    clock message is received.</li>
+<li>The next 3 characters are the MIDI note number is displayed.</li>
+<li>The last 2 digits are the velocity value in hexadecimal, or '--' for
+    a note off message.</li>
+</ul>
+<p>The following text indicate a note pressure (aftertouch) message - 'a'
+for aftertouch, 7 being the highest nibble of the aftertouch value.</p>
+<pre><code>1*A#4 a7
+</code></pre>
+<p>The following text indicates a channel pressure (aftertouch) message.</p>
+<pre><code>1*aft 7e
+</code></pre>
+<p>The following text indicates a CC #30 message.</p>
+<pre><code>1 #30 70
+</code></pre>
+<p>The following text indicates a pitch bend message of value 0x3070 on
+channel 4.</p>
+<pre><code>4 b 3070
+</code></pre>
+<p>Here is a list of text messages displayed for less common MIDI messages:</p>
+<ul>
+<li><strong>notoff</strong>: all notes off controller.</li>
+<li><strong>omnoff</strong>: omni mode off controller.</li>
+<li><strong>omnion</strong>: omni mode on controller.</li>
+<li><strong>monoon</strong>: mono mode on controller.</li>
+<li><strong>polyon</strong>: poly mode on controller.</li>
+<li><strong>sysx..</strong>: beginning of SysEx reception.</li>
+<li><strong>.sysx.</strong>: SysEx reception in progress.</li>
+<li><strong>..sysx</strong>: end of SysEx reception.</li>
+<li><strong>start</strong>: clock start.</li>
+<li><strong>cont</strong>.: clock continue.</li>
+<li><strong>stop</strong>: clock stop.</li>
+<li><strong>reset</strong>: system reset.</li>
+</ul>
+<h4 id="bpm-meter-bpm-cntr">BPM meter (<code>bpm cntr</code>)</h4>
+<p>This app estimates and displays a BPM value from the MIDI clock. Every
+incoming MIDI data is forwarded to the MIDI out.</p>
+<p>Rotate the encoder to switch between the following views:</p>
+<pre><code>b 120.0
+</code></pre>
+<p>BPM estimated over the past half-second</p>
+<pre><code>B 120.0
+</code></pre>
+<p>Average BPM (estimated since the clock was started)</p>
+<pre><code>t 23307
+</code></pre>
+<p>Total number of clock ticks received</p>
+<p>Click the encoder to reset the BPM estimate and the clock tick counter.</p>
+<h3 id="midi-plumbing-apps">MIDI Plumbing apps</h3>
+<h4 id="channel-filter-chnfiltr">Channel filter (<code>chnfiltr</code>)</h4>
+<p>This app deletes from the MIDI stream all messages associated with one
+or many MIDI channels.</p>
+<pre><code>chX off
+</code></pre>
+<p>Enables or disable the MIDI channel X.</p>
+<h4 id="splitter-splitter">Splitter (<code>splitter</code>)</h4>
+<p>This app routes MIDI note messages (note on, note off and aftertouch)
+from a specific channel to a different MIDI channel depending on their
+note value. For example, if you have a keyboard emitting on channel 1,
+you can use the lower half of the keyboard to send notes to a bass synth
+listening on channel 1, and the upper half of the keyboard to send notes
+to a multitimbral expander listening on channel 3.</p>
+<pre><code>inp   5
+</code></pre>
+<p>Input channel.</p>
+<pre><code>spl  B3
+</code></pre>
+<p>Split point.</p>
+<pre><code>low   7
+</code></pre>
+<p>Notes below the split point, coming from the input channel, will be
+routed to this channel.</p>
+<pre><code>upp   7
+</code></pre>
+<p>Notes above the split point, coming from the input channel, will be
+routed to this channel.</p>
+<h4 id="dispatcher-dispatch">Dispatcher (<code>dispatch</code>)</h4>
+<p>This app routes MIDI note messages from a single channel to several
+channels. This allows you to play chords on a rack of monophonic synths,
+for example.</p>
+<pre><code>inp   5
+</code></pre>
+<p>Input channel.</p>
+<pre><code>mod cyc
+</code></pre>
+<p>Dispatching method:</p>
+<ul>
+<li>cyclic (<strong>cyc</strong>). Each new note is cyclically played on the next
+    channel.</li>
+<li>polyphonic (<strong>pol</strong>). The mapping of notes to channel uses a true
+    voice stealing algorithm. The MIDIpal tries to reuse the same
+    channel for occurrences of the same note ; or the least recently
+    used channel.</li>
+<li>random (<strong>rnd</strong>). Each new note is routed to a random channel.</li>
+<li>stacking (<strong>stk</strong>). Each note is sent to all channels at the same
+    time. Perfect for thickening a lead by sending it to several synths,
+    or to several parts of the same multitimbral device.</li>
+<li>
+<p>velocity (<strong>vel</strong>). The louder (higher velocity) the note, the
+    higher the MIDI channel it is sent to.</p>
+<p>out   4</p>
+</li>
+</ul>
+<p>First output channel.</p>
+<pre><code>num   3
+</code></pre>
+<p>Number of output channels. For example, if out = 4 and num = 3, the
+notes will be dispatched to channels 4, 5 and 6.</p>
+<h4 id="channel-merger-chnmergr">Channel merger (<code>chnmergr</code>)</h4>
+<p>This app merges data from several channels into a single one.</p>
+<pre><code>inp   5
+</code></pre>
+<p>First input channel.</p>
+<pre><code>num   3
+</code></pre>
+<p>Number of channels to merge. For example, if inp = 5 and num = 3,
+channels 5, 6 and 7 will be merged.</p>
+<pre><code>out   2
+</code></pre>
+<p>Output channel.</p>
+<h4 id="clock-divider-divider">Clock divider (<code>divider</code>)</h4>
+<p>This app forwards every incoming MIDI message, but it only pick every
+Nth clock message. This has the effect of slowing down the MIDI clock by
+a ratio of N.</p>
+<pre><code>div   1
+</code></pre>
+<p>Ratio by which the MIDI clock is divided.</p>
+<h4 id="sync-latch-syncltch">Sync latch (<code>syncltch</code>)</h4>
+<p>This feature, inspired by the <a href="http://mungo.com.au/syncZ.html">Mungo
+Sync</a> allows a slave device to be
+synchronized and started/stopped in sync with a master device playing a
+loop.</p>
+<p>Consider the following situation: you have a drum machine playing a
+steady 2-bar loop, in 4/4, and generating a clock signal for a slave
+MIDI sequencer. You need to reload a pattern on the sequencer. You stop
+the sequencer, load the pattern, and then you need to hit the <strong>play</strong>
+button on the sequencer at the exact right moment so that it starts spot
+on the first beat of the 2-bar drum loop. Tricky isn't it? This is where
+the MIDIpal can be used. Insert it between the drum machine and the
+sequencer. Configure the duration/time signature of the loop (Here: 8
+quarter notes). The MIDIpal will keep counting beats. When you press the
+MIDIpal encoder, it'll wait for the beginning of the loop and then send
+a <strong>start</strong> message to the MIDI slave. When you press again the MIDIpal
+encoder, it'll wait for the end of the loop and then send a <strong>stop</strong>
+message to the MIDI slave.</p>
+<pre><code>num   4
+den   1/4
+</code></pre>
+<p>Numerator and denominator of the time signature of the loop.</p>
+<pre><code>  03:00 .
+</code></pre>
+<p>Beat counter. This shows:</p>
+<ul>
+<li>the MIDIpal counting beats.</li>
+<li>whether the slave is playing or stopped (a dot is shown when the
+    slave is stopped ; a "&gt;" sign is shown when the slave is
+    running).</li>
+<li>whether the MIDIpal is ready to send a start/stop message to the
+    slave.</li>
+</ul>
+<p>When you press the encoder, the beat count is shown in brackets, to
+indicate that the MIDIpal is waiting for the beginning of the next bar
+to send the <strong>Start</strong> message (or the end of the bar to send the
+<strong>Stop</strong> message).</p>
+<p>For example:</p>
+<pre><code>[03:20].
+</code></pre>
+<p>Indicates that the slave is currently stopped, and that the MIDIpal is
+waiting for the beginning of the next bar to send a <strong>Start</strong> message.</p>
+<pre><code>[01:10]&gt;
+</code></pre>
+<p>Indicates that the slave is currently running, and that the MIDIpal is
+waiting for the end of the bar to send a <strong>Stop</strong> message.</p>
+<h3 id="controller-and-master-apps">Controller and master apps.</h3>
+<h4 id="clock-source-clock">Clock source (<code>clock</code>)</h4>
+<p>This app acts as a clock source - regularly sending MIDI clock (<code>0xf8</code>)
+messages. Every incoming MIDI data, at the exception of MIDI clock
+messages, are forwarded to the MIDI out. The settings are the following:</p>
+<pre><code>run off
+</code></pre>
+<p>Starts or stops the clock.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock:</p>
+<ul>
+<li><strong>swg</strong>: swing</li>
+<li><strong>shf</strong>: shuffle</li>
+<li><strong>psh</strong>: <em>push</em> effect, anticipating the beats</li>
+<li><strong>lag</strong>: <em>lag</em> effect, delaying the beats</li>
+<li><strong>hum</strong>: humanization</li>
+<li>
+<p><strong>mnk</strong>: monkeyzation</p>
+<p>amt  80</p>
+</li>
+</ul>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>tap 120
+</code></pre>
+<p>While on this screen, you can "click" on the encoder to tap a tempo.</p>
+<h4 id="high-resolution-clock-source-clock">High-resolution clock source (<code>clock</code>)</h4>
+<p>This variant of the <code>clock</code> app acts as a clock source with a finer
+resolution of 0.1 BPM. Both variants perform equally well in terms of
+jitter/accuracy - this version just has a finer range of adjustment. The
+settings are the following:</p>
+<pre><code>run off
+</code></pre>
+<p>Starts or stops the clock.</p>
+<pre><code>  120.0
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<h4 id="cc-and-nrpn-knob-cc-knob">CC and NRPN knob (<code>cc knob</code>)</h4>
+<p>This app turns the MIDIpal into a MIDI controller - sending CC or NRPN
+messages. All incoming messages are sent to the output -- that is to
+say, the generated CC/NRPN messages are merged into the MIDI stream. The
+settings are the following:</p>
+<pre><code>val  60
+</code></pre>
+<p>CC or NRPN value to send.</p>
+<pre><code>chn   7
+</code></pre>
+<p>Channel on which the CC message has to be sent.</p>
+<pre><code>typ cc\#
+</code></pre>
+<p>Type of message to send: CC or NRPN.</p>
+<pre><code>num   7
+</code></pre>
+<p>Number of the CC or NRPN message to send. For example, set this to 7 to
+send a volume message.</p>
+<pre><code>min   0
+max  80
+</code></pre>
+<p>Value range. This restricts the range of the <code>val</code> setting on the first
+page.</p>
+<h4 id="controller-contrllr">Controller (<code>contrllr</code>)</h4>
+<p>This app is only useful if you dare opening your MIDIpal. On the circuit
+board, you will find 8 pads labelled Analog 1..8 to which you can
+connect any circuit (including a simple potentiometer voltage divider)
+outputting a voltage <strong>in the 0-3.3V range</strong>. These are connected to the
+analog to digital converter of the MIDIpal brain. Voltage changes on
+these inputs will be translated into CC messages: a voltage of 0V yields
+a CC value of 0 ; a voltage of 3.3V yields a CC value of 127.</p>
+<p>Note that by default, these pads are floating, so they will receive
+random values! And beware: <strong>values above 3.3V are likely to destroy
+your MIDIpal</strong>.</p>
+<p>The following settings are available:</p>
+<pre><code>chn   8
+</code></pre>
+<p>Channel on which the CC messages will be sent.</p>
+<pre><code>ccN   7
+</code></pre>
+<p>CC# associated with the Nth input.</p>
+<h3 id="inspirationcomposition-apps">Inspiration/composition apps</h3>
+<h4 id="drum-pattern-generator-drums">Drum pattern generator (<code>drums</code>)</h4>
+<p>This app generates 4-part rhythmic patterns on a selected channel
+(preferably 10!). You can use a 49 keys keyboard (or larger) to start,
+stop and mutate the patterns. The first octave on a 61 keys keyboard (C2
+to B2) controls the first part. The second octave (C3 to B3) controls
+the second part. And so on.</p>
+<p>Two types of rhythmic patterns are available:</p>
+<ul>
+<li><strong>Preset patterns</strong>: Each key within an octave will trigger and loop
+    a different 1-bar pattern. C mutes the part.</li>
+<li><strong>Euclidean patterns</strong>: Pressing a key in an octave indicates how
+    many notes should be played within the span of a bar (C is 0, C# is
+    1, D is 2, D# is 4, then 5, 6, 8, 10, 12, 14, 16). Pressing two
+    keys indicate how many notes should be played within the span of a
+    sequence + the duration of a sequence. For example, if you press D
+    and E, a 5 steps long pattern, containing 2 evenly spaced notes will
+    be played.</li>
+</ul>
+<p>You can safely ignore these instructions and just play keys and clap
+your hands.</p>
+<p>The following settings are available:</p>
+<pre><code>mod ptn
+</code></pre>
+<p>Switch between the <strong>preset patterns</strong> and the <strong>euclidean patterns</strong>
+modes.</p>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>chn  10
+</code></pre>
+<p>Channel on which the notes are sent. This is also the channel to which
+pattern triggers must be sent.</p>
+<pre><code>pt1  C1
+pt2  D1
+pt3  A#1
+pt4  C#1
+</code></pre>
+<p>MIDI Note to send when a note is triggered on parts 1, 2, 3, 4. Notes
+are sent with a velocity of 100, and have a duration of one sixteenth
+note.</p>
+<h4 id="randomizer-randomiz">Randomizer (<code>randomiz</code>)</h4>
+<p>This app randomizes the note and velocity values of the incoming MIDI
+data. It can even send a random CC every time a new note is triggered!</p>
+<pre><code>chn  8
+</code></pre>
+<p>Channel on which the randomization effect is applied.</p>
+<pre><code>amt  99
+</code></pre>
+<p>How often randomization is applied. When this value is set to 127
+(maximum value), every note is randomized. When this value is set to 63
+(medium value), there is a 50/50% probability that a note will be
+randomized. When this value is set to 0, no randomization is applied.</p>
+<pre><code>not.  1
+</code></pre>
+<p>Amount of random modulation applied to the note number, in semitones.
+For example, if this parameter is set to 12, the emitted note is within
+<em>/- 12 semitones =</em>/- 1 octave of the original note.</p>
+<pre><code>vel  70
+</code></pre>
+<p>Amount of random modulation applied to the velocity value.</p>
+<pre><code>cc1  70
+cc2  70
+</code></pre>
+<p>Amount of random modulation applied to the first and second CC. Set both
+to 0 if you don't want to send a random CC with each note.</p>
+<pre><code>#c1   7
+#c2   7
+</code></pre>
+<p>CC Numbers for the first and second random CC sources.</p>
+<h4 id="chord-memory-chordmem">Chord memory (<code>chordmem</code>)</h4>
+<p>This app memorizes a chord and lets you play transpositions of it. To
+record a chord, click the encoder, and play a chord. Click the encoder
+again and that's it maestro!</p>
+<p>In recording mode, you can also select the affected channel.</p>
+<h4 id="arpeggiator-arpeggio">Arpeggiator (<code>arpeggio</code>)</h4>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>chn   1
+</code></pre>
+<p>Channel to arpeggiate. Chords sent on this channels are filtered out and
+played as arpeggios.</p>
+<pre><code>dir  up
+</code></pre>
+<p>Arpeggio direction. The available directions are up, down, up&amp;down, or
+random.</p>
+<pre><code>oct   1
+</code></pre>
+<p>Arpeggio range, in octaves.</p>
+<pre><code>ptn  10
+</code></pre>
+<p>Arpeggio rhythmic pattern.</p>
+<pre><code> 1: o o o o o o o o
+ 2: o o ooooo o oooo
+ 3: o o oo oo o oo o
+ 4: o o o ooo o o oo
+ 5: o o o o oo o o o
+ 6: o o o o o  oo o
+ 7: o o o  oo o o  o
+ 8: o  o    o  o    
+ 9: o  o  o  o  o  o
+10: o  o  o  o  o o
+11: o  o  o o  o  o
+12: o  oo   o o o oo
+13: oo o oo oo o oo
+14: oo oo o oo oo o
+15: ooo ooo ooo ooo
+16: ooo oo oo oo oo
+17: ooo o o ooo o o
+18: oooo oo oooo oo
+19: ooooo oo oo ooo
+20: o   o   o  o o o
+21: o     oooooo oo
+22: o       o   o oo
+
+div /16
+</code></pre>
+<p>Duration of an arpeggio step (the duration of a 'o' or blank in the
+previous chart). The default is /16 -- a 16th note per step.</p>
+<pre><code>dur /16
+</code></pre>
+<p>Duration of the notes played by the arpeggiator. The default is /32, a
+32th note.</p>
+<pre><code>lat  on
+</code></pre>
+<p>Latch mode. When set to <strong>on</strong>, releasing the keyboard will not stop the
+arpeggiator. To stop the arpeggiator, set this latch setting to <strong>off</strong>.
+Please note that the sustain pedal of your controller can be used
+similarity to hold notes.</p>
+<h4 id="tempo-synchronized-delaystrummer-delay">Tempo-synchronized delay/strummer (<code>delay</code>)</h4>
+<p>This app adds echoes to incoming note on and note off messages. The echo
+duration is specified as a fraction of the duration of a bar - thus,
+this effect can be musically synchronized to a tempo clock (be it
+internal or external).</p>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>chn   1
+</code></pre>
+<p>Channel on which the echo effect is applied.</p>
+<pre><code>del 1/4
+</code></pre>
+<p>Delay duration, expressed as a fraction of a bar. For example, when this
+is set to 1/4, the duration between echoes is equal to the duration of a
+quarter note.</p>
+<pre><code>rep   8
+</code></pre>
+<p>Number of echoes to play. Note that when a complex sequence is played
+with many overlapping echoes, the internal scheduler buffer can
+overflow. In this case, a '!' symbol briefly appears on the LCD display.
+Keep in mind that each echo is going to use a polyphony voice, so it is
+not a good idea to play MIDI echoes on a device with a limited
+polyphony.</p>
+<pre><code>vel  16
+</code></pre>
+<p>Velocity dampening. When this value is low, the echoes have a small and
+rapidly decreasing velocity. When this value is high (the maximum being
+16), all the echoes are played with the same velocity as the original
+note.</p>
+<pre><code>trs   0
+</code></pre>
+<p>Number of semitones by which each echo must be transposed.</p>
+<pre><code>dpl  32
+</code></pre>
+<p>Pseudo-doppler effect: Increases (when set to a positive value) or
+decreases (when set to a negative value) the delay between the notes as
+they echo.</p>
+<h4 id="scale-and-harmony-processor-scale">Scale and harmony processor (<code>scale</code>)</h4>
+<p>This app can transpose incoming note messages, and "quantize" them to
+the nearest note in one of the 25 preset scales. It can also harmonizes
+the incoming note at a fixed interval and/or through algorithmic
+modification of the played melody.</p>
+<pre><code>chn   1
+</code></pre>
+<p>Channel on which the scale / transposition / harmony modifications have
+to be applied.</p>
+<pre><code>roo   C
+</code></pre>
+<p>Root note of the target scale.</p>
+<pre><code>scl chr
+</code></pre>
+<p>Target scale. All notes outside of this scale are "quantized" to their
+nearest neighbor in the scale. For example, if a C major scale is
+selected, and if you play a chromatic scale (C, C#, D, D#, E...), what
+will be heard will be C, C, D, D, E, F, F, G, G, A, A, B. The available
+scales are:</p>
+<ul>
+<li><strong>chr</strong>: chromatic scale (no quantization).</li>
+<li><strong>ion</strong>: ionian mode (major scale).</li>
+<li><strong>dor</strong>: dorian mode (russian minor scale).</li>
+<li><strong>phr</strong>: phrygian mode.</li>
+<li><strong>lyd</strong>: lydian mode.</li>
+<li><strong>mix</strong>: mixolydian mode.</li>
+<li><strong>aeo</strong>: aeolian mode (minor scale).</li>
+<li><strong>loc</strong>: locrian mode.</li>
+<li><strong>bmj</strong>: major blues scale.</li>
+<li><strong>bmn</strong>: major blues scale.</li>
+<li><strong>pmj</strong>: pentatonic major scale.</li>
+<li><strong>pmn</strong>: pentatonic minor scale.</li>
+<li><strong>bhr</strong>: raga Bhairav.</li>
+<li><strong>shr</strong>: raga Shri.</li>
+<li><strong>rup</strong>: raga Rupavati.</li>
+<li><strong>tod</strong>: raga Todi.</li>
+<li><strong>rag</strong>: raga Rageshri.</li>
+<li><strong>kaa</strong>: raga Kaafi.</li>
+<li><strong>meg</strong>: raga Meg.</li>
+<li><strong>mlk</strong>: raga Malkauns.</li>
+<li><strong>dpk</strong>: raga Deepak.</li>
+<li><strong>flk</strong>: Folkish scale.</li>
+<li><strong>jap</strong>: Japanese scale.</li>
+<li><strong>gam</strong>: Gamelan scale.</li>
+<li>
+<p><strong>whl</strong>: Whole tones.</p>
+<p>trs   0</p>
+</li>
+</ul>
+<p>Transposition to apply to the incoming notes.</p>
+<pre><code>voi   0
+</code></pre>
+<p>When set to a non-zero value, a parallel harmony N semitones apart from
+the incoming melody is played. For example, when set to -24, the
+incoming notes are doubled 2 octaves below. Note that the generated
+notes are also subject to scale quantization.</p>
+<pre><code>hrm off
+</code></pre>
+<p>Generates an additional, mostly random, harmonic line on top of the
+incoming melody. Several algorithms are available to generate the
+harmony:</p>
+<ul>
+<li><strong>mir</strong>: mirrors the intervals played on the incoming melody. If you
+    play an ascending scale, a descending scale will be added.</li>
+<li><strong>alt</strong>: alternates between following what you play, and the
+    <strong>mirror</strong> mode.</li>
+<li><strong>trk</strong>: tracks the interval you play, plus or minus a few
+    semitones. For example, if you play a fifth, a major third, and an
+    octave, the harmonized line might play a fourth, a minor third, then
+    an octave.</li>
+<li><strong>random</strong>: plays a random note within +/- 1 fifth of the note you
+    played.</li>
+</ul>
+<p>Obviously, all those random modifications are likely to generate
+annoying junk unless you select a scale. In which case, it will still
+sound random, but of the "Free-Jazz" flavor of random.</p>
+<h4 id="step-sequencer-sequencr">Step sequencer (<code>sequencr</code>)</h4>
+<p>This app is a step sequencer which can generate note messages, CCs, or a
+combination of both, on up to 32 steps.</p>
+<p>The following settings are available for each step:</p>
+<ul>
+<li>Note (represented on the screen by a note icon).</li>
+<li>Note duration (represented on the screen by a pulse icon).</li>
+<li>Note velocity (represented on the screen by a triangle icon). Set
+    the velocity to 0 to mark a step as being a rest.</li>
+<li>CC value (represented by a knob icon).</li>
+</ul>
+<p>Since navigating between the 32 steps x 4 settings = 128 pages can be
+tedious, you can "simplify" the sequencer operation by:</p>
+<ul>
+<li>Muting the notes track. In this case, the sequencer only sends CC -
+    and works more like a programmable MIDI LFO.</li>
+<li>Muting the note duration track. In this case, a default note
+    duration of 1 step will be used for all the generated notes.</li>
+<li>Muting the velocity track. In this case, a default velocity of 100
+    is used for each step.</li>
+<li>Muting the CC track. In this case, the sequencer only sends note
+    information.</li>
+</ul>
+<p>The muting/unmuting of those track can be used for creative effects --
+for example, you can temporarily mute the velocity track of a synth
+sequence to make it sound louder and more mechanical.</p>
+<p>The sequencer has many settings pages, described in this section.</p>
+<pre><code>run off
+</code></pre>
+<p>Start or stop the sequencer, when it is synchronized to the internal
+clock -- When the sequencer is synchronized to an external MIDI clock, a
+proper start/stop MIDI message must be sent for the sequence to start.</p>
+<p>You can also start the sequencer by playing a MIDI note, and stop it by
+replaying the same note.</p>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>div /16
+</code></pre>
+<p>Duration of a step, in a fraction of a bar. The most common setting
+(TB303-like) is one sixteenth note (/16) per step.</p>
+<pre><code>chn   1
+</code></pre>
+<p>MIDI channel on which the sequenced events will be sent.</p>
+<pre><code>cc#   7
+</code></pre>
+<p>CC number of the messages sequenced on the CC track.</p>
+<pre><code>not  on
+</code></pre>
+<p>Whether the sequencer sends note messages.</p>
+<pre><code>dur  on
+</code></pre>
+<p>Whether the note duration track is active. When this track is disabled,
+all notes played by the sequencer have a duration of 1 step.</p>
+<pre><code>vel  on
+</code></pre>
+<p>Whether the velocity track is active. When this track is disabled, a
+note is played on every step, with a velocity of 100.</p>
+<pre><code>cc  on
+</code></pre>
+<p>Whether the CC track is active.</p>
+<pre><code>stp   8
+</code></pre>
+<p>Number of steps a sequence is made of.</p>
+<pre><code>01N   C3
+</code></pre>
+<p>Note for step 1.</p>
+<pre><code>01D /96
+</code></pre>
+<p>Duration of the note played at step 1 - here, 1 MIDI clock tick.</p>
+<pre><code>01V  14
+</code></pre>
+<p>Velocity for step 1. The actual MIDI velocity value sent is 8 times the
+displayed value. For example, 15 corresponds to the velocity value 120.</p>
+<pre><code>01C  63
+</code></pre>
+<p>Value of the CC sent at step 1.</p>
+<p>Some nice things about the sequencer:</p>
+<p>While a sequence is playing, you can transpose it by playing a note
+on the keyboard. The transposition is relative to C3 if the sequence
+was started from the menu or from an external MIDI clock ; or
+relative to the pressed key when the sequence was started from the
+keyboard.</p>
+<p>While the MIDIpal is in editing mode, on a note step (in other
+words, when the screen is displaying something like this, pressing a key on the keyboard does not transpose or start the sequence. Instead, it records the played note at the current step.</p>
+<pre><code>01N[ C3]
+</code></pre>
+<h4 id="sh-101-style-sequencer-sequencr">SH-101 style Sequencer (<code>sequencr</code>)</h4>
+<p>This variant of the sequencer app provides a very simple way of
+recording sequences from a keyboard and playing them back with
+transposition.</p>
+<p>To record a sequence, turn the encoder until the display shows:</p>
+<pre><code>rec off
+</code></pre>
+<p>Click the encoder to enable recording.</p>
+<p>The display shows the number of the current step (here, 0):</p>
+<pre><code>. 0|rest
+</code></pre>
+<p>Every note played from the MIDI in is added to the sequence.</p>
+<ul>
+<li>To insert a rest (blank step), click the encoder.</li>
+<li>To insert a tie (extends the duration of the previously input note
+    into this step), turn the encoder to select "tie" and click.</li>
+<li>To insert an accent, move the modulation wheel up before playing a
+    note - this note will be accented.</li>
+<li>To insert a slide between two notes, wiggle the pitch bend lever
+    (the actual position does not matter) between the two notes.</li>
+<li>To leave the recording mode, turn the encoder to select "exit" and
+    click.</li>
+</ul>
+<p>There are different ways of starting the play-back of the recorded
+sequence:</p>
+<ul>
+<li>Turn the encoder until the display shows the "run" option and click.</li>
+<li>Play a note from the MIDI keyboard connected to the MIDIpal - you
+    can transpose the sequence by playing a different note. The sequence
+    stops if you move back to the original note used to start the
+    sequence.</li>
+<li>If the MIDIpal is configured to receive an external MIDI clock, send
+    a MIDI start message.</li>
+</ul>
+<p>The other settings available are:</p>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>div /16
+</code></pre>
+<p>Duration of a step, in a fraction of a bar. The most common setting is
+one sixteenth note (/16) per step.</p>
+<pre><code>chn   1
+</code></pre>
+<p>MIDI channel on which the sequenced events will be sent, and from which
+events will be recorded.</p>
+<h4 id="jx-3p-style-sequencer-polyseq">JX-3P style Sequencer (<code>polyseq</code>)</h4>
+<p>This sequencer app inspired by JX-3P sequencer allows layer by layer
+recording of polyphonic sequences. Think of it as a polyphonic version
+of the SH-101 style sequencer.</p>
+<p>To clear the sequence and record a first layer, turn the encoder until
+the display shows:</p>
+<pre><code>rec off
+</code></pre>
+<p>Click the encoder to enable recording.</p>
+<p>The display shows the number of the current step (here, 0):</p>
+<pre><code>. 0|rest
+</code></pre>
+<p>Every note played from the MIDI in is added to the sequence.</p>
+<ul>
+<li>To insert a rest (blank step), click the encoder.</li>
+<li>To insert a tie (extends the duration of the previously input note
+    into this step), turn the encoder to select "tie" and click.</li>
+<li>To leave the recording mode, turn the encoder to select "exit" and
+    click.</li>
+</ul>
+<p>To record a new layer above the existing sequence (overdub mode), turn
+the encoder until the display shows:</p>
+<pre><code>dub off
+</code></pre>
+<p>Click the encoder to enable overdubbing. From there, you can record
+notes/ties/rests just like in the record mode. Note that once you reach
+the end of the sequence, the step counter goes back to 0 and you can
+record a new layer above the previous one.</p>
+<p>There are different ways of starting the play-back of the recorded
+sequence:</p>
+<ul>
+<li>Turn the encoder until the display shows the "run" option and click.</li>
+<li>Play a note from the MIDI keyboard connected to the MIDIpal - you
+    can transpose the sequence by playing a different note. The sequence
+    stops if you move back to the original note used to start the
+    sequence.</li>
+<li>If the MIDIpal is configured to receive an external MIDI clock, send
+    a MIDI start message.</li>
+</ul>
+<p>The other settings available are:</p>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>div /16
+</code></pre>
+<p>Duration of a step, in a fraction of a bar. The most common setting is
+one sixteenth note (/16) per step.</p>
+<pre><code>chn   1
+</code></pre>
+<p>MIDI channel on which the sequenced events will be sent, and from which
+events will be recorded.</p>
+<h4 id="lfo-lfo">LFO (<code>lfo</code>)</h4>
+<p>This app generates slowly evolving controllers for up to 4 individual
+CC. Note that there are a few fundamental differences between what this
+app does and what an LFO on a synth traditionally does:</p>
+<ol>
+<li>The stream of CC is generated at a slow speed, typically 50 samples
+    per second.</li>
+<li>
+<p>Instead of controlling the LFO frequency in Hz, you control here the
+    duration of a cycle expressed as a musical duration relative to a
+    tempo.</p>
+<p>run off</p>
+</li>
+</ol>
+<p>Start or stop the LFOs, when it is synchronized to the internal clock --
+When the LFO is synchronized to an external MIDI clock, a proper
+start/stop MIDI message must be sent for the LFOs to start.</p>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>res /96
+</code></pre>
+<p>Resolution of the LFO clock. Selecting a high resolution allows for
+faster modulations and less stepping, but some devices might not like
+the very dense MIDI streams this generates. Selecting a low resolution
+might create "stepping" effects.</p>
+<pre><code>chn   1
+</code></pre>
+<p>MIDI channel on which the CC messages will be sent.</p>
+<pre><code>ccN   7
+</code></pre>
+<p>CC number sent by the Nth LFO.</p>
+<pre><code>amN  63
+</code></pre>
+<p>Modulation amount of the Nth LFO. A negative amount inverses the
+polarity of the LFO waveform.</p>
+<pre><code>ceN  63
+</code></pre>
+<p>Center value of the Nth LFO. For example, if the modulation amount is 40
+and the center value 70, the LFO will oscillate between 70 - 40 = 30 and
+70 + 40 = 110.</p>
+<pre><code>wfN tri
+</code></pre>
+<p>Waveform of the Nth LFO. The following waveforms are available:</p>
+<ul>
+<li><strong>tri</strong>: triangle</li>
+<li><strong>sqr</strong>: square</li>
+<li><strong>rmp</strong>: ascending ramp. Use a negative modulation amount to get a
+    descending ramp.</li>
+<li><strong>sin</strong>: sine wave</li>
+<li><strong>si2</strong>: first and second sine harmonics</li>
+<li><strong>si3</strong>: first and third sine harmonics</li>
+<li><strong>si5</strong>: first and fifth sine harmonics</li>
+<li><strong>gg1</strong>: gurgle</li>
+<li><strong>gg2</strong>: double gurgle</li>
+<li><strong>bt1</strong>: bat (folded triangle) 1</li>
+<li><strong>bt2</strong>: bar (folded triangle) 2</li>
+<li><strong>sp1</strong>: spike</li>
+<li><strong>sp2</strong>: bipolar spike</li>
+<li><strong>lp1</strong>: smoothed ramp</li>
+<li><strong>lp2</strong>: smoothed square</li>
+<li><strong>rs1</strong>: ramp with overshoot</li>
+<li><strong>rs2</strong>: square with overshoot</li>
+<li><strong>s&amp;h</strong>: (random) sample&amp;hold</li>
+</ul>
+<p>A large fraction of those waveforms has been approved by the
+International Organization for Dubstep Standardization.</p>
+<pre><code>rtN 1/8
+</code></pre>
+<p>Period of the Nth LFO. For example, if this is set to 1/4, the LFO will
+complete a whole cycle every quarter note (beat).</p>
+<pre><code>syN fre
+</code></pre>
+<p>Sync mode of the Nth LFO. The synchronization modes are:</p>
+<ul>
+<li><strong>fre</strong>: free running. The LFO oscillates independently of any note
+    message, and its phase is never reset.</li>
+<li><strong>not</strong>: note synchronization. The LFO phase is reset to 0 every
+    time a note on message is received.</li>
+<li><strong>chd</strong>: chord synchronization. The LFO phase is reset to 0 every
+    time a new "chord" is received. In other words, as long as a note is
+    held, playing new notes will not reset the LFO phase. You need to
+    release all keys and press a new key to reset the LFO phase.</li>
+</ul>
+<h3 id="miscellaneous-apps">Miscellaneous apps</h3>
+<h4 id="tanpura-pattern-generator-tanpura">Tanpura pattern generator (<code>tanpura</code>)</h4>
+<p>This app generates the repetitive note patterns traditionally played on
+the <a href="http://en.wikipedia.org/wiki/Tambura">tanpura</a> to accompany north
+indian classical music.</p>
+<p>The settings are the following:</p>
+<pre><code>run off
+</code></pre>
+<p>Starts/stops playback.</p>
+<pre><code>clk int
+</code></pre>
+<p>Select an internal or external clock source. When using an external
+clock source, start, clock and stop MIDI messages must be sent.</p>
+<pre><code>bpm 120
+</code></pre>
+<p>Tempo of the internal clock, in beats per minutes.</p>
+<pre><code>grv swg
+</code></pre>
+<p>Type of shuffle/jitter to apply to the clock.</p>
+<pre><code>amt  80
+</code></pre>
+<p>Amount of shuffle/jitter to apply to the clock.</p>
+<pre><code>res 1/4
+</code></pre>
+<p>Relationship between the tempo grid (BPM) and the notes. The default is
+1/4. 1/8 and 1/16 can be used for double and quadruple time.</p>
+<pre><code>chn   1
+</code></pre>
+<p>MIDI channel on which the note messages will be sent.</p>
+<pre><code> sa  C4
+</code></pre>
+<p>Root note (sa) of the pattern.</p>
+<pre><code>mod  pa
+</code></pre>
+<p>Interval highlighted in the pattern. Pa = fifth, ma = fourth, ni = 7th,
+sa = only octave.</p>
+<pre><code>cyc   5
+</code></pre>
+<p>This setting indicates from which note the pattern starts. For example,
+considering the pattern: sa . . . . pa Sa Sa sa. 0 will start the
+pattern at sa ; 1, 2, 3, 4 will start the pattern by a silence ; 5 will
+start the pattern at pa ; 6 and 7 will start the pattern at Sa.</p>
+<h3 id="general-purpose-event-processor-user-prg">General purpose event processor (<code>user prg</code>)</h3>
+<p>This app applies one of 4 user-defined event filtering / remapping
+pipelines, each of them consisting of up to 4 filtering / remapping
+rules. It's like piping stuff on a unix shell, with note messages and
+transpositions instead of grep and awk!</p>
+<p>There is only one setting - the active program.</p>
+<pre><code>prg   1
+</code></pre>
+<p>To edit a program:</p>
+<ul>
+<li>Select the program number you want to edit on the MIDIpal.</li>
+<li>Go to this <a href="https://midipal-editor-350009.ew.r.appspot.com/">webpage</a>.</li>
+<li>Configure the filtering rules.</li>
+<li>Click on "Download .syx" to retrieve a .syx file.</li>
+<li>Play the .syx file into the MIDIpal to install the program at the
+    active location.</li>
+</ul>
+<p>And now, a few explanations about the filtering rules!</p>
+<h3 id="creating-custom-filtering-rules">Creating custom filtering rules</h3>
+<p>Each program contains up to 4 "filters". Use the checkboxes to activate
+/ deactivate a filter.</p>
+<p>The first line of the table specifies which events the filter operates
+on:</p>
+<ul>
+<li>The <strong>Channel</strong> column specifies the affected channel(s).</li>
+<li>The <strong>Event type</strong> column specifies the affected MIDI event type(s).</li>
+<li>The <strong>Data A</strong> and <strong>Data B</strong> columns specify value range for the
+    two bytes of information contained in MIDI messages. You can use
+    this, for example, to restrict an effect or processing to a certain
+    range of notes (value A) or velocity (value B).</li>
+</ul>
+<p>The second line of the table specifies some transformations to apply on
+the matching event:</p>
+<ul>
+<li><strong>Transform</strong>: the original event is modified and sent to the MIDI
+    out.</li>
+<li><strong>Pass and transform</strong>: both the original event and its modified
+    version are sent to the MIDI out. You can use it to automatically
+    "clone" a note to another channel.</li>
+<li><strong>CCize</strong>: a control change (CC) message is formed with the data of
+    the incoming event, and sent to the MIDI out. The original message
+    is lost. This can be used to translate pitch bend or note messages
+    into CC.</li>
+<li><strong>Pass and CCize</strong>: a control change (CC) message is formed with the
+    data of the incoming event, and sent to the MIDI out. The original
+    message is also sent. This can be used, for example to send a new CC
+    (maybe a random one?) every time a note is pressed.</li>
+<li><strong>Filter out</strong>: the original event is removed from the MIDI stream.</li>
+</ul>
+<p>The next option list shows what to do with the MIDI channel of the
+incoming event. By default, <strong>Shift by: 0</strong> does nothing. You can
+specify another value to shift the channel number by the specified
+amount (if <strong>Shift by: 4</strong> is used, Channel 1 becomes channel 5, channel
+2 becomes channel 6 etc.). <strong>Reassign to</strong> overwrite the MIDI channel of
+the original message to the specified value.</p>
+<p>Finally, operations can be applied to the MIDI message data:</p>
+<ul>
+<li><strong>Add/Subtract/Invert/Set to</strong> are self-explanatory.</li>
+<li><strong>Map to range</strong> changes the dynamic range of a parameter -- you can
+    use this to alter the velocity response of a keyboard or drum
+    sensor.</li>
+<li><strong>Set to random</strong> replaces the value by a number picked within the
+    specified interval.</li>
+<li><strong>Add random</strong> adds a random value (drawn from the specified
+    interval).</li>
+<li>When <strong>Preserve zero</strong> is checked, no matter which transformation is
+    specified, a value of 0 is never modified. This is particularly
+    useful when dealing with synths sending Note On with a velocity of 0
+    instead of Note Off. You don't want those to be affected by your
+    velocity randomizer don't you?</li>
+<li>When <strong>Binary wrapping</strong> is checked, weird things may happen... For
+    example, what if you use <strong>Add: 12</strong> to transpose a note one octave
+    above, and then you play the last key on your keyboard? Normally,
+    nothing will happen -- the note won't be transposed at all. With
+    <strong>Binary wrapping</strong> checked, it'll wrap around and a very low note
+    will be played!</li>
+<li>When <strong>Swap source</strong> is checked, the second byte of the MIDI message
+    (velocity, note) is put in place of the first.</li>
+</ul>
+<p>Here are some examples:</p>
+<p>Map all notes below C4 (Midi note 60) to channel 2:</p>
+<p><img alt="" src="../../static/images/midipal_example_split.png" /></p>
+<p>Map CC 07 (volume) to CC 08 (pan):</p>
+<p><img alt="" src="../../static/images/midipal_example_remap_cc.png" /></p>
+<p>Randomize note velocities:</p>
+<p><img alt="" src="../../static/images/midipal_example_randomize.png" /></p>
+<p>Remove program changes on all channels except channel 1:</p>
+<p><img alt="" src="../../static/images/midipal_example_no_pc.png" /></p>
+<p>Send a random modwheel value at each new note:</p>
+<p><img alt="" src="../../static/images/midipal_example_random_modulation.png" /></p>
+<p>To retrieve the rules contained in a .syx file, <a href="http://midipal-editor.appspot.com/retrieve">go to this
+page</a></p>
+<h2 id="updating-the-midipal-firmware">Updating the MIDIpal firmware</h2>
+<p>To find out which firmware version the MIDIpal is running, hold the
+encoder and jump to the app selection menu, then scroll to the end of
+the list. On the first release of the firmware (v1.1), the last entry is
+the system reset command. On more recent versions, starting from v1.2,
+the firmware revision number is displayed at the end of the list.</p>
+<p><strong>This section describes how to update the operating system and apps of
+the MIDIpal (firmware)</strong>. The operations described here are not required
+for sending to the MIDIpal data such as memory backups, or custom
+programs - the MIDIpal can receive such data while being powered on
+normally.</p>
+<p>Keep the encoder pressed while you power on the MIDIpal. You'll see the
+MIDI in and MIDI out LEDs rapidly blink in sequence, and the MIDI in LED
+will stay on. The MIDIpal is ready to receive the update data, which can
+be sent as a SysEx (with a 250ms or more delay between packets) or
+MIDIfile. The MIDI in LED blinks on every received packet, an update
+containing up to 256 packets. The update takes about 1 minute, and can
+be restarted in case of accident during the transmission. Upon reception
+of the last packet, the MIDIpal immediately boots with the new firmware.</p>
+<p>If you want to use a dedicated SysEx transfer tool rather than a
+sequencer, we recommend <a href="http://www.elektron.se/support-and-downloads">Elektron's C6
+tool</a> available for both
+Windows and OS X, with the following timing settings:</p>
+<p><img alt="" src="../../static/images/c6_win.jpg" /></p>
+<p><img alt="" src="../../static/images/c6_osx.png" /></p>
+<h2 id="sysex-data-format">SysEx data format</h2>
+<p>The MIDIpal can receive and transmit settings in system exclusive
+format. The messages all share the same format:</p>
+<pre><code>0xf0  (SysEx)
+0x00 0x21 0x02  (Mutable Instruments Manufaturer id)
+0x00 0x03  (Product ID for MIDIpal)
+Command
+Argument
+Payload
+Checksum
+0xf7  (End of SysEx)
+</code></pre>
+<p><strong>Command</strong> indicates what the receiver should do with the data in the
+<strong>payload</strong> block, and <strong>argument</strong> is a byte that might contain an
+additional piece of information about what to do with the data.</p>
+<p><strong>Payload</strong> is a sequence of bytes in nibblized form. For example, the
+sequence <code>0x80 0x56 0x13</code> is transmitted as
+<code>0x08 0x00 0x05 0x06 0x01 0x03</code>.</p>
+<p><strong>Checksum</strong> is equal to the nibblized-sum, modulo 256, of the payload
+bytes. In the example above, the checksum is equal to
+<code>0x80 + 0x56 + 0x13 = 0xe9</code> and is transmitted as <code>0x0e 0x09</code>.</p>
+<h3 id="settings-data-block-transfer">Settings data block transfer</h3>
+<p>To transmit a block of data to the MIDIpal, <strong>command</strong> must be equal to
+<strong>0x01</strong> and <strong>argument</strong> is the size (up to 32) of the data block to
+transmit. The first 2 bytes of the payload are the address of the block
+to write, the <strong>argument</strong> following bytes are the data.</p>
+<p>Upon reception, the MIDIpal writes the block of data in its internal
+eeprom, where all settings are stored.</p>
+<h3 id="app-selection">App selection</h3>
+<p>To change the current app the MIDIpal is running, set <strong>command</strong> to
+<strong>0x02</strong> and <strong>argument</strong> to an app number. The payload must be left
+empty.</p>
+<p>Upon reception, the MIDIpal reboots into the select app.</p>
+<h3 id="settings-data-block-request">Settings data block request</h3>
+<p>To request the transmission of a block of data from the MIDIpal,
+<strong>command</strong> is equal to <strong>0x11</strong> and <strong>argument</strong> is the size of the
+requested data block. The payload consists of 2 bytes, indicating the
+address of the requested block.</p>
+<p>Upon reception, the MIDIpal sends the designated data. If <strong>argument</strong>
+is null, the entire content of the eeprom is dumped. If <strong>argument</strong> is
+greater than 32, the data is sent in 32 bytes chunk, with a 150ms pause
+between chunks.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../cvpal/build/" class="btn btn-neutral float-left" title="Build instructions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../firmware/" class="btn btn-neutral float-right" title="Firmware development">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../cvpal/build/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
