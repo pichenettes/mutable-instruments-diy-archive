@@ -7,10 +7,10 @@ This page contains the user manuals, assembly instructions or technical document
 Shruthi is a DIY hybrid monosynth with a large palette of analog filter boards.
 
 - [User manual](shruthi/manual)
-- [Firmware hacking](/shruthi/firmware)
-- [Control board](/shruthi/digital)
-- [SMR4 mkII filter board](/shruthi/smr4mkii)
-- [All DIY resources](/shruthi/build)
+- [Firmware hacking](shruthi/firmware)
+- [Control board](shruthi/digital)
+- [SMR4 mkII filter board](shruthi/smr4mkii)
+- [All DIY resources](shruthi/build)
 
 * * *
 
