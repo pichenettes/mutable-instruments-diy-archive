@@ -1,0 +1,52 @@
+site_name: Mutable Instruments prehistoric projects
+site_author: Émilie Gillet
+dev_addr: 127.0.0.1:1313
+theme:
+    name: readthedocs
+    highlightjs: false
+
+nav:
+    - Home: 'index.md'
+    - Shruthi:
+        - 'Manual': 'shruthi/manual.md'
+        - 'Firmware development': 'shruthi/firmware.md'
+        - Build instructions:
+            - 'Home': 'shruthi/build.md'
+            - 'Digital control board': 'shruthi/digital.md'
+            - 'SMR4 mkII filter board': 'shruthi/smr4mkii.md'
+            - '4 Pole-mission kit': 'shruthi/4pm_build.md'
+            - '4 pole-mission filter board': 'shruthi/4pm.md'
+            - 'Yellow magic kit': 'shruthi/ym_build.md'
+            - 'Yellow magic filter board': 'shruthi/delay.md'
+            - 'DSP filter board': 'shruthi/dsp.md'
+            - 'Polivoks filter board': 'shruthi/polivoks.md'
+            - 'SMR4 filter board': 'shruthi/smr4.md'
+            - 'SSM2044 filter board': 'shruthi/ssm2044.md'
+            - 'SVF filter board (old)': 'shruthi/svf.md'
+            - 'SVF filter board': 'shruthi/svf2.md'
+            - 'XT control board': 'shruthi/digital_xt.md'
+            - 'XT enclosure': 'shruthi/xt_enclosure.md'
+    - Ambika:
+        - 'Manual': 'ambika/manual.md'
+        - Build Instructions:
+            - 'Motherboard': 'ambika/mobo.md'
+            - 'SMR-4 voicecard': 'ambika/smr4.md'
+            - 'Other voicecards': 'ambika/voicecards.md'
+            - 'Mechanical assembly': 'ambika/mechanical.md'
+            - 'Firmware setup': 'ambika/firmware.md'
+            - 'Technical notes': 'ambika/technotes.md'
+    - Anushri:
+        - 'Manual': 'anushri/manual.md'
+        - 'Build instructions': 'anushri/build.md'
+    - CVpal:
+        - 'Manual': 'cvpal/manual.md'
+        - 'Specifications': 'cvpal/specs.md'
+        - 'Build instructions': 'cvpal/build.md'
+    - MIDIpal:
+        - 'Manual': 'midipal/manual.md'
+        - 'Firmware development': 'midipal/firmware.md'
+        - 'Build instructions': 'midipal/build.md'
+    - Other projects:
+        - 'Cyclic': 'cyclic/index.md'
+        - 'Module Tester': 'module_tester/index.md'
+        - 'Breadboard Friends': 'bbf/index.md'
