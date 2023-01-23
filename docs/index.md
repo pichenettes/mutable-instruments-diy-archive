@@ -70,3 +70,10 @@ The MIDIpal is a MIDI event processor.
 * [CycliC](cyclic/)
 * [Module tester](module_tester/)
 * [Breadboard friends](bbf/)
+
+* * *
+
+## Third party firmware and data
+
+* [A collection of patches](https://github.com/joegiralt/ambika-shruthi-instruments)
+* [Y A M, for Ambika](https://github.com/bjoeri/ambika)
